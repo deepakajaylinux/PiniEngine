@@ -4,6 +4,7 @@ by Jason Costello, @jsncostello
 *******************************************************************************/
 
 @import url(pygment_trac.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 /*******************************************************************************
 MeyerWeb Reset
@@ -37,6 +38,7 @@ footer, header, hgroup, menu, nav, section {
 
 ol, ul {
   list-style: none;
+  
 }
 
 table {
@@ -47,13 +49,16 @@ table {
 /*******************************************************************************
 Theme Styles
 *******************************************************************************/
+html *
+{
+    font-family: 'Nanum Gothic', serif;
+}
 
 body {
   box-sizing: border-box;
   color:#373737;
   background: #212121;
   font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -62,7 +67,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
   color:#222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
 
@@ -82,7 +86,7 @@ h3 {
 }
 
 h4 {
-  font-size: 21px;
+  font-size: 20px;
 }
 
 h5 {
@@ -95,6 +99,10 @@ h6 {
 
 p {
   margin: 10px 0 15px 0;
+}
+
+#desc{
+  text-indent: 1em;
 }
 
 footer p {
