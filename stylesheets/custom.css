@@ -1,0 +1,39 @@
+/*******************************************************************************
+Custom CSS by Klazz
+*******************************************************************************/
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+html *
+{
+    font-family: 'Nanum Gothic', serif;
+}
+
+#main_content li{
+    font-weight: 700;
+}
+#main_content p{
+    text-indent: 0.5em;
+    padding: 0px 10px;
+}
+
+#main_content .logo{
+    content:url("../images/piniengineLogo.jpg") no-repeat top center;
+    max-width: 640px;
+    padding: 20px 10px;
+    margin: 0 auto;
+}
+
+.textEditor{
+    content:url("../images/textEditor.png") no-repeat top center;
+    max-width: 640px;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+
+.displayError{
+    content:url("../images/error.PNG") no-repeat top center;
+    max-width: 640px;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
