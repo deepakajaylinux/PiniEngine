@@ -9,6 +9,18 @@ html *
     font-family: 'Nanum Gothic', serif;
 }
 
+img {
+    max-width: 640px;
+    padding: 7px 10px;
+    margin: 0 auto;
+}
+
+p img {
+    max-width: 640px;
+    padding: 7px 10px;
+    margin: 0 auto;
+}
+
 #main_content li{
     font-weight: 700;
 }
@@ -26,14 +38,13 @@ html *
 
 .textEditor{
     content:url("../images/textEditor.png") no-repeat top center;
-    max-width: 640px;
-    padding: 10px 10px;
-    margin: 0 auto;
 }
 
 .displayError{
     content:url("../images/error.PNG") no-repeat top center;
-    max-width: 640px;
-    padding: 10px 10px;
-    margin: 0 auto;
+}
+
+p.autoComplete-video{
+    border-style: dotted;
+    border-width: 1px;
 }
