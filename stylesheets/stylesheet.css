@@ -385,6 +385,20 @@ Full-Width Styles
     margin: 0 auto;
 }
 
+.textEditor{
+    content:url("../images/textEditor.png") no-repeat top center;
+    max-width: 640px;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+
+.displayError{
+    content:url("../images/error.PNG") no-repeat top center;
+    max-width: 640px;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+
 #footer_wrap {
   background: #212121;
 }
