@@ -24,6 +24,11 @@ p img {
 #main_content li{
     font-weight: 700;
 }
+
+li.plain{
+    font-weight: 100;
+}
+
 #main_content p{
     text-indent: 0.5em;
     padding: 0px 10px;
