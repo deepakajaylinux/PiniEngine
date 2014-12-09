@@ -6,14 +6,24 @@
     <meta name="description" content="PiniEngine은 비주얼노벨 게임 제작에 특화된 게임엔진 입니다.">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/custom.css">
+    
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
       
     <title>PiniEngine - Game Engine</title>
 
   </head>
 
   <body>
-
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요한) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- 모든 합쳐진 플러그인을 포함하거나 (아래) 필요한 각각의 파일들을 포함하세요 -->
+    <script src="js/bootstrap.min.js"></script>
+ 
+    <!-- Respond.js 으로 IE8 에서 반응형 기능을 활성화하세요 (https://github.com/scottjehl/Respond) -->
+    <script src="js/respond.js"></script>
+      
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
@@ -112,17 +122,23 @@ $ git checkout gh-pages
         </ul>
     </ul>
 </ul>
-<h3>
-<a id="channeling" class="anchor" href="#channeling" aria-hidden="true"><span class="octicon octicon-link"></span></a>채널링</h3>
-<p>개인이나 소규모 동인팀에서 부담스러워 할 부분들에 대해서 저희측에서 해소해 드립니다.
-다음과 같은 것들에 대한 부담을 줄일 수 있습니다.(서버유지 비용이 발생하기 때문에 선별과정이 필요함을 양해 부탁드립니다.)<br>contact@nooslab.com 을 통해 연락주세요
-    <ul>
-        <li type="circle">서버 유지비용</li>
-        <li type="circle">애플 개발자 등록 비용</li>
-        <li type="circle">게임제작업, 게임배급업 등의 허가 등록.신고 과정</li>
-        <li type="circle">게임물 등급 위원회 심의</li>
-    </ul>
-</p>
+          <div class="panel panel-primary">
+              <div class="panel-heading">
+              <h3 class="panel-title channeling-title">채널링</h3>
+              </div>
+              
+              <div class="panel-body">
+                <p>개인이나 소규모 동인팀에서 부담스러워 할 부분들에 대해서 저희측에서 해소해 드립니다.
+                다음과 같은 것들에 대한 부담을 줄일 수 있습니다.(서버유지 비용이 발생하기 때문에 선별과정이 필요함을 양해 부탁드립니다.)<br><a href="mailto:contact@nooslab.com">contact@nooslab.com</a> 을 통해 연락주세요
+                    <ul>
+                        <li type="circle">서버 유지비용</li>
+                        <li type="circle">애플 개발자 등록 비용</li>
+                        <li type="circle">게임제작업, 게임배급업 등의 허가 등록.신고 과정</li>
+                        <li type="circle">게임물 등급 위원회 심의</li>
+                    </ul>
+                </p>
+              </div>
+          </div>
           
       </section>
     </div>

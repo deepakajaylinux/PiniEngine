@@ -49,7 +49,6 @@ p img {
     content:url("../images/error.PNG") no-repeat top center;
 }
 
-p.autoComplete-video{
-    border-style: dotted;
-    border-width: 1px;
-}
+.channeling-title{ font-size: 18px; font-weight: 700; color: white; }
+
+p.autoComplete-video{ border-style: dotted; border-width: 1px; }
