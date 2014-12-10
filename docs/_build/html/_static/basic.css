@@ -9,8 +9,6 @@
  *
  */
 
- @import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
-
 /* -- main layout ----------------------------------------------------------- */
 
 div.clearer {
@@ -77,7 +75,7 @@ div.sphinxsidebar form {
 
 div.sphinxsidebar input {
     border: 1px solid #98dbcc;
-    font-family: 'Nanum Gothic', serif;
+    font-family: sans-serif;
     font-size: 1em;
 }
 
@@ -435,7 +433,7 @@ dl.glossary dt {
 }
 
 .guilabel, .menuselection {
-    font-family: 'Nanum Gothic', serif;
+    font-family: sans-serif;
 }
 
 .accelerator {
@@ -498,7 +496,7 @@ h1 tt, h2 tt, h3 tt, h4 tt, h5 tt, h6 tt {
 
 .viewcode-back {
     float: right;
-    font-family: 'Nanum Gothic', serif;
+    font-family: sans-serif;
 }
 
 div.viewcode-block:target {
