@@ -13,6 +13,7 @@ Contents:
    
    내보내기
    튜토리얼
+   test
 
 
 Indices and tables
