@@ -11,9 +11,10 @@ Contents:
 .. toctree::
    :maxdepth: 2
    
-   내보내기
-   튜토리얼
-   test
+   pages/Getting-Started
+   pages/tutorial
+   pages/export
+   pages/test
 
 
 Indices and tables

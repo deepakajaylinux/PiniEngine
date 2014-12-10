@@ -3,24 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to PiniEngine's documentation!
+시작하기
 ======================================
 
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-   
-   pages/Getting-Started
-   pages/tutorial
-   pages/export
-   pages/test
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+본 내용은 피니엔진을 처음 시작하려는 분들을 위해 작성 되었습니다.
