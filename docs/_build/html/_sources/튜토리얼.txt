@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-내보내기
+튜토리얼
 ======================================
 
-피니엔진으로 만든 게임은 안드로이드 OS(.apk)와 iOS(.iap)에서 실행 가능한 형태로 앱 설치파일을 내보낼 수 있습니다.
+본 내용은 피니엔진을 처음 접하거나 아직은 미숙한 분들을 위해 작성된 튜토리얼 입니다.
