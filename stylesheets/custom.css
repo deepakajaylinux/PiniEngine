@@ -35,7 +35,7 @@ p img {
 }
 
 #main_content .logo{
-    content:url("../images/piniengineLogo.jpg") no-repeat top center;
+    content:url("../images/piniengineLogo.png") no-repeat top center;
     max-width: 640px;
     padding: 20px 10px;
     margin: 0 auto;
