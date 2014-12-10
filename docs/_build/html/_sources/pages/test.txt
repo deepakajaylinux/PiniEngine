@@ -21,11 +21,11 @@
 \=, for sections
 ======================================
 
-\-, for subsections
+for subsections
 --------------------------------------
 
-\^, for subsubsections
+for subsubsections
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-\", for paragraphs
+for paragraphs
 """"""""""""""""""""""""""""""""""""""
