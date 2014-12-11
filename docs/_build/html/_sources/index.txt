@@ -15,14 +15,15 @@
 목차:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    
    pages/Getting-Started
    pages/tutorial
    pages/export
-   pages/test
    pages/lnx-script/index
    pages/user-feedback
+   
+   pages/test
 
 
 색인 및 내용

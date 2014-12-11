@@ -20,9 +20,10 @@
    pages/Getting-Started
    pages/tutorial
    pages/export
-   pages/test
    pages/lnx-script/index
    pages/user-feedback
+   
+   pages/test
 
 
 색인 및 내용
