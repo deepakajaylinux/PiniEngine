@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>LNX 스크립트 &mdash; PiniEngine 1.0.0 documentation</title>
+    <title>대화 및 문자 &mdash; PiniEngine 1.0.0 documentation</title>
     
     <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -51,9 +51,88 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="lnx">
-<h1>LNX 스크립트<a class="headerlink" href="#lnx" title="Permalink to this headline">¶</a></h1>
-<p>본 내용은 피니엔진을 처음 접하거나 아직은 미숙한 분들을 위해 작성된 튜토리얼 입니다.</p>
+  <div class="section" id="id1">
+<h1><tt class="xref py py-mod docutils literal"><span class="pre">대화</span> <span class="pre">및</span> <span class="pre">문자</span></tt><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>문자 함수<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<tt class="descname">[이미지 아이디,파일명,위치=화면중앙,효과=업페이드,효과시간=1,크기=원본크기,연결,관계]</tt></dt>
+<dd><p>화면에 이미지를 출력합니다.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>아이디</strong> (<em>문자열</em>) &#8211; <strong>필수</strong> 이미지의 고유 아이디입니다. 기존에 쓰이고 있는 아이디를 전달 한다면 덮어쓰여 집니다.</li>
+<li><strong>파일명</strong> (<em>문자열</em>) &#8211; <strong>필수</strong> 보여질 이미지의 확장자를 포함한 파일명을 전달해야 합니다.</li>
+<li><strong>위치</strong> (x,y를 표현한 문자열(&#8220;숫자,숫자&#8221;) 혹은 <tt class="docutils literal"><span class="pre">크기</span></tt>) &#8211; 이미지의 위치를 전달해야 합니다.</li>
+<li><strong>효과</strong> (<em>노드입장효과</em>) &#8211; <a href="#id3"><span class="problematic" id="id4">``</span></a>노드입장효과``를 사용하여 이미지가 나타날때의 효과를 정할수 있습니다.</li>
+<li><strong>효과시간</strong> (<em>숫자</em>) &#8211; 등장시 효과의 시간 (기준은 초)</li>
+<li><strong>크기</strong> (<em>너비,높이를 표현한 문자열(&#8220;숫자,숫자&#8221;) 혹은 크기</em>) &#8211; 이미지의 크기를 정할수 있습니다. 직접 변수나 &#8220;숫자,숫자&#8221;(e.g &#8220;20,60&#8221;) 형태나 <a href="#id5"><span class="problematic" id="id6">``</span></a>숫자``형태로 크기를 전달 할 수 있습니다.</li>
+<li><strong>북마크이동</strong> (<em>문자열</em>) &#8211; 북마크 이동에 문자열 형태로 인자를 전달해 준다면 이미지를 클릭 하였을 경우</li>
+<li><strong>관계</strong> (<em>문자열</em>) &#8211; 보여질 이미지의 부모 노드의 아이디를 전달해줍니다.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="id7">
+<h2>대화 함수<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<tt class="descname">[대화 아이디,파일명,위치=화면중앙,효과=업페이드,효과시간=1,크기=원본크기,연결,관계]</tt></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>아이디</strong> (<em>문자열</em>) &#8211; <strong>필수</strong> 이미지의 고유 아이디입니다. 기존에 쓰이고 있는 아이디를 전달 한다면 덮어쓰여 집니다.</li>
+<li><strong>파일명</strong> (<em>문자열</em>) &#8211; <strong>필수</strong> 보여질 이미지의 확장자를 포함한 파일명을 전달해야 합니다.</li>
+<li><strong>위치</strong> (x,y를 표현한 문자열(&#8220;숫자,숫자&#8221;) 혹은 <tt class="docutils literal"><span class="pre">크기</span></tt>) &#8211; 이미지의 위치를 전달해야 합니다.</li>
+<li><strong>효과</strong> (<em>노드입장효과</em>) &#8211; <a href="#id8"><span class="problematic" id="id9">``</span></a>노드입장효과``를 사용하여 이미지가 나타날때의 효과를 정할수 있습니다.</li>
+<li><strong>효과시간</strong> (<em>숫자</em>) &#8211; 등장시 효과의 시간 (기준은 초)</li>
+<li><strong>크기</strong> (<em>너비,높이를 표현한 문자열(&#8220;숫자,숫자&#8221;) 혹은 크기</em>) &#8211; 이미지의 크기를 정할수 있습니다. 직접 변수나 &#8220;숫자,숫자&#8221;(e.g &#8220;20,60&#8221;) 형태나 <a href="#id10"><span class="problematic" id="id11">``</span></a>숫자``형태로 크기를 전달 할 수 있습니다.</li>
+<li><strong>북마크이동</strong> (<em>문자열</em>) &#8211; 북마크 이동에 문자열 형태로 인자를 전달해 준다면 이미지를 클릭 하였을 경우</li>
+<li><strong>관계</strong> (<em>문자열</em>) &#8211; 보여질 이미지의 부모 노드의 아이디를 전달해줍니다.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="id12">
+<h2>대화창수정 함수<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<tt class="descname">[대화창수정 아이디,파일명,위치=화면중앙,효과=업페이드,효과시간=1,크기=원본크기,연결,관계]</tt></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>아이디</strong> (<em>문자열</em>) &#8211; <strong>필수</strong> 이미지의 고유 아이디입니다. 기존에 쓰이고 있는 아이디를 전달 한다면 덮어쓰여 집니다.</li>
+<li><strong>여백</strong> &#8211; </li>
+<li><strong>영역</strong> &#8211; </li>
+<li><strong>위치</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>:param :
+:param :
+:param :
+:param :
+:param :</p>
+</dd></dl>
+
+</div>
 </div>
 
 
@@ -62,6 +141,16 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">대화</span> <span class="pre">및</span> <span class="pre">문자</span></tt></a><ul>
+<li><a class="reference internal" href="#id2">문자 함수</a></li>
+<li><a class="reference internal" href="#id7">대화 함수</a></li>
+<li><a class="reference internal" href="#id12">대화창수정 함수</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="image.html"
                         title="previous chapter"><tt class="docutils literal"><span class="pre">이미지</span></tt></a></p>

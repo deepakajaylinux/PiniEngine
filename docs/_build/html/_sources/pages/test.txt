@@ -29,3 +29,35 @@
 
 .. for paragraphs
 .. """"""""""""""""""""""""""""""""""""""
+
+
+.. note::
+    이런 식으로 정보를 적을 수 있다.
+
+.. seealso::
+    이런 식으로 추가 정보를 적을 수 있다.
+   
+   `PiniEngine 홈페이지로 가보세요~~ <http://nooslab.githun.io/PiniEngine>`_
+    화이팅 하하하~!!
+
+.. warning::
+    이런 식으로 주의사항을 적을 수 있다.
+
+.. versionadded:: 2.5
+    특정 버전에 *어떤 기능*이 ``추가``됐다면 이런 식으로 표기할 수 있다.
+
+.. versionadded:: 3.6
+    이제는 :func:`print` 을 대신 사용하세요.
+
+.. centered:: LICENSE AGREEMENT
+
+.. rubric:: rubric 알 수 없음.
+
+.. hlist::
+   :columns: 3
+
+   * A list of
+   * short items
+   * that should be
+   * displayed
+   * horizontally
