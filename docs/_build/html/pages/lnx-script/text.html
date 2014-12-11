@@ -111,21 +111,24 @@
 <dl class="function">
 <dt>
 <tt class="descname">[대화창수정 아이디,파일명,위치=화면중앙,효과=업페이드,효과시간=1,크기=원본크기,연결,관계]</tt></dt>
-<dd><p>아래와 같이 동일한 아이디의 대화창에 대한 속성을 여러번에 걸쳐 나누어 적용하면 스크립트를 훨씬 보기 편하게 작성할 수 있습니다.
-예제:</p>
-<div class="highlight-python"><div class="highlight"><pre>[대화창수정 아이디=&quot;대화&quot; 이미지=&quot;textArea.png&quot; 색상=&quot;255,255,255,255&quot; 위치=&quot;0,720&quot; 영역=&quot;1070,200&quot;  여백=&quot;100,60&quot; ]
-[대화창수정 아이디=&quot;대화&quot; 이름창이미지=&quot;nameLabel.png&quot; 이름창색상=&quot;255,255,255,255&quot; 이름창위치=&quot;30,500&quot; 이름창폰트크기=&quot;40&quot;  이름창폰트색상=&quot;97,68,36,255&quot; ]
-
-[대화창수정 아이디=&quot;독백&quot; 이미지=&quot;largeTextArea.png&quot; 위치=&quot;0,720&quot; 여백=&quot;100,100&quot; 영역=&quot;1080,520&quot;  색상=&quot;255,255,255,255&quot;]
-[대화창수정 아이디=&quot;독백&quot; 연결이미지=&quot;unselect.png&quot; 연결선택시이미지=&quot;select.png&quot; 연결색상=&quot;255,255,255,255&quot; 연결넓이맞춤=&quot;예&quot;]
-</pre></div>
-</div>
+<dd><p>아래와 같이 동일한 아이디의 대화창에 대한 속성을 여러번에 걸쳐 나누어 적용하면 스크립트를 훨씬 보기 편하게 작성할 수 있습니다.</p>
+<dl class="docutils">
+<dt>예제::</dt>
+<dd><blockquote class="first">
+<div><p>[대화창수정 아이디=&#8221;대화&#8221; 이미지=&#8221;textArea.png&#8221; 색상=&#8221;255,255,255,255&#8221; 위치=&#8221;0,720&#8221; 영역=&#8221;1070,200&#8221;  여백=&#8221;100,60&#8221; ]
+[대화창수정 아이디=&#8221;대화&#8221; 이름창이미지=&#8221;nameLabel.png&#8221; 이름창색상=&#8221;255,255,255,255&#8221; 이름창위치=&#8221;30,500&#8221; 이름창폰트크기=&#8221;40&#8221;  이름창폰트색상=&#8221;97,68,36,255&#8221; ]</p>
+<p>[대화창수정 아이디=&#8221;독백&#8221; 이미지=&#8221;largeTextArea.png&#8221; 위치=&#8221;0,720&#8221; 여백=&#8221;100,100&#8221; 영역=&#8221;1080,520&#8221;  색상=&#8221;255,255,255,255&#8221;]
+[대화창수정 아이디=&#8221;독백&#8221; 연결이미지=&#8221;unselect.png&#8221; 연결선택시이미지=&#8221;select.png&#8221; 연결색상=&#8221;255,255,255,255&#8221; 연결넓이맞춤=&#8221;예&#8221;]</p>
+</div></blockquote>
+<p class="last">혹은</p>
+</dd>
+</dl>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>아이디</strong> (<em>문자열</em>) &#8211; <strong>필수</strong> 대화의 고유 아이디입니다. 기존에 쓰이고 있는 아이디를 전달 한다면 덮어쓰여 집니다.</li>
+<li><strong>아이디</strong> (<em>문자열</em>) &#8211; <strong>필수</strong> 대화창의 고유 아이디입니다. 속성을 수정하고 싶은 대화창의 아이디를 전달하여야 합니다.</li>
 <li><strong>여백</strong> &#8211; </li>
 <li><strong>영역</strong> &#8211; </li>
 <li><strong>위치</strong> &#8211; </li>
