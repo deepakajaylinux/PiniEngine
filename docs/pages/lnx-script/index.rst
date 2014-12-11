@@ -4,14 +4,14 @@
    contain the root `toctree` directive.
 
 LNX 스크립트
-======================================
+**********************************************
 
 LNX 스크립트는 피니 엔진에서 사용되는 스크립트 언어 입니다.
 
 .. toctree::
 
     syntax
-    image
     text
-    api (3)
+    image    
+    data-structure
     api (4)
