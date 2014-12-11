@@ -21,8 +21,8 @@
    pages/tutorial
    pages/export
    pages/test
-   pages/user-feedback
    pages/lnx-script/index
+   pages/user-feedback
 
 
 색인 및 내용
