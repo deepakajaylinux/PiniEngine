@@ -22,9 +22,9 @@
 .. :param str 이미지: 이미지의 아이디 입니다.
 
 
-.. py:function:: send_message(sender, recipient, message_body, [priority=1])
+.. function:: send_message(sender, recipient, message_body, [priority=1])
 
-   Send a message to a recipient
+   화면에 이미지를 출력합니다.
 
    :param 아이디: 이미지의 아이디
    :param 파일명: 이미지 파일명
