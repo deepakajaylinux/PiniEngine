@@ -23,6 +23,7 @@
 
 
 .. function:: send_message(sender, recipient, message_body, [priority=1])
+.. function:: [이미지 아이디,파일명,위치,효과,효과시간,크기,연결,관계]
 
    화면에 이미지를 출력합니다.
 
