@@ -53,7 +53,10 @@
 .. versionadded:: 2.5
     특정 버전에 **어떤 기능**이 `` 추가 `` 됐다면 이런 식으로 표기할 수 있다.
 
-.. versionadded:: 3.6
+.. versionchanged:: 1.2
+    특정 버전에 **어떤 기능**이 `` 변경 `` 됐다면 이런 식으로 표기할 수 있다.
+
+.. deprecated:: 6.6
     이제는 :func:`print` 을 대신 사용하세요.
 
 .. hlist::
