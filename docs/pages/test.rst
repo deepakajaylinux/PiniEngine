@@ -57,7 +57,7 @@
 .. versionchanged:: 1.2
     특정 버전에 **어떤 기능**이 :literal:`변경` 됐다면 이런 식으로 표기할 수 있다.
 
-특정 버전에 **어떤 기능**이 :literal:`변경` 됐다면 이런 식으로 표기할 수 있다.
+:emphasis:`특정 버전`에 :strong:`어떤 기능`이 :literal:`변경` 됐다면 이런 식으로 표기할 수 있다.
 
 .. deprecated:: 6.6
     이제는 :func:`print` 을 대신 사용하세요.
@@ -70,3 +70,15 @@
    * that should be
    * displayed
    * horizontally
+
+The chemical formula for pure water is |H2O|.
+
+.. |H2O| replace:: H\ :sub:`2`\ O
+
+.. role:: raw-html(raw)
+   :format: html
+
+If there just *has* to be a line break here,
+:raw-html:`<br />`
+it can be accomplished with a "raw"-derived role.
+But the line block syntax should be considered first.
