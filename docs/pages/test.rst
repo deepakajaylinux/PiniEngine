@@ -50,8 +50,7 @@
     이제는 :func:`print` 을 대신 사용하세요.
 
 .. centered:: LICENSE AGREEMENT
-
-.. rubric:: rubric 알 수 없음.
+    안녕하세요 이건 테스트 라이센스 약관입니다. `오ㅠㅐ ㄴㅇ아아ㅣㅜㅇㄹ;ㅏㅈ`
 
 .. hlist::
    :columns: 3
