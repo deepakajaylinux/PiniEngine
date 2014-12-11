@@ -52,10 +52,10 @@
     이런 식으로 주의사항을 적을 수 있다.
 
 .. versionadded:: 2.5
-    특정 버전에 **어떤 기능**이 \ ``추가``\ 됐다면 이런 식으로 표기할 수 있다.
+    특정 버전에 **어떤 기능**\ 이 \ ``추가``\ 됐다면 이런 식으로 표기할 수 있다.
 
 .. versionchanged:: 1.2
-    특정 버전에 **어떤 기능**이 :literal:`변경` 됐다면 이런 식으로 표기할 수 있다.
+    특정 버전에 **어떤 기능** 이 ``변경`` 됐다면 이런 식으로 표기할 수 있다.
 
 :emphasis:`특정 버전`에 :strong:`어떤 기능`이 :literal:`변경` 됐다면 이런 식으로 표기할 수 있다.
 
@@ -82,3 +82,11 @@ If there just *has* to be a line break here,
 :raw-html:`<br />`
 it can be accomplished with a "raw"-derived role.
 But the line block syntax should be considered first.
+
+.. transition
+
+Para.
+
+----------
+
+Para.
