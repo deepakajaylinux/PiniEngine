@@ -111,25 +111,33 @@
 <dl class="function">
 <dt>
 <tt class="descname">[대화창수정 아이디,파일명,위치=화면중앙,효과=업페이드,효과시간=1,크기=원본크기,연결,관계]</tt></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pygit2</span> <span class="kn">import</span> <span class="n">Repository</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">repo</span> <span class="o">=</span> <span class="n">Repository</span><span class="p">(</span><span class="s">&#39;path/to/pygit2&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">repo</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;101715bf37440d32291bde4f58c3142bcf7d8adb&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span>
+<span class="go">&lt;_pygit2.Commit object at 0x7ff27a6b60f0&gt;</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>아이디</strong> (<em>문자열</em>) &#8211; <strong>필수</strong> 이미지의 고유 아이디입니다. 기존에 쓰이고 있는 아이디를 전달 한다면 덮어쓰여 집니다.</li>
+<li><strong>아이디</strong> (<em>문자열</em>) &#8211; <strong>필수</strong> 대화의 고유 아이디입니다. 기존에 쓰이고 있는 아이디를 전달 한다면 덮어쓰여 집니다.</li>
 <li><strong>여백</strong> &#8211; </li>
 <li><strong>영역</strong> &#8211; </li>
 <li><strong>위치</strong> &#8211; </li>
+<li><strong>색상</strong> &#8211; </li>
+<li><strong>이미지</strong> &#8211; </li>
+<li><strong>폰트크기</strong> &#8211; </li>
+<li><strong>폰트색상</strong> &#8211; </li>
+<li><strong>폰트</strong> &#8211; </li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>:param :
-:param :
-:param :
-:param :
-:param :</p>
 </dd></dl>
 
 </div>
