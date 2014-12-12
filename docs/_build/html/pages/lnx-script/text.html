@@ -97,7 +97,8 @@
 <tt class="descname">[대화 이름,대사창,유지=&quot;아니오&quot;]</tt></dt>
 <dd></dd></dl>
 
-<p>대화 함수는 특정 캐릭터가 어떠한 대사를 하기 전달하기 위해 사용할 수 있습니다.</p>
+<p>대화 함수는 특정 캐릭터가 어떠한 대사를 하기 전달하기 위해 사용할 수 있습니다.
+대화 함수 대화창의 스타일은 <a class="reference internal" href="#id8"><em>대화창수정 함수</em></a> 의 아이디에 &#8220;대화&#8221; 넣어 수정할 수 있습니다.</p>
 <blockquote>
 <div><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -117,37 +118,19 @@
 <span id="id7"></span><h2>독백 함수<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
-<tt class="descname">[독백 아이디,파일명,위치=화면중앙,효과=업페이드,효과시간=1,크기=원본크기,연결]</tt></dt>
+<tt class="descname">[독백 이름,파일명,위치]</tt></dt>
 <dd></dd></dl>
 
-<p>독백 함수는 대화 함수와는 달리 전면을 차지하여 텍스트를 전달할 수 있습니다.</p>
+<p>독백 함수는 대화 함수와는 달리 전면을 차지하여 텍스트를 전달할 수 있습니다.
+독백 함수 대화창의 스타일은 <a class="reference internal" href="#id8"><em>대화창수정 함수</em></a> 의 아이디에 &#8220;독백&#8221; 넣어 수정할 수 있습니다.</p>
 <blockquote>
 <div><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">param 문자열 아이디:</th><td class="field-body">( <strong>필수</strong> ) 이미지의 고유 아이디입니다. 기존에 쓰이고 있는 아이디를 전달 한다면 덮어쓰여 집니다.</td>
+<tr class="field-odd field"><th class="field-name">param 문자열 대사창:</th><td class="field-body">대사창의 내용칸에 보이게 될 대사를 전달해 주어야 합니다.</td>
 </tr>
-<tr class="field-even field"><th class="field-name">param 문자열 파일명:</th><td class="field-body">( <strong>필수</strong> ) 보여질 이미지의 확장자를 포함한 파일명을 전달해야 합니다.</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">param 위치:</th><td class="field-body">이미지의 위치를 전달해야 합니다.</td>
-</tr>
-<tr class="field-even field"><th class="field-name">type 위치:</th><td class="field-body">x,y를 표현한 문자열(&#8220;숫자,숫자&#8221;) 혹은 <tt class="docutils literal"><span class="pre">크기</span></tt></td>
-</tr>
-<tr class="field-odd field"><th class="field-name">param 효과:</th><td class="field-body"><tt class="docutils literal"><span class="pre">노드입장효과</span></tt> 를 사용하여 이미지가 나타날때의 효과를 정할수 있습니다.</td>
-</tr>
-<tr class="field-even field"><th class="field-name">type 효과:</th><td class="field-body">노드입장효과</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">param 숫자 효과시간:</th><td class="field-body">등장시 효과의 시간 (기준은 초)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">param 크기:</th><td class="field-body">이미지의 크기를 정할수 있습니다. 직접 변수나 &#8220;숫자,숫자&#8221;(e.g &#8220;20,60&#8221;) 형태나 <tt class="docutils literal"><span class="pre">숫자</span></tt> 형태로 크기를 전달 할 수 있습니다.</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">type 크기:</th><td class="field-body">너비,높이를 표현한 문자열(&#8220;숫자,숫자&#8221;) 혹은 크기</td>
-</tr>
-<tr class="field-even field"><th class="field-name" colspan="2">param 문자열 북마크이동:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body">북마크 이동에 문자열 형태로 인자를 전달해 준다면 이미지를 클릭 하였을 경우</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">param 문자열 관계:</th><td class="field-body">보여질 이미지의 부모 노드의 아이디를 전달해줍니다.</td>
+<tr class="field-even field"><th class="field-name">param 문자열 유지:</th><td class="field-body">&#8220;예&#8221; 혹은 &#8220;아니오&#8221;의 승낙여부를 전달해 주어야 합니다. 만약 &#8220;예&#8221; 전달한다면 해당 대화는 대화가 끝나더라도 대화창이 계속 남게 됩니다.</td>
 </tr>
 </tbody>
 </table>
@@ -157,7 +140,7 @@
 <span id="id9"></span><h2>대화창수정 함수<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
-<tt class="descname">[대화창수정 아이디,파일명,위치=화면중앙,효과=업페이드,효과시간=1,크기=원본크기,연결]</tt></dt>
+<tt class="descname">[대화창수정 아이디,여백,영역,위치,색상,이미지,폰트크기,폰트색상,폰트,커서이미지,커서크기,커서색상,이름창위치,연결색상,연결넓이맞춤,연결선택시이미지]</tt></dt>
 <dd></dd></dl>
 
 <p>대화창을 수정하여 캐릭터별, 상황별 대화창을 만들 수 있습니다.</p>
@@ -178,17 +161,18 @@
 </tr>
 <tr class="field-even field"><th class="field-name">param 문자열 이미지:</th><td class="field-body">대화창의 이미지를 설정합니다. 확장자를 포함한 이미지의 파일명을 전달해야 합니다.</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">param 폰트크기:</th><td class="field-body"></td>
+<tr class="field-odd field"><th class="field-name">param 폰트크기:</th><td class="field-body">대화창의 원하는 텍스트의 폰트를 전달해야 합니다.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">param 폰트색상:</th><td class="field-body"></td>
 </tr>
 <tr class="field-odd field"><th class="field-name">param 폰트:</th><td class="field-body"></td>
 </tr>
-<tr class="field-even field"><th class="field-name">param 커서이미지:</th><td class="field-body"></td>
+<tr class="field-even field"><th class="field-name" colspan="2">param 문자열 커서이미지:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body">대화창 커서의 이미지를 설정합니다. 확장자를 포함한 이미지의 파일명을 전달해야 합니다.</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">param 커서크기:</th><td class="field-body"></td>
 </tr>
-<tr class="field-even field"><th class="field-name">param 커서색상:</th><td class="field-body"></td>
+<tr class="field-even field"><th class="field-name">param 커서색상:</th><td class="field-body">대화창의 커서의 색상을 설정합니다. 원하는 대사창 커서 색상의 &#8220;R,G,B,A&#8221; 형태 문자열로 전달해야 합니다.</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">param 이름창위치:</th><td class="field-body"></td>
 </tr>
