@@ -104,22 +104,22 @@
 
 혹은 
 
-   :param 문자열 아이디: **필수** 대화창의 고유 아이디입니다. 속성을 수정하고 싶은 대화창의 아이디를 전달하여야 합니다.
+:param 문자열 아이디: **필수** 대화창의 고유 아이디입니다. 속성을 수정하고 싶은 대화창의 아이디를 전달하여야 합니다.
 
-   :param 여백: 
-   :param 영역: 
-   :param 위치: 
-   :param 색상: 
-   :param 이미지:
-   :param 폰트크기:
-   :param 폰트색상:
-   :param 폰트:
+:param 여백: 
+:param 영역: 
+:param 위치: 
+:param 색상: 
+:param 이미지:
+:param 폰트크기:
+:param 폰트색상:
+:param 폰트:
 
-   :param 커서이미지: 
-   :param 커서크기: 
-   :param 커서색상: 
-   :param 이름창위치: 
-   :param 이미지:
-   :param 폰트크기:
-   :param 폰트색상:
-   :param 폰트:
+:param 커서이미지: 
+:param 커서크기: 
+:param 커서색상: 
+:param 이름창위치: 
+:param 이미지:
+:param 폰트크기:
+:param 폰트색상:
+:param 폰트:      
