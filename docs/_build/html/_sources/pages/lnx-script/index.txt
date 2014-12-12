@@ -9,13 +9,14 @@ LNX 스크립트
 LNX 스크립트는 피니 엔진에서 사용되는 스크립트 언어 입니다.
 
 .. toctree::
+  :maxdepth: 2
 
-    syntax
-    text
-    image
-    sound
-    video
-    save-and-load
-    screenshot
-    system
-    data-structure
+  syntax
+  text
+  image
+  sound
+  video
+  save-and-load
+  screenshot
+  system
+  data-structure
