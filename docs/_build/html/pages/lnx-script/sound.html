@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>소리 관련 &mdash; PiniEngine 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="PiniEngine 1.0.0 documentation" href="../../index.html" />
+    <link rel="up" title="LNX 스크립트" href="index.html" />
+    <link rel="next" title="비디오 관련" href="video.html" />
+    <link rel="prev" title="이미지 관련" href="image.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="video.html" title="비디오 관련"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="image.html" title="이미지 관련"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">PiniEngine 1.0.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">LNX 스크립트</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>소리 관련<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>피니엔진에서는 배경음 스트리밍 재생과 효과음 재생 등 소리를 재생할 수 있는 기능을 제공하고 있습니다.</p>
+<div class="section" id="id2">
+<span id="id3"></span><h2>배경음 함수<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<tt class="descname">[배경음 파일명,반복]</tt></dt>
+<dd><p>배경음을 출력하는 함수 입니다.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>파일명</strong> (<em>문자열</em>) &#8211; <strong>필수</strong> 재생을 원하는 배경음의 확장자를 포함한 파일명을 전달해 주어야 합니다.</li>
+<li><strong>반복</strong> (<em>문자열</em>) &#8211; <strong>필수</strong> &#8220;예&#8221; 문자열 혹은 &#8220;아니오&#8221; 문자열를 전달하여 반복 여부를 결정 합니다.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="id4">
+<span id="id5"></span><h2>효과음 함수<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<tt class="descname">[효과음 아이디,파일명,위치=화면중앙,효과=업페이드,효과시간=1,크기=원본크기,북마크이동]</tt></dt>
+<dd><p>효과음을 출력하는 함수 입니다.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>아이디</strong> (<em>문자열</em>) &#8211; <strong>필수</strong> 해당 이미지를 지칭하는 고유 아이디입니다.</li>
+<li><strong>파일명</strong> (<em>문자열</em>) &#8211; <strong>필수</strong> 보여질 이미지의 확장자를 포함한 파일명을 전달해야 합니다.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="id6">
+<span id="id7"></span><h2>배경음끄기 함수<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<tt class="descname">[배경음끄기]</tt></dt>
+<dd><p>현재 재생되고 있는 배경음을 끄는 함수 입니다.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="id8">
+<span id="id9"></span><h2>효과음끄기 함수<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<tt class="descname">[효과음끄기 아이디]</tt></dt>
+<dd><p>재생되고 있는 특정 효과음을 끄는 함수 입니다.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>아이디</strong> (<em>문자열</em>) &#8211; <strong>필수</strong> 끄고 싶은 효과음의 아이디를 전달해야 합니다.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">소리 관련</a><ul>
+<li><a class="reference internal" href="#id2">배경음 함수</a></li>
+<li><a class="reference internal" href="#id4">효과음 함수</a></li>
+<li><a class="reference internal" href="#id6">배경음끄기 함수</a></li>
+<li><a class="reference internal" href="#id8">효과음끄기 함수</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="image.html"
+                        title="previous chapter">이미지 관련</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="video.html"
+                        title="next chapter">비디오 관련</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/pages/lnx-script/sound.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="video.html" title="비디오 관련"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="image.html" title="이미지 관련"
+             >previous</a> |</li>
+        <li><a href="../../index.html">PiniEngine 1.0.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" >LNX 스크립트</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Nooslab.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>
