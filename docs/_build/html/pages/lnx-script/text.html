@@ -52,96 +52,117 @@
           <div class="body">
             
   <div class="section" id="id1">
-<h1><tt class="xref py py-mod docutils literal"><span class="pre">텍스트</span> <span class="pre">관련</span></tt><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>텍스트 관련<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
 <span id="id3"></span><h2>텍스트 함수<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[텍스트 아이디,텍스트,위치=&quot;화면중앙&quot;,효과=&quot;업페이드&quot;,효과시간=0,글꼴=&quot;NanumBarunGothic&quot;,크기=20,색상=&quot;255,255,255&quot;]</tt></dt>
-<dd></dd></dl>
-
-<p>가장 기본적인 텍스트 관련 함수로서 원하는 위치에 글자만을 보여주길 원할때 사용할 수 있습니다.</p>
-<blockquote>
-<div><table class="docutils field-list" frame="void" rules="none">
+<dd><p>가장 기본적인 텍스트 관련 함수로서 원하는 위치에 글자만을 보여주길 원할때 사용할 수 있습니다.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">param 문자열 아이디:</th><td class="field-body">( <strong>필수</strong> ) 텍스트의 고유 아이디입니다. 기존에 쓰이고 있는 아이디를 전달 한다면 덮어쓰여 집니다.</td>
-</tr>
-<tr class="field-even field"><th class="field-name">param 문자열 텍스트:</th><td class="field-body">( <strong>필수</strong> ) 보여주고 싶은 문자열을 전달해야 합니다.</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">param 위치:</th><td class="field-body">텍스트의 위치를 전달해야 합니다.</td>
-</tr>
-<tr class="field-even field"><th class="field-name">type 위치:</th><td class="field-body">x,y를 표현한 문자열(&#8220;숫자,숫자&#8221;) 혹은 <tt class="docutils literal"><span class="pre">크기</span></tt></td>
-</tr>
-<tr class="field-odd field"><th class="field-name">param 효과:</th><td class="field-body"><tt class="docutils literal"><span class="pre">노드입장효과</span></tt> 를 사용하여 텍스트가 나타날 때의 효과를 정할수 있습니다.</td>
-</tr>
-<tr class="field-even field"><th class="field-name">type 효과:</th><td class="field-body">노드입장효과</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">param 숫자 효과시간:</th><td class="field-body">등장시 효과의 시간 (기준은 초)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">param 문자열 글꼴:</th><td class="field-body">원하는 텍스트의 폰트를 전달해야 합니다.</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">param 숫자 크기:</th><td class="field-body">원하는 텍스트의 사이즈를 전달해야 합니다.</td>
-</tr>
-<tr class="field-even field"><th class="field-name">param 문자열 색상:</th><td class="field-body">원하는 텍스트 색상의 &#8220;R,G,B,A&#8221; 형태 문자열로 전달해야 합니다.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>아이디</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 텍스트의 고유 아이디입니다. 기존에 쓰이고 있는 아이디를 전달 한다면 덮어쓰여 집니다.</li>
+<li><strong>텍스트</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 보여주고 싶은 문자열을 전달해야 합니다.</li>
+<li><strong>위치</strong> (x,y를 표현한 문자열(&#8220;숫자,숫자&#8221;) 혹은 <tt class="docutils literal"><span class="pre">크기</span></tt>) &#8211; 텍스트의 위치를 전달해야 합니다.</li>
+<li><strong>효과</strong> (<em>노드입장효과</em>) &#8211; <tt class="docutils literal"><span class="pre">노드입장효과</span></tt> 를 사용하여 텍스트가 나타날 때의 효과를 정할수 있습니다.</li>
+<li><strong>효과시간</strong> (<em>숫자</em>) &#8211; 등장시 효과의 시간 (기준은 초)</li>
+<li><strong>글꼴</strong> (<em>문자열</em>) &#8211; 원하는 텍스트의 폰트를 전달해야 합니다.</li>
+<li><strong>크기</strong> (<em>숫자</em>) &#8211; 원하는 텍스트의 사이즈를 전달해야 합니다.</li>
+<li><strong>색상</strong> (<em>문자열</em>) &#8211; 원하는 텍스트 색상의 &#8220;R,G,B,A&#8221; 형태 문자열로 전달해야 합니다.</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
-</div></blockquote>
+</dd></dl>
+
 </div>
 <div class="section" id="id4">
 <span id="id5"></span><h2>대화 함수<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[대화 이름,대사창,유지=&quot;아니오&quot;]</tt></dt>
-<dd></dd></dl>
-
-<p>대화 함수는 특정 캐릭터가 어떠한 대사를 하기 전달하기 위해 사용할 수 있습니다.
+<dd><p>대화 함수는 특정 캐릭터가 어떠한 대사를 하기 전달하기 위해 사용할 수 있습니다.
 대화 함수 대화창의 스타일은 <a class="reference internal" href="#id8"><em>대화창수정 함수</em></a> 의 아이디에 &#8220;대화&#8221; 넣어 수정할 수 있습니다.</p>
-<blockquote>
-<div><table class="docutils field-list" frame="void" rules="none">
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">param 문자열 이름:</th><td class="field-body">( <strong>필수</strong> ) 대사창의 이름칸에 보이게 될 이름을 전달해 주어야 합니다.</td>
-</tr>
-<tr class="field-even field"><th class="field-name">param 문자열 대사창:</th><td class="field-body">( <strong>필수</strong> ) 대사창의 내용칸에 보이게 될 대사를 전달해 주어야 합니다.</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">param 문자열 유지:</th><td class="field-body">&#8220;예&#8221; 혹은 &#8220;아니오&#8221;의 승낙여부를 전달해 주어야 합니다. 만약 &#8220;예&#8221; 전달한다면 해당 대화는 대화가 끝나더라도 대화창이 계속 남게 됩니다.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>이름</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 대사창의 이름칸에 보이게 될 이름을 전달해 주어야 합니다.</li>
+<li><strong>대사창</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 대사창의 내용칸에 보이게 될 대사를 전달해 주어야 합니다.</li>
+<li><strong>유지</strong> (<em>문자열</em>) &#8211; &#8220;예&#8221; 혹은 &#8220;아니오&#8221;의 승낙여부를 전달해 주어야 합니다. 만약 &#8220;예&#8221; 전달한다면 해당 대화는 대화가 끝나더라도 대화창이 계속 남게 됩니다.</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
-</div></blockquote>
+</dd></dl>
+
 </div>
 <div class="section" id="id6">
 <span id="id7"></span><h2>독백 함수<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[독백 이름,파일명,위치]</tt></dt>
-<dd></dd></dl>
-
-<p>독백 함수는 대화 함수와는 달리 전면을 차지하여 텍스트를 전달할 수 있습니다.
+<dd><p>독백 함수는 대화 함수와는 달리 전면을 차지하여 텍스트를 전달할 수 있습니다.
 독백 함수 대화창의 스타일은 <a class="reference internal" href="#id8"><em>대화창수정 함수</em></a> 의 아이디에 &#8220;독백&#8221; 넣어 수정할 수 있습니다.</p>
-<blockquote>
-<div><table class="docutils field-list" frame="void" rules="none">
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">param 문자열 대사창:</th><td class="field-body">대사창의 내용칸에 보이게 될 대사를 전달해 주어야 합니다.</td>
-</tr>
-<tr class="field-even field"><th class="field-name">param 문자열 유지:</th><td class="field-body">&#8220;예&#8221; 혹은 &#8220;아니오&#8221;의 승낙여부를 전달해 주어야 합니다. 만약 &#8220;예&#8221; 전달한다면 해당 대화는 대화가 끝나더라도 대화창이 계속 남게 됩니다.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>대사창</strong> (<em>문자열</em>) &#8211; 대사창의 내용칸에 보이게 될 대사를 전달해 주어야 합니다.</li>
+<li><strong>유지</strong> (<em>문자열</em>) &#8211; &#8220;예&#8221; 혹은 &#8220;아니오&#8221;의 승낙여부를 전달해 주어야 합니다. 만약 &#8220;예&#8221; 전달한다면 해당 대화는 대화가 끝나더라도 대화창이 계속 남게 됩니다.</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
-</div></blockquote>
+</dd></dl>
+
 </div>
 <div class="section" id="id8">
 <span id="id9"></span><h2>대화창수정 함수<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[대화창수정 아이디,여백,영역,위치,색상,이미지,폰트크기,폰트색상,폰트,커서이미지,커서크기,커서색상,이름창위치,연결색상,연결넓이맞춤,연결선택시이미지]</tt></dt>
-<dd></dd></dl>
+<dd><p>대화창을 수정하여 캐릭터별, 상황별 대화창을 만들 수 있습니다.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>아이디</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 대화창의 고유 아이디입니다. 속성을 수정하고 싶은 대화창의 아이디를 전달해야 합니다.</li>
+<li><strong>여백</strong> &#8211; </li>
+<li><strong>영역</strong> &#8211; </li>
+<li><strong>위치</strong> &#8211; </li>
+<li><strong>색상</strong> (<em>문자열</em>) &#8211; 대화창의 색상을 설정합니다. 원하는 대사창 색상의 &#8220;R,G,B,A&#8221; 형태 문자열로 전달해야 합니다.</li>
+<li><strong>이미지</strong> (<em>문자열</em>) &#8211; 대화창의 이미지를 설정합니다. 확장자를 포함한 이미지의 파일명을 전달해야 합니다.</li>
+<li><strong>폰트크기</strong> &#8211; 대화창의 원하는 텍스트의 폰트를 전달해야 합니다.</li>
+<li><strong>폰트색상</strong> &#8211; </li>
+<li><strong>폰트</strong> &#8211; </li>
+<li><strong>커서이미지</strong> (<em>문자열</em>) &#8211; 대화창 커서의 이미지를 설정합니다. 확장자를 포함한 이미지의 파일명을 전달해야 합니다.</li>
+<li><strong>커서크기</strong> &#8211; </li>
+<li><strong>커서색상</strong> &#8211; 대화창의 커서의 색상을 설정합니다. 원하는 대사창 커서 색상의 &#8220;R,G,B,A&#8221; 형태 문자열로 전달해야 합니다.</li>
+<li><strong>이름창위치</strong> &#8211; </li>
+<li><strong>이름창영역</strong> &#8211; </li>
+<li><strong>이름창폰트크기</strong> &#8211; </li>
+<li><strong>이름창폰트색상</strong> &#8211; </li>
+<li><strong>이름창폰트</strong> &#8211; </li>
+<li><strong>연결이미지</strong> &#8211; </li>
+<li><strong>연결색상</strong> &#8211; </li>
+<li><strong>연결넓이맞춤</strong> &#8211; </li>
+<li><strong>연결선택시이미지</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <p>아래와 같이 동일 아이디의 대화창 속성을 여러번에 걸쳐 나누어 적용하면 스크립트를 훨씬 보기 편하게 작성할 수 있습니다.</p>
 <p>예제:</p>
@@ -192,7 +213,7 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">텍스트</span> <span class="pre">관련</span></tt></a><ul>
+<li><a class="reference internal" href="#">텍스트 관련</a><ul>
 <li><a class="reference internal" href="#id2">텍스트 함수</a></li>
 <li><a class="reference internal" href="#id4">대화 함수</a></li>
 <li><a class="reference internal" href="#id6">독백 함수</a></li>
