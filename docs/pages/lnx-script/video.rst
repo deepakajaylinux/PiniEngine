@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-비디오 관련
+동영상 관련
 **********************************************
 
 .. _함수_비디오:

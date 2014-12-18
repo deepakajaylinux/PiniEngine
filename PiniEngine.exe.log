@@ -10,4 +10,18 @@ Traceback (most recent call last):
   File "lupa/_lupa.pyx", line 1071, in lupa._lupa.call_lua (lupa/_lupa.c:15082)
   File "lupa/_lupa.pyx", line 1081, in lupa._lupa.execute_lua_call (lupa/_lupa.c:15212)
   File "lupa/_lupa.pyx", line 1032, in lupa._lupa.raise_lua_error (lupa/_lupa.c:14549)
+lupa._lupa.LuaErrorGenerating LALR tables
+WARNING: 128 shift/reduce conflicts
+Generating LALR tables
+WARNING: 128 shift/reduce conflicts
+Traceback (most recent call last):
+  File "view\ScriptEditor.pyc", line 300, in cursorPositionChanged
+  File "view\ScriptEditor.pyc", line 1114, in commitGraphics
+  File "command\ScriptCommands.pyc", line 227, in __init__
+  File "command\ScriptCommands.pyc", line 267, in luaInit
+  File "command\ScriptCommands.pyc", line 282, in clear
+  File "lupa/_lupa.pyx", line 361, in lupa._lupa._LuaObject.__call__ (lupa/_lupa.c:5726)
+  File "lupa/_lupa.pyx", line 1071, in lupa._lupa.call_lua (lupa/_lupa.c:15082)
+  File "lupa/_lupa.pyx", line 1081, in lupa._lupa.execute_lua_call (lupa/_lupa.c:15212)
+  File "lupa/_lupa.pyx", line 1032, in lupa._lupa.raise_lua_error (lupa/_lupa.c:14549)
 lupa._lupa.LuaError
