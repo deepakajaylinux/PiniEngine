@@ -32,6 +32,8 @@
 
     :param 문자열 색상: 원하는 텍스트 색상의 "R,G,B,A" 형태 문자열로 전달해야 합니다.
 
+    .. image:: /images/example_text.png
+    .. image:: /images/example_text.gif
 
 
     .. image:: /images/example_text_sameid.png
