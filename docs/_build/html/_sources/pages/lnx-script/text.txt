@@ -36,12 +36,17 @@
 ---------------------------------------------
 
     .. image:: /images/example_text.png
+        :scale: 100%
     .. image:: /images/example_text.gif
+        :scale: 100%
 
 예제
 ---------------------------------------------
+
     .. image:: /images/example_text_sameid.png
+        :scale: 100%
     .. image:: /images/example_text_sameid.gif
+        :scale: 100%
 
 .. _함수_대화:
 
@@ -61,8 +66,11 @@
 
 예제
 ---------------------------------------------
+
     .. image:: /images/example_dialog.png
+        :scale: 100%
     .. image:: /images/example_dialog.gif
+        :scale: 100%
 
 .. _함수_독백:
 
@@ -80,8 +88,11 @@
 
 예제
 ---------------------------------------------
+
     .. image:: /images/example_monologue.png
+        :scale: 100%
     .. image:: /images/example_monologue.gif
+        :scale: 100%
 
 .. _함수_대화창수정:
 
