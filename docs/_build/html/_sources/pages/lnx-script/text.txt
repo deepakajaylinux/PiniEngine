@@ -49,6 +49,9 @@
     :param 유지: 만약 "예" 전달한다면 해당 대화는 대화가 끝나더라도 대화창이 계속 남게 됩니다. "예"가 아닌 "아니오"를 전달한다면 독백이 끝나게 될 시 독백 창이 사라지게 됩니다.
     :type 유지: :ref:`자료형_여부`
 
+    .. image:: /images/example_dialog.png
+    .. image:: /images/example_dialog.gif
+
 .. _함수_독백:
 
 독백 함수
