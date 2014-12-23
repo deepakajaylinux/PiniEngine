@@ -37,4 +37,4 @@
    :param 효과: 이 매개변수를 전달하면 전달된 ``아이디`` 에 해당되는 오브젝트를 원하는 :ref:`자료형_노드입장효과` 로 삭제할 수 있습니다. 전달된 ``효과`` 에 따라 화면에서 사라지게 됩니다.
    :type 효과: :ref:`자료형_노드입장효과`
 
-   .. image:: http://imgur.com/ryni1hi
+   .. image:: http://imgur.com/ryni1hi.png
