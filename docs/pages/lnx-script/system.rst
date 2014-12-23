@@ -50,6 +50,5 @@
     </script>
     <button onclick="copyCode()">복사하기</button>        
     
-
-   .. image:: http://imgur.com/ryni1hi.png
-   .. image:: http://imgur.com/6k8DCpj.gif
+.. image:: http://imgur.com/ryni1hi.png
+.. image:: http://imgur.com/6k8DCpj.gif  
