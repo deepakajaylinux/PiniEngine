@@ -41,6 +41,7 @@
 ---------------------------------------------
 
 .. raw:: html
+
     <script>
     function myFunction()
     {
