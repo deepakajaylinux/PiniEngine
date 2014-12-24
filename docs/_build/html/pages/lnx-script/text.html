@@ -81,11 +81,19 @@
 
 <div class="section" id="id4">
 <h3>예제<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div><a class="reference internal image-reference" href="../../_images/example_text.png"><img alt="../../_images/example_text.png" src="../../_images/example_text.png" style="width: 914.0px; height: 171.0px;" /></a>
-<a class="reference internal image-reference" href="../../_images/example_text.gif"><img alt="../../_images/example_text.gif" src="../../_images/example_text.gif" style="width: 1286.0px; height: 748.0px;" /></a>
-</div></blockquote>
-</div>
+<button id="copy-button">복사하기</button>
+
+<script src="../../_static/zeroclipboard/ZeroClipboard.js"></script>
+<script src="../../_static/copyClipboard.js"></script>
+<script>
+    var code = "[이미지 아이디=\"텍스트테스트배경\"  파일명=\"example-text-background.png\" 크기=\"1,1\" 효과=\"줌인페이드\" ]\n\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨1\"  텍스트=\"왼쪽 상단\" 위치=\"왼쪽상단\" 크기=64 색상=\"25,84,92\"]\n\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨2\"  텍스트=\"오른쪽 하단\" 위치=\"오른쪽하단\" 크기=64 색상=\"60,200,219\"]";
+    document.getElementById("copy-button").setAttribute("data-clipboard-text",code);
+</script>
+
+.. image:: /images/example_text.png
+    :scale: 100%
+.. image:: /images/example_text.gif
+    :scale: 100%</div>
 <div class="section" id="id5">
 <h3>예제<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <blockquote>

@@ -35,6 +35,17 @@
 예제
 ---------------------------------------------
 
+.. raw:: html
+
+    <button id="copy-button">복사하기</button>
+
+    <script src="../../_static/zeroclipboard/ZeroClipboard.js"></script>
+    <script src="../../_static/copyClipboard.js"></script>
+    <script>
+        var code = "[이미지 아이디=\"텍스트테스트배경\"  파일명=\"example-text-background.png\" 크기=\"1,1\" 효과=\"줌인페이드\" ]\n\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨1\"  텍스트=\"왼쪽 상단\" 위치=\"왼쪽상단\" 크기=64 색상=\"25,84,92\"]\n\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨2\"  텍스트=\"오른쪽 하단\" 위치=\"오른쪽하단\" 크기=64 색상=\"60,200,219\"]";
+        document.getElementById("copy-button").setAttribute("data-clipboard-text",code);
+    </script>
+
     .. image:: /images/example_text.png
         :scale: 100%
     .. image:: /images/example_text.gif
