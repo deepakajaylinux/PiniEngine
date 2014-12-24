@@ -46,10 +46,10 @@
         document.getElementById("copy-button").setAttribute("data-clipboard-text",code);
     </script>
 
-    .. image:: /images/example_text.png
-        :scale: 100%
-    .. image:: /images/example_text.gif
-        :scale: 100%
+.. image:: /images/example_text.png
+    :scale: 100%
+.. image:: /images/example_text.gif
+    :scale: 100%    
 
 예제
 ---------------------------------------------

@@ -51,6 +51,5 @@
         document.getElementById("copy-button").setAttribute("data-clipboard-text",code);
     </script>
     
-
 .. image:: http://imgur.com/ryni1hi.png
 .. image:: http://imgur.com/6k8DCpj.gif
