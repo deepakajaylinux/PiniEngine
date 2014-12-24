@@ -37,7 +37,7 @@
 
 .. raw:: html
 
-    <button id="copy-button">복사하기</button>
+    <button id="copy-button">예제 복사하기</button>
 
     <script src="../../_static/zeroclipboard/ZeroClipboard.js"></script>
     <script src="../../_static/copyClipboard.js"></script>
