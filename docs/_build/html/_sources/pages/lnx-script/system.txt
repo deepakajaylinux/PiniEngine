@@ -42,7 +42,7 @@
 
 .. raw:: html
 
-    <button id="copy-button" onclick="copyCode(this)" data-clipboard-text="[이미지 아이디="멍구1" 파일명="멍구1.png" 크기="화면맞춤" 효과="줌아웃페이드" ]\n[이미지 아이디="피니" 파일명="피니_웃음.png" 위치="600,430" 크기="1,1" ]\n[클릭대기]\n\n[삭제 아이디="피니" 효과="줌인페이드"]\n[클릭대기]">복사하기</button>
+    <button id="copy-button" data-clipboard-text="[이미지 아이디=\"멍구1\" 파일명=\"멍구1.png\" 크기=\"화면맞춤\" 효과=\"줌아웃페이드\" ]\n[이미지 아이디=\"피니\" 파일명=\"피니_웃음.png\" 위치=\"600,430\" 크기=\"1,1\" ]\n[클릭대기]\n\n[삭제 아이디=\"피니\" 효과=\"줌인페이드\"]\n[클릭대기]">복사하기</button>
 
     <script src="../../_static/zeroclipboard/ZeroClipboard.js"></script>
     <script src="../../_static/copyClipboard.js"></script>
