@@ -46,6 +46,7 @@
     function copyCode()
     {
         window.clipboardData.setData('Text', "12345");
+        alert("들어오긴 하는건가");
     }
     </script>
     <button onclick="copyCode()">복사하기</button>
