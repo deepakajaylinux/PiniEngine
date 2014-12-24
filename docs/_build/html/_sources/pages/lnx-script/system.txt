@@ -46,8 +46,8 @@
     <script type="text/javascript">
     function copyCode()
     {
-        window.clipboardData.setData('Text', "12345");
         alert("들어오긴 하는건가");
+        window.clipboardData.setData('Text', "12345");
     }
     </script>
     
