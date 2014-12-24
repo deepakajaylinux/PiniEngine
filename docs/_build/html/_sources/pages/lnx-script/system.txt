@@ -42,6 +42,7 @@
 
 .. raw:: html
 
+    <button onclick="copyCode()">복사하기</button>
     <script type="text/javascript">
     function copyCode()
     {
@@ -49,7 +50,7 @@
         alert("들어오긴 하는건가");
     }
     </script>
-    <button onclick="copyCode()">복사하기</button>
+    
 
 .. image:: http://imgur.com/ryni1hi.png
 .. image:: http://imgur.com/6k8DCpj.gif
