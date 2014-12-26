@@ -37,13 +37,13 @@
 
 .. raw:: html
 
-    <button id="copy-button" name="oh">예제 복사하기</button>
+    <button id="copy-button" name="text-example1">예제 복사하기</button>
 
     <script src="../../_static/zeroclipboard/ZeroClipboard.js"></script>
     <script src="../../_static/copyClipboard.js"></script>
     <script>
         var code = "[이미지 아이디=\"텍스트테스트배경\"  파일명=\"example-text-background.png\" 크기=\"1,1\" 효과=\"줌인페이드\" ]\n\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨1\"  텍스트=\"왼쪽 상단\" 위치=\"왼쪽상단\" 크기=64 색상=\"25,84,92\"]\n\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨2\"  텍스트=\"오른쪽 하단\" 위치=\"오른쪽하단\" 크기=64 색상=\"60,200,219\"]";
-        document.getElementByName("oh").setAttribute("data-clipboard-text",code);
+        document.getElementByName("text-example1").setAttribute("data-clipboard-text",code);
     </script>
 
 .. image:: /images/example_text.png
@@ -56,11 +56,11 @@
 
 .. raw:: html
 
-    <button id="copy-button" name="oh2">예제 복사하기</button>
+    <button id="copy-button" name="text-example2">예제 복사하기</button>
 
     <script>
-        var code = "[이미지 아이디=\"텍스트테스트배경\"  파일명=\"example-text-background.png\" 크기=\"1,1\" 효과=\"줌인페이드\" ]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"이렇게\" 위치=\"640,70\" 크기=64 색상=\"92,91,4\"]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"같은 아이디를 사용하게 되면\" 위치=\"640,130\" 크기=74 색상=\"225,223,76\"]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"기존의 텍스트가 사라지고 \" 위치=\"640,260\" 크기=84 색상=\"219,216,9\"]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"이렇게 보여지게 됩니다.\" 위치=\"640,540\" 크기=94 색상=\"168,166,7\"]\n[클릭대기]"]";
-        document.getElementByName("oh2").setAttribute("data-clipboard-text",code);
+        var code = "[이미지 아이디=\"텍스트테스트배경\"  파일명=\"example-text-background.png\" 크기=\"1,1\" 효과=\"줌인페이드\" ]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"이렇게\" 위치=\"640,70\" 크기=64 색상=\"92,91,4\"]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"같은 아이디를 사용하게 되면\" 위치=\"640,130\" 크기=74 색상=\"225,223,76\"]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"기존의 텍스트가 사라지고 \" 위치=\"640,260\" 크기=84 색상=\"219,216,9\"]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"이렇게 보여지게 됩니다.\" 위치=\"640,540\" 크기=94 색상=\"168,166,7\"]\n[클릭대기]";
+        document.getElementByName("text-example2").setAttribute("data-clipboard-text",code);
     </script>
 
 .. image:: /images/example_text_sameid.png
@@ -87,10 +87,19 @@
 예제
 ---------------------------------------------
 
-    .. image:: /images/example_dialog.png
-        :scale: 100%
-    .. image:: /images/example_dialog.gif
-        :scale: 100%
+.. raw:: html
+
+    <button id="copy-button" name="dialog-example">예제 복사하기</button>
+
+    <script>
+        var code = "[이미지 아이디=\"멍구1\" 파일명=\"멍구1.png\" 크기=\"화면맞춤\" 효과=\"줌아웃페이드\"]\n\n[대화 이름=\"멍구\"]\n 킁..<클릭> 킁킁..<클릭> 킁킁킁.. <클릭> 킁킁킁킁.. <클릭> 킁킁킁킁킁킁킁킁..!!!!!!";
+        document.getElementByName("dialog-example").setAttribute("data-clipboard-text",code);
+    </script>
+
+.. image:: /images/example_dialog.png
+    :scale: 100%
+.. image:: /images/example_dialog.gif
+    :scale: 100%
 
 .. _함수_독백:
 
