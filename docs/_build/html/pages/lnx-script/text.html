@@ -161,10 +161,8 @@
 
 <div class="section" id="id11">
 <h3>예제<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div><a class="reference internal image-reference" href="../../_images/example_monologue.png"><img alt="../../_images/example_monologue.png" src="../../_images/example_monologue.png" style="width: 841.0px; height: 146.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/example_monologue.png"><img alt="../../_images/example_monologue.png" src="../../_images/example_monologue.png" style="width: 841.0px; height: 146.0px;" /></a>
 <a class="reference internal image-reference" href="../../_images/example_monologue.gif"><img alt="../../_images/example_monologue.gif" src="../../_images/example_monologue.gif" style="width: 1268.0px; height: 732.0px;" /></a>
-</div></blockquote>
 </div>
 </div>
 <div class="section" id="id12">
@@ -205,39 +203,21 @@
 </tbody>
 </table>
 <p>아래와 같이 동일 아이디의 대화창 속성을 여러번에 걸쳐 나누어 적용하면 스크립트를 훨씬 보기 편하게 작성할 수 있습니다.</p>
-<p>예제:</p>
-<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13</pre></div></td><td class="code"><div class="highlight"><pre># 대화 함수 대화창 수정
-[대화창수정 아이디=&quot;대화&quot; 이미지=&quot;textArea.png&quot; 색상=&quot;255,255,255,255&quot; 위치=&quot;0,720&quot; 영역=&quot;1070,200&quot;  여백=&quot;100,60&quot; ]
-[대화창수정 아이디=&quot;대화&quot; 이름창이미지=&quot;nameLabel.png&quot; 이름창색상=&quot;255,255,255,255&quot; 이름창위치=&quot;30,500&quot; 이름창폰트크기=&quot;40&quot;  이름창폰트색상=&quot;97,68,36,255&quot; ]
-
-# 독백 함수 대화창 수정
-[대화창수정 아이디=&quot;독백&quot; 이미지=&quot;largeTextArea.png&quot; 위치=&quot;0,720&quot; 여백=&quot;100,100&quot; 영역=&quot;1080,520&quot;  색상=&quot;255,255,255,255&quot;]
-[대화창수정 아이디=&quot;독백&quot; 연결이미지=&quot;unselect.png&quot; 연결선택시이미지=&quot;select.png&quot; 연결색상=&quot;255,255,255,255&quot; 연결넓이맞춤=&quot;예&quot;]
-
-# 대화 함수 대화창 일부 속성 수정
-대화창수정.아이디 = &quot;대화&quot;
-대화창수정.이름창색상 = &quot;125,0,125,255&quot;
-대화창수정.이름창폰트크기 = &quot;20&quot;
-[대화창수정]
-</pre></div>
-</td></tr></table></div>
 </dd></dl>
 
-</div>
 <div class="section" id="id14">
-<span id="id15"></span><h2>대화지우기 함수<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<h3>예제<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<button id="dialog-window-modified-example">예제 복사하기</button>
+
+<script>
+    code = "# 대화 함수 대화창 수정\n[대화창수정 아이디=\"대화\" 이미지=\"textArea.png\" 색상=\"255,255,255,255\" 위치=\"0,720\" 영역=\"1070,200\"  여백=\"100,60\" ]\n[대화창수정 아이디=\"대화\" 이름창이미지=\"nameLabel.png\" 이름창색상=\"255,255,255,255\" 이름창위치=\"30,500\" 이름창폰트크기=\"40\"  이름창폰트색상=\"97,68,36,255\" ]\n\n# 독백 함수 대화창 수정\n[대화창수정 아이디=\"독백\" 이미지=\"largeTextArea.png\" 위치=\"0,720\" 여백=\"100,100\" 영역=\"1080,520\"  색상=\"255,255,255,255\"]\n[대화창수정 아이디=\"독백\" 연결이미지=\"unselect.png\" 연결선택시이미지=\"select.png\" 연결색상=\"255,255,255,255\" 연결넓이맞춤=\"예\"]\n\n# 대화 함수 대화창 일부 속성 수정\n대화창수정.아이디 = \"대화\"\n대화창수정.이름창색상 = \"125,0,125,255\"\n대화창수정.이름창폰트크기 = \"20\"\n[대화창수정]";
+
+    copyClipboard("dialog-window-modified-example",code);
+</script><a class="reference internal image-reference" href="http://i.imgur.com/bu7ZDCv.png"><img alt="http://i.imgur.com/bu7ZDCv.png" src="http://i.imgur.com/bu7ZDCv.png" /></a>
+</div>
+</div>
+<div class="section" id="id15">
+<span id="id16"></span><h2>대화지우기 함수<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[대화지우기]</tt></dt>
@@ -269,8 +249,11 @@
 <li><a class="reference internal" href="#id11">예제</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id12">대화창수정 함수</a></li>
-<li><a class="reference internal" href="#id14">대화지우기 함수</a></li>
+<li><a class="reference internal" href="#id12">대화창수정 함수</a><ul>
+<li><a class="reference internal" href="#id14">예제</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id15">대화지우기 함수</a></li>
 </ul>
 </li>
 </ul>
