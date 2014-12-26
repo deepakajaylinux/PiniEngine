@@ -126,6 +126,7 @@
 .. image:: /images/example_monologue.gif
     :scale: 100%
 
+
 .. _함수_대화창수정:
 
 대화창수정 함수
@@ -177,6 +178,7 @@
 
 .. image:: http://i.imgur.com/bu7ZDCv.png
     :scale: 100%
+
 
 .. _함수_대화지우기:
 
