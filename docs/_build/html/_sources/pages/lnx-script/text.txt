@@ -95,7 +95,8 @@
 
     <script>
         var code = "[이미지 아이디=\"멍구1\" 파일명=\"멍구1.png\" 크기=\"화면맞춤\" 효과=\"줌아웃페이드\"]\n\n[대화 이름=\"멍구\"]\n 킁..<클릭> 킁킁..<클릭> 킁킁킁.. <클릭> 킁킁킁킁.. <클릭> 킁킁킁킁킁킁킁킁..!!!!!!";
-        document.getElementByName("dialog-example").setAttribute("data-clipboard-text",code);
+        var element = document.getElementsByName("dialog-example")[0];
+        element.setAttribute("data-clipboard-text",code);
     </script>
 
 .. image:: /images/example_dialog.png
