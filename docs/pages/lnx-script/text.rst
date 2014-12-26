@@ -37,14 +37,14 @@
 
 .. raw:: html
 
-    <button id="copy-button" name="text-example1">예제 복사하기</button>
+    <button id="text-example1">예제 복사하기</button>
 
     <script src="../../_static/zeroclipboard/ZeroClipboard.js"></script>
     <script src="../../_static/copyClipboard.js"></script>
     <script>
         var code = "[이미지 아이디=\"텍스트테스트배경\" 파일명=\"example-text-background.png\" 크기=\"1,1\" 효과=\"줌인페이드\"]\n\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨1\" 텍스트=\"왼쪽 상단\" 위치=\"왼쪽상단\" 크기=64 색상=\"25,84,92\"]\n\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨2\" 텍스트=\"오른쪽 하단\" 위치=\"오른쪽하단\" 크기=64 색상=\"60,200,219\"]";
-        var element = document.getElementsByName("text-example1")[0];
-        element.setAttribute("data-clipboard-text",code);
+        
+        copyClipboard("text-example1",code)
     </script>
 
 .. image:: /images/example_text.png
@@ -57,12 +57,12 @@
 
 .. raw:: html
 
-    <button id="copy-button" name="text-example2">예제 복사하기</button>
+    <button id="text-example2">예제 복사하기</button>
 
     <script>
-        code = "[이미지 아이디=\"텍스트테스트배경\"  파일명=\"example-text-background.png\" 크기=\"1,1\" 효과=\"줌인페이드\" ]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"이렇게\" 위치=\"640,70\" 크기=64 색상=\"92,91,4\"]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"같은 아이디를 사용하게 되면\" 위치=\"640,130\" 크기=74 색상=\"225,223,76\"]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"기존의 텍스트가 사라지고 \" 위치=\"640,260\" 크기=84 색상=\"219,216,9\"]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"이렇게 보여지게 됩니다.\" 위치=\"640,540\" 크기=94 색상=\"168,166,7\"]\n[클릭대기]";
-        element = document.getElementsByName("text-example2")[0];
-        element.setAttribute("data-clipboard-text",code);
+        var code = "[이미지 아이디=\"텍스트테스트배경\"  파일명=\"example-text-background.png\" 크기=\"1,1\" 효과=\"줌인페이드\" ]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"이렇게\" 위치=\"640,70\" 크기=64 색상=\"92,91,4\"]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"같은 아이디를 사용하게 되면\" 위치=\"640,130\" 크기=74 색상=\"225,223,76\"]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"기존의 텍스트가 사라지고 \" 위치=\"640,260\" 크기=84 색상=\"219,216,9\"]\n[클릭대기]\n[텍스트 아이디=\"테스트용 글씨3\"  텍스트=\"이렇게 보여지게 됩니다.\" 위치=\"640,540\" 크기=94 색상=\"168,166,7\"]\n[클릭대기]";
+        
+        copyClipboard("text-example2",code)
     </script>
 
 .. image:: /images/example_text_sameid.png
