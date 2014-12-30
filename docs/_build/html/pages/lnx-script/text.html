@@ -54,11 +54,11 @@
   <div class="section" id="id1">
 <h1>텍스트 관련<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
-<span id="id3"></span><h2>텍스트 함수<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<span id="id3"></span><h2>텍스트 매크로<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[텍스트 아이디,텍스트,위치=&quot;화면중앙&quot;,효과=&quot;업페이드&quot;,효과시간=0,글꼴=&quot;NanumBarunGothic&quot;,크기=20,색상=&quot;255,255,255&quot;]</tt></dt>
-<dd><p>가장 기본적인 텍스트 관련 함수로서 원하는 위치에 글자만을 보여주길 원할때 사용할 수 있습니다.</p>
+<dd><p>가장 기본적인 텍스트 관련 매크로로서 원하는 위치에 글자만을 보여주길 원할때 사용할 수 있습니다.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -67,7 +67,7 @@
 <li><strong>아이디</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 텍스트의 고유 아이디입니다. 기존에 쓰이고 있는 아이디를 전달 한다면 덮어쓰여 집니다.</li>
 <li><strong>텍스트</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 보여주고 싶은 문자열을 전달해야 합니다.</li>
 <li><strong>위치</strong> (x,y를 표현한 문자열(&#8220;숫자,숫자&#8221;) 혹은 <a class="reference internal" href="data-structure.html#id3"><em>위치</em></a>) &#8211; 텍스트의 위치를 전달해야 합니다.</li>
-<li><strong>효과</strong> (<a class="reference internal" href="data-structure.html#id14"><em>노드입장효과</em></a>) &#8211; <a class="reference internal" href="data-structure.html#id14"><em>노드입장효과</em></a> 를 사용하여 텍스트가 나타날 때의 효과를 정할수 있습니다.</li>
+<li><strong>효과</strong> (<a class="reference internal" href="data-structure.html#id18"><em>노드입장효과</em></a>) &#8211; <a class="reference internal" href="data-structure.html#id18"><em>노드입장효과</em></a> 를 사용하여 텍스트가 나타날 때의 효과를 정할수 있습니다.</li>
 <li><strong>효과시간</strong> (<em>숫자</em>) &#8211; 등장시 효과의 시간 (기준은 초)</li>
 <li><strong>글꼴</strong> (<em>문자열</em>) &#8211; 원하는 텍스트의 폰트를 전달해야 합니다.</li>
 <li><strong>크기</strong> (<em>숫자</em>) &#8211; 원하는 텍스트의 사이즈를 전달해야 합니다.</li>
@@ -105,12 +105,12 @@
 </div>
 </div>
 <div class="section" id="id6">
-<span id="id7"></span><h2>대화 함수<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<span id="id7"></span><h2>대화 매크로<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[대화 이름,대사창,유지=&quot;아니오&quot;]</tt></dt>
-<dd><p>대화 함수는 특정 캐릭터가 어떠한 대사를 하기 전달하기 위해 사용할 수 있습니다.
-대화 함수 대화창의 스타일은 <a class="reference internal" href="#id12"><em>대화창수정 함수</em></a> 의 매개변수인 아이디에 &#8220;대화&#8221; 라는 문자열을 전달하여 수정할 수 있습니다.</p>
+<dd><p>대화 매크로는 특정 캐릭터가 어떠한 대사를 하기 전달하기 위해 사용할 수 있습니다.
+대화 매크로 대화창의 스타일은 <a class="reference internal" href="#id12"><em>대화창수정 매크로</em></a> 의 매개변수인 아이디에 &#8220;대화&#8221; 라는 문자열을 전달하여 수정할 수 있습니다.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -118,7 +118,7 @@
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>이름</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 대사창의 이름칸에 보이게 될 이름을 전달해 주어야 합니다.</li>
 <li><strong>대사창</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 대사창의 내용칸에 보이게 될 대사를 전달해 주어야 합니다.</li>
-<li><strong>유지</strong> (<a class="reference internal" href="data-structure.html#id21"><em>여부</em></a>) &#8211; 만약 &#8220;예&#8221; 전달한다면 해당 대화는 대화가 끝나더라도 대화창이 계속 남게 됩니다. &#8220;예&#8221;가 아닌 &#8220;아니오&#8221;를 전달한다면 대화가 끝나게 될 시 독백 창이 사라지게 됩니다.</li>
+<li><strong>유지</strong> (<a class="reference internal" href="data-structure.html#id25"><em>여부</em></a>) &#8211; 만약 &#8220;예&#8221; 전달한다면 해당 대화는 대화가 끝나더라도 대화창이 계속 남게 됩니다. &#8220;예&#8221;가 아닌 &#8220;아니오&#8221;를 전달한다면 대화가 끝나게 될 시 독백 창이 사라지게 됩니다.</li>
 </ul>
 </td>
 </tr>
@@ -139,19 +139,19 @@
 </div>
 </div>
 <div class="section" id="id9">
-<span id="id10"></span><h2>독백 함수<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<span id="id10"></span><h2>독백 매크로<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[독백 이름,파일명,위치]</tt></dt>
-<dd><p>독백 함수는 대화 함수와는 달리 전면을 차지하여 텍스트를 전달할 수 있습니다.
-독백 함수 대화창의 스타일은 <a class="reference internal" href="#id12"><em>대화창수정 함수</em></a> 의 매개변수인 아이디에 &#8220;대화&#8221; 라는 문자열을 전달하여 수정할 수 있습니다.</p>
+<dd><p>독백 매크로는 대화 매크로와는 달리 전면을 차지하여 텍스트를 전달할 수 있습니다.
+독백 매크로 대화창의 스타일은 <a class="reference internal" href="#id12"><em>대화창수정 매크로</em></a> 의 매개변수인 아이디에 &#8220;대화&#8221; 라는 문자열을 전달하여 수정할 수 있습니다.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>대사창</strong> (<em>문자열</em>) &#8211; 대사창의 내용칸에 보이게 될 대사를 전달해 주어야 합니다.</li>
-<li><strong>유지</strong> (<a class="reference internal" href="data-structure.html#id21"><em>여부</em></a>) &#8211; 만약 &#8220;예&#8221; 전달한다면 해당 독백이 끝나더라도 독백 창이 계속 남게 됩니다. &#8220;예&#8221;가 아닌 &#8220;아니오&#8221;를 전달한다면 독백이 끝나게 될 시 독백 창이 사라지게 됩니다.</li>
+<li><strong>유지</strong> (<a class="reference internal" href="data-structure.html#id25"><em>여부</em></a>) &#8211; 만약 &#8220;예&#8221; 전달한다면 해당 독백이 끝나더라도 독백 창이 계속 남게 됩니다. &#8220;예&#8221;가 아닌 &#8220;아니오&#8221;를 전달한다면 독백이 끝나게 될 시 독백 창이 사라지게 됩니다.</li>
 </ul>
 </td>
 </tr>
@@ -166,7 +166,7 @@
 </div>
 </div>
 <div class="section" id="id12">
-<span id="id13"></span><h2>대화창수정 함수<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<span id="id13"></span><h2>대화창수정 매크로<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[대화창수정 아이디,여백,영역,위치,색상,이미지,폰트크기,폰트색상,폰트,커서이미지,커서크기,커서색상,이름창위치,연결색상,연결넓이맞춤,연결선택시이미지]</tt></dt>
@@ -210,14 +210,14 @@
 <button id="dialog-window-modified-example">예제 복사하기</button>
 
 <script>
-    code = "# 대화 함수 대화창 수정\n[대화창수정 아이디=\"대화\" 이미지=\"textArea.png\" 색상=\"255,255,255,255\" 위치=\"0,720\" 영역=\"1070,200\"  여백=\"100,60\" ]\n[대화창수정 아이디=\"대화\" 이름창이미지=\"nameLabel.png\" 이름창색상=\"255,255,255,255\" 이름창위치=\"30,500\" 이름창폰트크기=\"40\"  이름창폰트색상=\"97,68,36,255\" ]\n\n# 독백 함수 대화창 수정\n[대화창수정 아이디=\"독백\" 이미지=\"largeTextArea.png\" 위치=\"0,720\" 여백=\"100,100\" 영역=\"1080,520\"  색상=\"255,255,255,255\"]\n[대화창수정 아이디=\"독백\" 연결이미지=\"unselect.png\" 연결선택시이미지=\"select.png\" 연결색상=\"255,255,255,255\" 연결넓이맞춤=\"예\"]\n\n# 대화 함수 대화창 일부 속성 수정\n대화창수정.아이디 = \"대화\"\n대화창수정.이름창색상 = \"125,0,125,255\"\n대화창수정.이름창폰트크기 = \"20\"\n[대화창수정]";
+    code = "# 대화 매크로 대화창 수정\n[대화창수정 아이디=\"대화\" 이미지=\"textArea.png\" 색상=\"255,255,255,255\" 위치=\"0,720\" 영역=\"1070,200\"  여백=\"100,60\" ]\n[대화창수정 아이디=\"대화\" 이름창이미지=\"nameLabel.png\" 이름창색상=\"255,255,255,255\" 이름창위치=\"30,500\" 이름창폰트크기=\"40\"  이름창폰트색상=\"97,68,36,255\" ]\n\n# 독백 매크로 대화창 수정\n[대화창수정 아이디=\"독백\" 이미지=\"largeTextArea.png\" 위치=\"0,720\" 여백=\"100,100\" 영역=\"1080,520\"  색상=\"255,255,255,255\"]\n[대화창수정 아이디=\"독백\" 연결이미지=\"unselect.png\" 연결선택시이미지=\"select.png\" 연결색상=\"255,255,255,255\" 연결넓이맞춤=\"예\"]\n\n# 대화 매크로 대화창 일부 속성 수정\n대화창수정.아이디 = \"대화\"\n대화창수정.이름창색상 = \"125,0,125,255\"\n대화창수정.이름창폰트크기 = \"20\"\n[대화창수정]";
 
     copyClipboard("dialog-window-modified-example",code);
 </script><a class="reference internal image-reference" href="http://i.imgur.com/bu7ZDCv.png"><img alt="http://i.imgur.com/bu7ZDCv.png" src="http://i.imgur.com/bu7ZDCv.png" /></a>
 </div>
 </div>
 <div class="section" id="id15">
-<span id="id16"></span><h2>대화지우기 함수<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<span id="id16"></span><h2>대화지우기 매크로<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[대화지우기]</tt></dt>
@@ -236,24 +236,24 @@
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">텍스트 관련</a><ul>
-<li><a class="reference internal" href="#id2">텍스트 함수</a><ul>
+<li><a class="reference internal" href="#id2">텍스트 매크로</a><ul>
 <li><a class="reference internal" href="#id4">예제</a></li>
 <li><a class="reference internal" href="#id5">예제</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id6">대화 함수</a><ul>
+<li><a class="reference internal" href="#id6">대화 매크로</a><ul>
 <li><a class="reference internal" href="#id8">예제</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id9">독백 함수</a><ul>
+<li><a class="reference internal" href="#id9">독백 매크로</a><ul>
 <li><a class="reference internal" href="#id11">예제</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id12">대화창수정 함수</a><ul>
+<li><a class="reference internal" href="#id12">대화창수정 매크로</a><ul>
 <li><a class="reference internal" href="#id14">예제</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id15">대화지우기 함수</a></li>
+<li><a class="reference internal" href="#id15">대화지우기 매크로</a></li>
 </ul>
 </li>
 </ul>
