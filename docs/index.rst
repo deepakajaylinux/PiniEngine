@@ -23,8 +23,8 @@
    
    pages/Getting-Started
    pages/tutorial
-   pages/export
    pages/lnx-script/index
+   pages/export
    pages/user-feedback
 
    pages/test
