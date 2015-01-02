@@ -70,6 +70,8 @@
 .. image:: /images/example_text_sameid.gif
     :scale: 100%
 
+----------
+
 .. _매크로_대화:
 
 대화 매크로
@@ -104,6 +106,8 @@
 .. image:: /images/example_dialog.gif
     :scale: 100%
 
+----------
+
 .. _매크로_독백:
 
 독백 매크로
@@ -125,6 +129,8 @@
     :scale: 100%
 .. image:: /images/example_monologue.gif
     :scale: 100%
+
+----------
 
 .. _매크로_대화창수정:
 
@@ -177,6 +183,8 @@
 
 .. image:: http://i.imgur.com/bu7ZDCv.png
     :scale: 100%
+
+----------
 
 .. _매크로_대화지우기:
 
