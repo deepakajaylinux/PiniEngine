@@ -25,8 +25,8 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="top" title="PiniEngine 1.0.0 documentation" href="../../index.html" />
     <link rel="up" title="LNX 스크립트" href="index.html" />
-    <link rel="next" title="이미지 관련" href="animation.html" />
-    <link rel="prev" title="텍스트 관련" href="text.html" />
+    <link rel="next" title="소리 관련" href="sound.html" />
+    <link rel="prev" title="이미지 관련" href="image.html" />
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-58077189-1']);
@@ -56,10 +56,10 @@ html *{
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="animation.html" title="이미지 관련"
+          <a href="sound.html" title="소리 관련"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="text.html" title="텍스트 관련"
+          <a href="image.html" title="이미지 관련"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">PiniEngine 1.0.0 documentation</a> &raquo;</li>
           <li><a href="index.html" accesskey="U">LNX 스크립트</a> &raquo;</li> 
@@ -76,26 +76,20 @@ html *{
   <div class="section" id="id1">
 <h1>이미지 관련<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
-<span id="id3"></span><h2>이미지 매크로<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<span id="id3"></span><h2>애니메이션 매크로<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>애니메이션 매크로는 다른 매크로와 달리 <tt class="docutils literal"><span class="pre">타입</span></tt> 매개변수에 어떤 종류의 애니메이션 효과가 전달 됬는지에 따라
+전달 해야할 매개변수의 종류와 갯수가 달라집니다. 타입에 따른 전달 매개변수는 <a class="reference internal" href="data-structure.html#id29"><em>애니메이션효과</em></a> 에 자세히 설명되어 있습니다.</p>
 <dl class="function">
 <dt>
-<tt class="descname">[이미지 아이디,파일명,위치=&quot;화면중앙&quot;,효과=&quot;업페이드&quot;,효과시간=1,크기=&quot;원본크기&quot;,북마크이동=&quot;&quot;,스크린샷노출=&quot;예&quot;,GUI=&quot;아니오&quot;]</tt></dt>
-<dd><p>화면에 이미지를 출력합니다.</p>
+<tt class="descname">[애니메이션 아이디,타입]</tt></dt>
+<dd><p><tt class="docutils literal"><span class="pre">아이디</span></tt> 에 해당되는 이미지에 <tt class="docutils literal"><span class="pre">타입</span></tt> 의 애니메이션 효과를 줍니다.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>아이디</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 해당 이미지를 지칭하는 고유 아이디입니다.</li>
-<li><strong>파일명</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 보여질 이미지의 확장자를 포함한 파일명을 전달해야 합니다.</li>
-<li><strong>위치</strong> (<a class="reference internal" href="data-structure.html#id3"><em>위치</em></a>) &#8211; 이미지의 위치를 전달해야 합니다.</li>
-<li><strong>효과</strong> (<a class="reference internal" href="data-structure.html#id18"><em>노드입장효과</em></a>) &#8211; 자료형 <a class="reference internal" href="data-structure.html#id18"><em>노드입장효과</em></a> 를 사용하여 이미지가 나타날때의 효과를 정할수 있습니다.</li>
-<li><strong>효과시간</strong> (<em>숫자</em>) &#8211; 등장시 효과의 시간 (기준은 초)</li>
-<li><strong>오버롤</strong> (<em>문자열</em>) &#8211; (PC에서만 동작하는 인자 입니다.) 마우스 오버롤시 바뀌게 될 확장자를 포함한 이미지의 파일명을 전달해야 합니다. 마우스 커서가 해당 이미지 위쪽에 닿는 순간 <tt class="docutils literal"><span class="pre">오버롤</span></tt> 인자로 넘어온 이미지로 바뀌게 됩니다. 그리고 다시 마우스 커서가 해당 이미지를 벗어나는 순간 기존에 해당되는 <tt class="docutils literal"><span class="pre">파일명</span></tt> 인자로 넘어온 원래 이미지로 돌아가게 됩니다.</li>
-<li><strong>크기</strong> (<a class="reference internal" href="data-structure.html#id12"><em>크기</em></a>) &#8211; 이미지의 크기를 정할수 있습니다. <a class="reference internal" href="data-structure.html#id12"><em>크기</em></a> 자료형을 사용하여 인자를 전달해야 합니다.</li>
-<li><strong>북마크이동</strong> (<em>문자열</em>) &#8211; 문자열 형태로 인자를 전달해 준다면 이미지를 클릭 하였을 경우 실행 지점이 해당 북마크로 이동합니다.</li>
-<li><strong>스크린샷노출</strong> (<a class="reference internal" href="data-structure.html#id25"><em>여부</em></a>) &#8211; <a class="reference internal" href="screenshot.html#id2"><em>스크린샷 매크로</em></a> 를 사용하여 스크린샷을 파일로 저장할 경우 해당 이미지가 스크린샷에 포함되게 할 것인지에 대한 여부를 정할수 있습니다.</li>
-<li><strong>GUI</strong> (<a class="reference internal" href="data-structure.html#id25"><em>여부</em></a>) &#8211; <a class="reference internal" href="data-structure.html#id25"><em>여부</em></a> 를 전달해주어 해당 이미지가 최상단에 보일것인지를 결정할 수 있습니다. 만약 &#8220;예&#8221;를 전달한다면 해당 이미지는 어떤 이미지 보다도 가장 앞쪽에 보이게 됩니다. 만약 <tt class="docutils literal"><span class="pre">GUI</span></tt> 인자를 &#8220;예&#8221;로 전달한 2개의 이미지가 있다면 나중에 호출된 이미지 매크로에 해당하는 이미지가 더 앞쪽에 보이게 됩니다.</li>
+<li><strong>타입</strong> (<a class="reference internal" href="data-structure.html#id29"><em>애니메이션효과</em></a>) &#8211; ( <strong>필수</strong> ) 보여질 이미지의 확장자를 포함한 파일명을 전달해야 합니다.</li>
 </ul>
 </td>
 </tr>
@@ -132,20 +126,20 @@ html *{
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">이미지 관련</a><ul>
-<li><a class="reference internal" href="#id2">이미지 매크로</a></li>
+<li><a class="reference internal" href="#id2">애니메이션 매크로</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="text.html"
-                        title="previous chapter">텍스트 관련</a></p>
+  <p class="topless"><a href="image.html"
+                        title="previous chapter">이미지 관련</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="animation.html"
-                        title="next chapter">이미지 관련</a></p>
+  <p class="topless"><a href="sound.html"
+                        title="next chapter">소리 관련</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../../_sources/pages/lnx-script/image.txt"
+    <li><a href="../../_sources/pages/lnx-script/animation.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -172,10 +166,10 @@ html *{
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="animation.html" title="이미지 관련"
+          <a href="sound.html" title="소리 관련"
              >next</a> |</li>
         <li class="right" >
-          <a href="text.html" title="텍스트 관련"
+          <a href="image.html" title="이미지 관련"
              >previous</a> |</li>
         <li><a href="../../index.html">PiniEngine 1.0.0 documentation</a> &raquo;</li>
           <li><a href="index.html" >LNX 스크립트</a> &raquo;</li> 

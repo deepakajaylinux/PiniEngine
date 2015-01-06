@@ -14,6 +14,7 @@ LNX 스크립트는 피니 엔진에서 사용되는 스크립트 언어 입니�
   syntax
   text
   image
+  animation
   sound
   video
   timer
