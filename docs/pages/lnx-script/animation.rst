@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-이미지 관련
+애니메이션 관련
 **********************************************
 
 .. _매크로_애니메이션:
