@@ -201,6 +201,7 @@ LNX스크립트의 몇몇 매크로의 매개변수로 사용됩니다. 보통 �
     아래 그래프를 참고하세요.
 
     (출처 - `CCEaseAction 의 라스트 정리 (또 다른 시선) (cocos2d for android) <http://ko.wikipedia.org/wiki/RGB_%EA%B0%80%EC%82%B0%ED%98%BC%ED%95%A9>`_ )
+    
     .. image:: http://i.imgur.com/wHSvjsp.png
         :scale: 100%
 
