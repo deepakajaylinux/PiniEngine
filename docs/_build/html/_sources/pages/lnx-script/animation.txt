@@ -8,10 +8,6 @@
 
 .. _매크로_애니메이션:
 
-.. figure:: asdasdasda
-   
-   sdfoejkfmvcfikedioeikdk
-
 애니메이션 매크로
 ===============================================
 
