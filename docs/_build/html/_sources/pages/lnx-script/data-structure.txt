@@ -199,6 +199,7 @@ LNX스크립트의 몇몇 매크로의 매개변수로 사용됩니다. 보통 �
 
 .. note::
     아래 그래프를 참고하세요.
-.. image:: http://i.imgur.com/wHSvjsp.png
-    :scale: 100%
+    
+    .. image:: http://i.imgur.com/wHSvjsp.png
+        :scale: 100%
 
