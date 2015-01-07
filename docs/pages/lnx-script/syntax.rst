@@ -54,6 +54,16 @@ LNX 스크립트 매크로의 개념은 `기존 프로그래밍 언어에 존재
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 모든 매크로는 어떠한 매개변수가 전달되어 호출됬을 경우 해당 매개변수를 모두 계속 기억하고 있는 특징을 가지고 있습니다. 아래와 같은 예를 봅시다.
 
+.. raw:: html
+
+    <button id="syntax-keep-property-example">예제 복사하기</button>
+
+    <script>
+        code = "[대화 이름=\"멍구\"]\n;킁..\n[대화]\n;킁킁..?\n[대화]\n;여기가 어디지?";
+        
+        copyClipboard("syntax-keep-property-example",code);
+    </script>
+
 .. image:: http://i.imgur.com/26MiUBX.png
     :scale: 100%
 
