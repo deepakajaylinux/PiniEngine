@@ -37,7 +37,6 @@
 "X,Y"
 ---------------------------
 X,Y 숫자값으로 직접 위치를 지정할 수 있습니다. 아래와 같이 왼쪽 상단은 "0,0"이며 원점을 의미합니다.
-
 X좌표는 커질수록 화면의 오른쪽을 향하게 되며 Y좌표는 커질수록 화면의 아랫쪽을 향하게 됩니다.
 
 `(출처 - Cocos2d-x UI Coordinate System) <http://www.cocos2d-x.org/wiki/Coordinate_System#UI-Coordinate-System>`_
