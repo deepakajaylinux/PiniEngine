@@ -3,6 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. raw:: html
+
+    <script src="../../_static/zeroclipboard/ZeroClipboard.js"></script>
+    <script src="../../_static/copyClipboard.js"></script>
+
 기본 문법
 **************************************
 
