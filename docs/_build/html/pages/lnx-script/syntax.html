@@ -86,8 +86,10 @@ html *{
 <tt class="descname">[이미지 아이디,파일명,위치=&quot;화면중앙&quot;,효과=&quot;업페이드&quot;,효과시간=1,크기=&quot;원본크기&quot;,북마크이동=&quot;&quot;,스크린샷노출=&quot;예&quot;,GUI=&quot;아니오&quot;]</tt></dt>
 <dd></dd></dl>
 
-<p>여기서 매크로의 원형에 해당되는 &#8220;[이미지 아이디,파일명,위치=&#8221;화면중앙&#8221;,효과=&#8221;업페이드&#8221;,효과시간=1,크기=&#8221;원본크기&#8221;,북마크이동,스크린샷노출=&#8221;예&#8221;,GUI=&#8221;아니오&#8221;]&#8221; 이 부분에 대해서 좀더 자세히 설명을 드리겠습니다.
-여기서 매개변수 <tt class="docutils literal"><span class="pre">아이디</span></tt> 와 <tt class="docutils literal"><span class="pre">파일명</span></tt> 같은 경우 아래에도 표시과 되어 있듯이 매크로 호출시 필수적으로 전달해야만 하는 매개변수 입니다. 하지만 그외 <tt class="docutils literal"><span class="pre">위치</span></tt> 나 <tt class="docutils literal"><span class="pre">효과</span></tt> 와 같이 선택적으로 전달할 수 있는 매개변수의 경우 사용자가 매크로 호출시 매개변수를 전달해주지 않았다면 피니엔진이 기본적으로 설정한 기본 매개변수를 전달하여 호출하게 됩니다. 그러니까 아래 표시된 것 같이 <tt class="docutils literal"><span class="pre">위치</span></tt> 는 &#8220;화면중앙&#8221;, <tt class="docutils literal"><span class="pre">효과</span></tt> 는 &#8220;업페이드&#8221; 가 기본 매개변수 입니다.</p>
+<p>여기서 매크로의 원형에 해당되는 &#8220;[이미지 아이디,파일명,위치=&#8221;화면중앙&#8221;,효과=&#8221;업페이드&#8221;,효과시간=1,크기=&#8221;원본크기&#8221;,북마크이동,스크린샷노출=&#8221;예&#8221;,GUI=&#8221;아니오&#8221;]&#8221; 이 부분에 대해서 좀더 자세히 설명을 드리겠습니다.</p>
+<p>여기서 매개변수 <tt class="docutils literal"><span class="pre">아이디</span></tt> 와 <tt class="docutils literal"><span class="pre">파일명</span></tt> 같은 경우 아래에도 표시과 되어 있듯이 매크로 호출시 필수적으로 전달해야만 하는 매개변수 입니다.
+하지만 그외 <tt class="docutils literal"><span class="pre">위치</span></tt> 나 <tt class="docutils literal"><span class="pre">효과</span></tt> 와 같이 선택적으로 전달할 수 있는 매개변수의 경우 사용자가 매크로 호출시 매개변수를 전달해주지 않았다면 피니엔진이 기본적으로 설정한 기본 매개변수를 전달하여 호출하게 됩니다.
+그러니까 아래 표시된 것 같이 <tt class="docutils literal"><span class="pre">위치</span></tt> 는 &#8220;화면중앙&#8221;, <tt class="docutils literal"><span class="pre">효과</span></tt> 는 &#8220;업페이드&#8221; 가 기본 매개변수 입니다.</p>
 <dl class="function">
 <dt>
 <tt class="descname">매개변수 설명</tt></dt>
@@ -116,17 +118,7 @@ html *{
 <h3>매크로의 특징<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ</p>
 <div class="section" id="id6">
-<h4>매크로 매개변수 속성<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
-<p>매크로를 호출하기 위해선 해당 매크로가 필요로 하는 매개변수를 전달 해주어야만 합니다.
-이에</p>
-<div class="line-block">
-<div class="line">이 라인은</div>
-<div class="line">부러져 있습니다 그러나</div>
-<div class="line">정확히는</div>
-</div>
-</div>
-<div class="section" id="id7">
-<h4>매크로 호출시 매개변수의 순서<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<h4>매크로 호출시 매개변수의 순서<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <p>매크로 호출시 매개변수를 넘기는 순서는 자유롭게 하여도 정상적으로 동작합니다.
 즉 아래와 같이해도 두 줄의 스크립트는 동일하게 동작하게 됩니다.</p>
 <button id="syntax-keep-property-example">예제 복사하기</button>
@@ -137,8 +129,8 @@ html *{
     copyClipboard("syntax-keep-property-example",code);
 </script><a class="reference internal image-reference" href="http://i.imgur.com/BTQeoz8.png"><img alt="http://i.imgur.com/BTQeoz8.png" src="http://i.imgur.com/BTQeoz8.png" /></a>
 </div>
-<div class="section" id="id8">
-<h4>매크로 매개변수 유지 특징<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id7">
+<h4>매크로 매개변수 유지 특징<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <p>모든 매크로는 어떠한 매개변수가 전달되어 호출됬을 경우 해당 매개변수를 모두 계속 기억하고 있는 특징을 가지고 있습니다. 아래와 같은 예를 봅시다.</p>
 <button id="syntax-keep-property-example">예제 복사하기</button>
 
@@ -158,6 +150,11 @@ html *{
 <p class="last">만약 이렇게 기억된 매개변수를 모두 지우고 기본 매개변수 기억하고 있는 초기의 상태로 돌아가고 싶을 경우 <a class="reference internal" href="system.html#id10"><em>인자변수초기화 매크로</em></a> 를 호출하면 됩니다.</p>
 </div>
 </div>
+<div class="section" id="id8">
+<h4>매크로의 속성<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<p>매크로를 호출하기 위해선 해당 매크로가 필요로 하는 매개변수를 전달 해주어야만 합니다.
+이에</p>
+</div>
 </div>
 </div>
 <hr class="docutils" />
@@ -170,6 +167,31 @@ html *{
 <div class="section" id="id11">
 <h3>기본 매개변수<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 <p>ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㄴㅇㄹ</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id12">
+<h2>변수<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<p>변수에 대하여</p>
+<div class="section" id="id13">
+<h3>변수의 선언 및 대입<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄹㄴㅇ</p>
+</div>
+</div>
+<div class="section" id="id14">
+<h2>조건문<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<p>만약</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="id15">
+<h2>북마크<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id16">
+<h3>북마크 선언<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<p>ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄹㄴㅇ</p>
+</div>
+<div class="section" id="id17">
+<h3>북마크 이동<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<p>실행 시점을 원하는 특정 북마크로 이동하고 싶다면 &gt;</p>
 </div>
 </div>
 </div>
@@ -203,9 +225,9 @@ html *{
 <li><a class="reference internal" href="#id2">매크로</a><ul>
 <li><a class="reference internal" href="#id4">매크로 호출</a></li>
 <li><a class="reference internal" href="#id5">매크로의 특징</a><ul>
-<li><a class="reference internal" href="#id6">매크로 매개변수 속성</a></li>
-<li><a class="reference internal" href="#id7">매크로 호출시 매개변수의 순서</a></li>
-<li><a class="reference internal" href="#id8">매크로 매개변수 유지 특징</a></li>
+<li><a class="reference internal" href="#id6">매크로 호출시 매개변수의 순서</a></li>
+<li><a class="reference internal" href="#id7">매크로 매개변수 유지 특징</a></li>
+<li><a class="reference internal" href="#id8">매크로의 속성</a></li>
 </ul>
 </li>
 </ul>
@@ -213,6 +235,16 @@ html *{
 <li><a class="reference internal" href="#id9">사용자 매크로</a><ul>
 <li><a class="reference internal" href="#id10">매크로 선언 및 정의</a></li>
 <li><a class="reference internal" href="#id11">기본 매개변수</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id12">변수</a><ul>
+<li><a class="reference internal" href="#id13">변수의 선언 및 대입</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id14">조건문</a></li>
+<li><a class="reference internal" href="#id15">북마크</a><ul>
+<li><a class="reference internal" href="#id16">북마크 선언</a></li>
+<li><a class="reference internal" href="#id17">북마크 이동</a></li>
 </ul>
 </li>
 </ul>
