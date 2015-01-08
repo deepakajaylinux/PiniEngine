@@ -40,12 +40,12 @@ LNX 스크립트 매크로의 개념은 `기존 프로그래밍 언어에 존재
 
 .. raw:: html
 
-    <button id="syntax-keep-property-example">예제 복사하기</button>
+    <button id="syntax-parameter-order-example">예제 복사하기</button>
 
     <script>
         code = "[텍스트 텍스트=\"좌우 흔들기\" 색상=\"255,0,0\" 크기=45]\n\n[텍스트 크기=45 텍스트=\"좌우 흔들기\" 색상=\"255,0,0\"]";
         
-        copyClipboard("syntax-keep-property-example",code);
+        copyClipboard("syntax-parameter-order-example",code);
     </script>
 
 .. image:: http://i.imgur.com/BTQeoz8.png
