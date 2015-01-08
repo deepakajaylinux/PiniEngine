@@ -75,8 +75,26 @@ html *{
   
   <div class="section" id="id1">
 <h1>시스템 관련<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
 <div class="section" id="id2">
-<span id="id3"></span><h2>나가기 매크로<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<span id="id3"></span><h2>스크립트 매크로<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt>
+<tt class="descname">[스크립트 파일명]</tt></dt>
+<dd><p>스크립트 매크로는 호출하게 되면 실행시점이 <tt class="docutils literal"><span class="pre">파일명</span></tt> 매개변수로 전달된 LNX 스크립트 파일로 옮겨가게 됩니다.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>파일명</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 실행될 스크립트 파일의 확장자를 포함한 파일명을 전달해 주어야 합니다.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="id4">
+<span id="id5"></span><h2>나가기 매크로<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[나가기]</tt></dt>
@@ -85,8 +103,8 @@ html *{
 
 <hr class="docutils" />
 </div>
-<div class="section" id="id4">
-<span id="id5"></span><h2>멈춤 매크로<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id6">
+<span id="id7"></span><h2>멈춤 매크로<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[멈춤]</tt></dt>
@@ -95,8 +113,8 @@ html *{
 
 <hr class="docutils" />
 </div>
-<div class="section" id="id6">
-<span id="id7"></span><h2>클릭대기 매크로<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id8">
+<span id="id9"></span><h2>클릭대기 매크로<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[클릭대기]</tt></dt>
@@ -105,8 +123,8 @@ html *{
 
 <hr class="docutils" />
 </div>
-<div class="section" id="id8">
-<span id="id9"></span><h2>화면초기화 매크로<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id10">
+<span id="id11"></span><h2>화면초기화 매크로<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[화면초기화]</tt></dt>
@@ -115,8 +133,8 @@ html *{
 
 <hr class="docutils" />
 </div>
-<div class="section" id="id10">
-<span id="id11"></span><h2>인자변수초기화 매크로<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id12">
+<span id="id13"></span><h2>인자변수초기화 매크로<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[인자변수초기화]</tt></dt>
@@ -125,8 +143,8 @@ html *{
 
 <hr class="docutils" />
 </div>
-<div class="section" id="id12">
-<span id="id13"></span><h2>삭제 매크로<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id14">
+<span id="id15"></span><h2>삭제 매크로<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[삭제 아이디,효과]</tt></dt>
@@ -137,7 +155,7 @@ html *{
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>아이디</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 삭제를 원하는 오브젝트의 고유 아이디를 전달해 주어야 합니다.</li>
-<li><strong>효과</strong> (<a class="reference internal" href="data-structure.html#id18"><em>노드입장효과</em></a>) &#8211; 이 매개변수를 전달하면 전달된 <tt class="docutils literal"><span class="pre">아이디</span></tt> 에 해당되는 오브젝트를 원하는 <a class="reference internal" href="data-structure.html#id18"><em>노드입장효과</em></a> 로 삭제할 수 있습니다. 전달된 <tt class="docutils literal"><span class="pre">효과</span></tt> 에 따라 화면에서 사라지게 됩니다.</li>
+<li><strong>효과</strong> (<a class="reference internal" href="data-structure.html#id23"><em>노드입장효과</em></a>) &#8211; 이 매개변수를 전달하면 전달된 <tt class="docutils literal"><span class="pre">아이디</span></tt> 에 해당되는 오브젝트를 원하는 <a class="reference internal" href="data-structure.html#id23"><em>노드입장효과</em></a> 로 삭제할 수 있습니다. 전달된 <tt class="docutils literal"><span class="pre">효과</span></tt> 에 따라 화면에서 사라지게 됩니다.</li>
 </ul>
 </td>
 </tr>
@@ -145,8 +163,8 @@ html *{
 </table>
 </dd></dl>
 
-<div class="section" id="id14">
-<h3>예제<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id16">
+<h3>예제<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
 <button id="delete-example">예제 복사하기</button>
 
 <script src="../../_static/zeroclipboard/ZeroClipboard.js"></script>
@@ -186,13 +204,14 @@ html *{
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">시스템 관련</a><ul>
-<li><a class="reference internal" href="#id2">나가기 매크로</a></li>
-<li><a class="reference internal" href="#id4">멈춤 매크로</a></li>
-<li><a class="reference internal" href="#id6">클릭대기 매크로</a></li>
-<li><a class="reference internal" href="#id8">화면초기화 매크로</a></li>
-<li><a class="reference internal" href="#id10">인자변수초기화 매크로</a></li>
-<li><a class="reference internal" href="#id12">삭제 매크로</a><ul>
-<li><a class="reference internal" href="#id14">예제</a></li>
+<li><a class="reference internal" href="#id2">스크립트 매크로</a></li>
+<li><a class="reference internal" href="#id4">나가기 매크로</a></li>
+<li><a class="reference internal" href="#id6">멈춤 매크로</a></li>
+<li><a class="reference internal" href="#id8">클릭대기 매크로</a></li>
+<li><a class="reference internal" href="#id10">화면초기화 매크로</a></li>
+<li><a class="reference internal" href="#id12">인자변수초기화 매크로</a></li>
+<li><a class="reference internal" href="#id14">삭제 매크로</a><ul>
+<li><a class="reference internal" href="#id16">예제</a></li>
 </ul>
 </li>
 </ul>
