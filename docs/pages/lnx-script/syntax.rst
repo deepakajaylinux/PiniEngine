@@ -65,7 +65,7 @@ LNX 스크립트 매크로의 개념은 `기존 프로그래밍 언어에 존재
         copyClipboard("syntax-keep-property-example",code);
     </script>
 
-.. image:: http://i.imgur.com/26MiUBX.png
+.. image:: http://i.imgur.com/p1u9D9b.png
     :scale: 100%
 
 .. image:: http://i.imgur.com/C6NwLZY.gif
