@@ -174,7 +174,8 @@ html *{
 <span id="id11"></span><h2><a class="toc-backref" href="#id34">사용자 정의 매크로</a><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id12">
 <h3><a class="toc-backref" href="#id35">매크로 선언 및 정의</a><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
-<p>ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄹㄴㅇ</p>
+<p>피니엔진이 기본으로 제공하느 매크로 외에 사용자가 직접 매크로를 만들어서 사용할 수 있습니다.</p>
+<a class="reference internal image-reference" href="http://i.imgur.com/SeOSlOq.png"><img alt="http://i.imgur.com/SeOSlOq.png" src="http://i.imgur.com/SeOSlOq.png" /></a>
 </div>
 <div class="section" id="id13">
 <h3><a class="toc-backref" href="#id36">매개변수</a><a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
@@ -183,7 +184,8 @@ html *{
 <div class="section" id="id14">
 <h3><a class="toc-backref" href="#id37">기본 매개변수</a><a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
 <p>사용자 매크로를 선언할 때 기본 매개변수를 지정해 줄 수 있습니다.</p>
-<p>즉, 어떠한 매크로가 기본 매개변수를 가지고 있다면 그 매크로를 호출할땐 최소한 기본 매개변수를 제외한 필수 매개변수를 전달 해주어야 합니다.</p>
+<p>즉, 어떠한 매크로가 기본 매개변수를 가지고 있다면 그 매크로를 호출할땐 최소한
+기본 매개변수를 제외한 필수 매개변수를 전달 해주어야 합니다.</p>
 <hr class="docutils" />
 </div>
 </div>
@@ -202,7 +204,8 @@ html *{
 <div class="section" id="id18">
 <h3><a class="toc-backref" href="#id40">변수의 대입</a><a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
 <p>변수의 대입은 변수의 선언과 동시에 이루어질수 있습니다. 대입은 등호(=)를 사용합니다.
-변수의 대입은 (변수이름=값)의 형태로 이루어 집니다. 어떠한 변수에 대입이 이루어 지면 해당 변수는 대입이 이루어졌을 때 전달된 값을 계속 보관하고 있게 됩니다.</p>
+변수의 대입은 (변수이름=값)의 형태로 이루어 집니다. 어떠한 변수에 대입이 이루어 지면 해당 변수는
+대입이 이루어졌을 때 전달된 값을 계속 보관하고 있게 됩니다.</p>
 </div>
 <div class="section" id="id19">
 <h3><a class="toc-backref" href="#id41">변수의 사칙연산</a><a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
@@ -239,33 +242,42 @@ html *{
 </div>
 <div class="section" id="id23">
 <span id="id24"></span><h2><a class="toc-backref" href="#id45">조건문</a><a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="#id15"><em>변수</em></a> 를 활용해 조건문을 사용하면 어떠한 조건이 맞아 떨어졌을 경우 여러 분기로 실행지점을 나누거나 특정 스크립트를 수행하게끔 할 수 있습니다.</p>
+<p><a class="reference internal" href="#id15"><em>변수</em></a> 를 활용해 조건문을 사용하면 어떠한 조건이 맞아 떨어졌을 경우 여러 분기로 실행지점을 나누거나
+특정 스크립트를 수행하게끔 할 수 있습니다.</p>
 <ul>
 <li><dl class="first docutils">
-<dt>조건</dt>
+<dt>&#64;조건 (조건):</dt>
 <dd><p class="first last">기존 프로그래밍 언어에 대입하여 보았을때 if문이라고 볼 수 있습니다.</p>
 </dd>
 </dl>
 </li>
 <li><dl class="first docutils">
-<dt>다른조건</dt>
+<dt>&#64;다른조건 (조건):</dt>
 <dd><p class="first last">기존 프로그래밍 언어에 대입하여 보았을때 else if문이라고 볼 수 있습니다.</p>
 </dd>
 </dl>
 </li>
 <li><dl class="first docutils">
-<dt>그외</dt>
+<dt>&#64;그외:</dt>
 <dd><p class="first last">기존 프로그래밍 언어에 대입하여 보았을때 else문이라고 볼 수 있습니다.</p>
 </dd>
 </dl>
 </li>
 </ul>
+<p>아래의 예제를 통해 자세히 살펴 봅시다. 조건,다른조건,그외 모두 실행시키고 싶은
+스크립트를 그 다음줄에 한칸의 탭을 준 후 써야 합니다.</p>
+<a class="reference internal image-reference" href="http://i.imgur.com/LpvVSUm.png"><img alt="http://i.imgur.com/LpvVSUm.png" src="http://i.imgur.com/LpvVSUm.png" /></a>
+<p>위와 같은 경우 변수 &#8216;사람&#8217;에는 문자열 &#8220;C&#8221; 라는 값이 있기 때문에 8번 라인에 C.mp3라는 음악 파일을 재생 시키는 효과음 함수가 호출되게 됩니다.
+마찬가지로 변수 &#8216;사람&#8217;이 문자열 &#8220;A&#8221; 혹은 &#8220;B&#8221;라는 값을 보관하고 있었다면 각각 4번째 라인과 6번라인이 실행 되었을 겁니다.
+그리고 마지막으로 &#8216;그외&#8217; 조건문은 말 그대로 변수 &#8216;사람&#8217;에 문자열 &#8220;A&#8221;나 &#8220;B&#8221; 나 &#8220;C&#8221;가 아닌 그외의 모든 경우에 들어오게 됩니다. 예를 들어 변수 &#8216;사람&#8217;에
+문자열 &#8220;D&#8221;나 숫자 34와 같은 경우 10번째 라인이 실행되게 됩니다.</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="id25">
 <h2><a class="toc-backref" href="#id46">북마크</a><a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
 <p>북마크를 사용하면 특정한 실행지점으로 이동할 수 있습니다.</p>
-<p>기존 프로그래밍 언어에 대입하여 설명 드리자면 <a class="reference external" href="http://ko.wikipedia.org/wiki/Goto_%EB%AC%B8)">goto문</a> 에 가까운 기능입니다. 북마크 선언을 통한 북마크 지점은 Label로 볼 수 있고 북마크 이동 기능은 goto 명령어라고 볼 수 있습니다.</p>
+<p>기존 프로그래밍 언어에 대입하여 설명 드리자면 <a class="reference external" href="http://ko.wikipedia.org/wiki/Goto_%EB%AC%B8)">goto문</a> 에 가까운 기능입니다.
+북마크 선언을 통한 북마크 지점은 Label로 볼 수 있고 북마크 이동 기능은 goto 명령어라고 볼 수 있습니다.</p>
 <div class="section" id="id26">
 <h3><a class="toc-backref" href="#id47">북마크 선언과 북마크 이동</a><a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
 <p>북마크 선언은 아래와 같이 :(콜론)과 원하는 북마크 이름을 적으면 됩니다.
