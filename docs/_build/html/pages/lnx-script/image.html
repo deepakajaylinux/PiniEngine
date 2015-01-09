@@ -25,7 +25,7 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="top" title="PiniEngine 1.0.0 documentation" href="../../index.html" />
     <link rel="up" title="LNX 스크립트" href="index.html" />
-    <link rel="next" title="이미지 관련" href="animation.html" />
+    <link rel="next" title="애니메이션 관련" href="animation.html" />
     <link rel="prev" title="텍스트 관련" href="text.html" />
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -56,7 +56,7 @@ html *{
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="animation.html" title="이미지 관련"
+          <a href="animation.html" title="애니메이션 관련"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="text.html" title="텍스트 관련"
@@ -88,14 +88,14 @@ html *{
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>아이디</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 해당 이미지를 지칭하는 고유 아이디입니다.</li>
 <li><strong>파일명</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 보여질 이미지의 확장자를 포함한 파일명을 전달해야 합니다.</li>
-<li><strong>위치</strong> (<a class="reference internal" href="data-structure.html#id3"><em>위치</em></a>) &#8211; 이미지의 위치를 전달해야 합니다.</li>
-<li><strong>효과</strong> (<a class="reference internal" href="data-structure.html#id18"><em>노드입장효과</em></a>) &#8211; 자료형 <a class="reference internal" href="data-structure.html#id18"><em>노드입장효과</em></a> 를 사용하여 이미지가 나타날때의 효과를 정할수 있습니다.</li>
+<li><strong>위치</strong> (<a class="reference internal" href="data-structure.html#id7"><em>위치</em></a>) &#8211; 이미지의 위치를 전달해야 합니다.</li>
+<li><strong>효과</strong> (<a class="reference internal" href="data-structure.html#id23"><em>노드입장효과</em></a>) &#8211; 자료형 <a class="reference internal" href="data-structure.html#id23"><em>노드입장효과</em></a> 를 사용하여 이미지가 나타날때의 효과를 정할수 있습니다.</li>
 <li><strong>효과시간</strong> (<em>숫자</em>) &#8211; 등장시 효과의 시간 (기준은 초)</li>
 <li><strong>오버롤</strong> (<em>문자열</em>) &#8211; (PC에서만 동작하는 인자 입니다.) 마우스 오버롤시 바뀌게 될 확장자를 포함한 이미지의 파일명을 전달해야 합니다. 마우스 커서가 해당 이미지 위쪽에 닿는 순간 <tt class="docutils literal"><span class="pre">오버롤</span></tt> 인자로 넘어온 이미지로 바뀌게 됩니다. 그리고 다시 마우스 커서가 해당 이미지를 벗어나는 순간 기존에 해당되는 <tt class="docutils literal"><span class="pre">파일명</span></tt> 인자로 넘어온 원래 이미지로 돌아가게 됩니다.</li>
-<li><strong>크기</strong> (<a class="reference internal" href="data-structure.html#id12"><em>크기</em></a>) &#8211; 이미지의 크기를 정할수 있습니다. <a class="reference internal" href="data-structure.html#id12"><em>크기</em></a> 자료형을 사용하여 인자를 전달해야 합니다.</li>
+<li><strong>크기</strong> (<a class="reference internal" href="data-structure.html#id17"><em>크기</em></a>) &#8211; 이미지의 크기를 정할수 있습니다. <a class="reference internal" href="data-structure.html#id17"><em>크기</em></a> 자료형을 사용하여 인자를 전달해야 합니다.</li>
 <li><strong>북마크이동</strong> (<em>문자열</em>) &#8211; 문자열 형태로 인자를 전달해 준다면 이미지를 클릭 하였을 경우 실행 지점이 해당 북마크로 이동합니다.</li>
-<li><strong>스크린샷노출</strong> (<a class="reference internal" href="data-structure.html#id25"><em>여부</em></a>) &#8211; <a class="reference internal" href="screenshot.html#id2"><em>스크린샷 매크로</em></a> 를 사용하여 스크린샷을 파일로 저장할 경우 해당 이미지가 스크린샷에 포함되게 할 것인지에 대한 여부를 정할수 있습니다.</li>
-<li><strong>GUI</strong> (<a class="reference internal" href="data-structure.html#id25"><em>여부</em></a>) &#8211; <a class="reference internal" href="data-structure.html#id25"><em>여부</em></a> 를 전달해주어 해당 이미지가 최상단에 보일것인지를 결정할 수 있습니다. 만약 &#8220;예&#8221;를 전달한다면 해당 이미지는 어떤 이미지 보다도 가장 앞쪽에 보이게 됩니다. 만약 <tt class="docutils literal"><span class="pre">GUI</span></tt> 인자를 &#8220;예&#8221;로 전달한 2개의 이미지가 있다면 나중에 호출된 이미지 매크로에 해당하는 이미지가 더 앞쪽에 보이게 됩니다.</li>
+<li><strong>스크린샷노출</strong> (<a class="reference internal" href="data-structure.html#id30"><em>여부</em></a>) &#8211; <a class="reference internal" href="screenshot.html#id2"><em>스크린샷 매크로</em></a> 를 사용하여 스크린샷을 파일로 저장할 경우 해당 이미지가 스크린샷에 포함되게 할 것인지에 대한 여부를 정할수 있습니다.</li>
+<li><strong>GUI</strong> (<a class="reference internal" href="data-structure.html#id30"><em>여부</em></a>) &#8211; <a class="reference internal" href="data-structure.html#id30"><em>여부</em></a> 를 전달해주어 해당 이미지가 최상단에 보일것인지를 결정할 수 있습니다. 만약 &#8220;예&#8221;를 전달한다면 해당 이미지는 어떤 이미지 보다도 가장 앞쪽에 보이게 됩니다. 만약 <tt class="docutils literal"><span class="pre">GUI</span></tt> 인자를 &#8220;예&#8221;로 전달한 2개의 이미지가 있다면 나중에 호출된 이미지 매크로에 해당하는 이미지가 더 앞쪽에 보이게 됩니다.</li>
 </ul>
 </td>
 </tr>
@@ -142,7 +142,7 @@ html *{
                         title="previous chapter">텍스트 관련</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="animation.html"
-                        title="next chapter">이미지 관련</a></p>
+                        title="next chapter">애니메이션 관련</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../../_sources/pages/lnx-script/image.txt"
@@ -172,7 +172,7 @@ html *{
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="animation.html" title="이미지 관련"
+          <a href="animation.html" title="애니메이션 관련"
              >next</a> |</li>
         <li class="right" >
           <a href="text.html" title="텍스트 관련"
