@@ -3,6 +3,6 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-대화와 독백 그리고 텍스트 찍어보기
+02. 대화와 독백 그리고 텍스트 찍어보기
 **********************************************
 

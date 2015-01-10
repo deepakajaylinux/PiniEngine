@@ -3,6 +3,6 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-대화창 꾸며보기
+04. 대화창 꾸며보기
 **********************************************
 

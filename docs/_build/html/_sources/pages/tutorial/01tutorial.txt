@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-프로젝트 만들기
+01. 프로젝트 만들기
 **********************************************
 
 피니엔진을 시작하기에 처음으로 해야할 일은 프로젝트를 만드는 것 입니다. 프로젝트란 피니엔진으로 만들어지는 저작물에 대한 기본 단위 입니다.
