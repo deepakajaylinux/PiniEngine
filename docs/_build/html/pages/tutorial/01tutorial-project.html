@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>튜토리얼 &mdash; PiniEngine 1.0.0 documentation</title>
+    <title>01. 프로젝트 만들기 &mdash; PiniEngine 1.0.0 documentation</title>
     
     <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -24,8 +24,9 @@
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="top" title="PiniEngine 1.0.0 documentation" href="../../index.html" />
-    <link rel="next" title="01. 프로젝트 만들기" href="01tutorial-project.html" />
-    <link rel="prev" title="시작하기!" href="../Getting-Started.html" />
+    <link rel="up" title="튜토리얼" href="index.html" />
+    <link rel="next" title="02. 이미지 띄워보기" href="02tutorial-image.html" />
+    <link rel="prev" title="튜토리얼" href="index.html" />
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-58077189-1']);
@@ -55,12 +56,13 @@ html *{
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="01tutorial-project.html" title="01. 프로젝트 만들기"
+          <a href="02tutorial-image.html" title="02. 이미지 띄워보기"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../Getting-Started.html" title="시작하기!"
+          <a href="index.html" title="튜토리얼"
              accesskey="P">previous</a> |</li>
-        <li><a href="../../index.html">PiniEngine 1.0.0 documentation</a> &raquo;</li> 
+        <li><a href="../../index.html">PiniEngine 1.0.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">튜토리얼</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -72,22 +74,26 @@ html *{
 
   
   <div class="section" id="id1">
-<span id="id2"></span><h1>튜토리얼<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>본 내용은 피니엔진을 처음 접하거나 아직은 미숙한 분들을 위해 작성된 튜토리얼 입니다.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="01tutorial-project.html">01. 프로젝트 만들기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02tutorial-image.html">02. 이미지 띄워보기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03tutorial-image-animation.html">03. 애니메이션 효과 적용해보기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04tutorial-text.html">04. 대화,독백 그리고 텍스트 찍어보기</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="04tutorial-text.html#id4">먼저 대화 해보기</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04tutorial-text.html#id5">그리고 독백 해보기</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04tutorial-text.html#id6">마지막으로 텍스트 찍어보기</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="05tutorial-text-decoration.html">05. 대화창 꾸며보기</a></li>
-</ul>
+<span id="id2"></span><h1>01. 프로젝트 만들기<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>피니엔진을 시작하기에 처음으로 해야할 일은 프로젝트를 만드는 것 입니다. 프로젝트란 피니엔진으로 만들어지는 저작물에 대한 기본 단위 입니다.
+좀 더 단순하게 얘기하자면 게임 1개당 1개의 프로젝트를 만들어 작업을 하시면 됩니다.</p>
+<p>피니엔진을 실행 했을때 가장 먼저 볼 수 있는 화면은 아래와 같은 프로젝트 창입니다.
+프로젝트 창에선 기존에 만든 프로젝트를 열거나 새로운 프로젝트를 만들수 있습니다.</p>
+<a class="reference internal image-reference" href="http://i.imgur.com/APno6rW.png"><img alt="http://i.imgur.com/APno6rW.png" src="http://i.imgur.com/APno6rW.png" /></a>
+<p>일단 먼저 위 사진에서 빨간색 사각형 표시가 된 부분의 버튼을 눌러 프로젝트가 생성될 위치를 정해줍니다.
+그리고 주황색 사각형 표시가 된 부분의 &#8216;프로젝트 생성&#8217; 버튼을 누릅니다. 그러면 아래와 같은 창을 볼 수 있습니다.</p>
+<a class="reference internal image-reference" href="http://i.imgur.com/zOTzdHc.png"><img alt="http://i.imgur.com/zOTzdHc.png" src="http://i.imgur.com/zOTzdHc.png" /></a>
+<p>&#8216;프로젝트 이름&#8217; 오른쪽에 위치한 에디트 박스에 원하는 프로젝트 이름을 적어주도록 합시다.
+저는 &#8216;연습&#8217;이라고 적어봤습니다. 그런 후 밑에 있는 &#8216;생성&#8217; 버튼을 눌렀다면 아래와 같이 프로젝트 선택창에 새로운 프로젝트가 추가된 것을 확인할 수 있습니다.</p>
+<a class="reference internal image-reference" href="http://i.imgur.com/TE9Q7rV.png"><img alt="http://i.imgur.com/TE9Q7rV.png" src="http://i.imgur.com/TE9Q7rV.png" /></a>
+<p>프로젝트 리스트에서 방금 새롭게 추가된 프로젝트 이름을 더블클릭해 봅시다. (위 사진에서 빨간색 사각형 부분입니다.)</p>
+<p>그러면 아래의 사진과 같이 해당 프로젝트가 열려서 미리보기 화면과 LNX 스크립트 작성할 수 있는 창과 같이 본격적인 작업에 들어갈수 있습니다. 빨간색 사각형 부분을 보면 &#8216;메인.lnx&#8217; 라는 <a class="reference internal" href="../lnx-script/index.html#lnx"><em>LNX 스크립트</em></a> 가 자동적으로 생성되어 있는것을 확인하실수 있을것 입니다.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">기본적으로 프로젝트를 생성했을때 자동적으로 생성되는 &#8216;메인.lnx&#8217;파일은 피니엔진의 기본 실행 시작 지점입니다.</p>
 </div>
+<a class="reference internal image-reference" href="http://i.imgur.com/ARDXCmH.png"><img alt="http://i.imgur.com/ARDXCmH.png" src="http://i.imgur.com/ARDXCmH.png" /></a>
+<p>다음 2번째 튜토리얼( <a class="reference internal" href="04tutorial-text.html#id1"><em>02. 대화,독백 그리고 텍스트 찍어보기</em></a> ) 에선 기본으로 자주 쓰이는 대화,독백,텍스트 매크로의 사용법에 대해서 알아보도록 하겠습니다.</p>
 </div>
 
 
@@ -114,14 +120,14 @@ html *{
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../Getting-Started.html"
-                        title="previous chapter">시작하기!</a></p>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">튜토리얼</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="01tutorial-project.html"
-                        title="next chapter">01. 프로젝트 만들기</a></p>
+  <p class="topless"><a href="02tutorial-image.html"
+                        title="next chapter">02. 이미지 띄워보기</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../../_sources/pages/tutorial/index.txt"
+    <li><a href="../../_sources/pages/tutorial/01tutorial-project.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -148,12 +154,13 @@ html *{
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="01tutorial-project.html" title="01. 프로젝트 만들기"
+          <a href="02tutorial-image.html" title="02. 이미지 띄워보기"
              >next</a> |</li>
         <li class="right" >
-          <a href="../Getting-Started.html" title="시작하기!"
+          <a href="index.html" title="튜토리얼"
              >previous</a> |</li>
-        <li><a href="../../index.html">PiniEngine 1.0.0 documentation</a> &raquo;</li> 
+        <li><a href="../../index.html">PiniEngine 1.0.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" >튜토리얼</a> &raquo;</li> 
       </ul>
     </div>
 

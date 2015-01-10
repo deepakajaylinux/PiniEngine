@@ -3,24 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. _LNX_스크립트:
+.. _03_튜토리얼:
 
-LNX 스크립트
+03. 애니메이션 효과 적용해보기
 **********************************************
 
-LNX 스크립트는 피니 엔진에서 사용되는 스크립트 언어 입니다.
+이전 튜토리얼에선 이미지를 띄워 보았습니다. 피니엔진에선 이미지에 대해 :ref:`매크로_애니메이션` 를 이용하여 애니메이션 효과를 줄 수 있습니다.
 
-.. toctree::
-  :maxdepth: 2
-
-  syntax
-  text
-  image
-  animation
-  sound
-  video
-  timer
-  save-and-load
-  screenshot
-  system
-  data-structure
