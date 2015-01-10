@@ -22,7 +22,7 @@
    :maxdepth: 2
    
    pages/Getting-Started
-   pages/tutorial
+   pages/tutorial/index
    pages/lnx-script/index
    pages/export
    pages/user-feedback
