@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. _02_튜토리얼:
+.. _04_튜토리얼:
 
-02. 대화,독백 그리고 텍스트 찍어보기
+04. 대화,독백 그리고 텍스트 찍어보기
 **********************************************
 
 피니엔진은 비주얼 노벨 게임 장르에 특화된 게임 엔진인 만큼 해당 장르에서 자주 쓰여 정형화된 기능들을 좀 더 쓰기 쉽게
