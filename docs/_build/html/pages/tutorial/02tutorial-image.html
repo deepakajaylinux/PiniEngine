@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>02. 이미지 띄워보기 &mdash; PiniEngine 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="PiniEngine 1.0.0 documentation" href="../../index.html" />
+    <link rel="up" title="튜토리얼" href="index.html" />
+    <link rel="next" title="03. 애니메이션 효과 적용해보기" href="03tutorial-image-animation.html" />
+    <link rel="prev" title="01. 프로젝트 만들기" href="01tutorial-project.html" />
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-58077189-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<style>
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+html *{
+    font-family: 'Nanum Gothic', serif;
+}
+</style>
+
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="03tutorial-image-animation.html" title="03. 애니메이션 효과 적용해보기"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="01tutorial-project.html" title="01. 프로젝트 만들기"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">PiniEngine 1.0.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">튜토리얼</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+
+  
+  <div class="section" id="id1">
+<span id="id2"></span><h1>02. 이미지 띄워보기<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>이번 튜토리얼 부터는 <a class="reference internal" href="../lnx-script/index.html#lnx"><em>LNX 스크립트</em></a> 를 사용하여 엔진 주요 기능들을 하나씩 살펴보려 합니다.
+해당 튜토리얼을 읽기 전에 먼저 <a class="reference internal" href="../lnx-script/index.html#lnx"><em>LNX 스크립트</em></a> 의 <a class="reference internal" href="../lnx-script/syntax.html#lnx"><em>기본 문법</em></a> 문서를 먼저 읽어보시면
+앞으로 진행될 튜토리얼을 이해 하시는데 도움이 됩니다.</p>
+<p>가장 먼저 이미지를 띄워보도록 합시다. 아래 사진은 <a class="reference internal" href="01tutorial-project.html#id1"><em>01. 프로젝트 만들기</em></a> 에서 만들었던 &#8216;연습&#8217;프로젝트의 폴더 구조를 나타냅니다.
+여기서 먼저 띄어보고 싶은 이미지를 사진에서 빨간색 네모 표시가 있는 &#8216;image&#8217;폴더에 넣어보도록 합시다.
+이번 튜토리얼에선 일단 기본 제공되는 &#8216;집나간 멍구&#8217; 예제의 이미지를 끌어와서 써보도록 하겠습니다.</p>
+<a class="reference internal image-reference" href="http://i.imgur.com/FNgKQ9J.png"><img alt="http://i.imgur.com/FNgKQ9J.png" src="http://i.imgur.com/FNgKQ9J.png" /></a>
+<p>아래와 같이 스크립트 편집창에서 <a class="reference internal" href="../lnx-script/image.html#id2"><em>이미지 매크로</em></a> 를 입력하여 이미지를 띄워봅시다.
+<tt class="docutils literal"><span class="pre">아이디</span></tt> 와 <tt class="docutils literal"><span class="pre">파일명</span></tt> 필수 매개변수이기 때문에 일단 이를 꼭 포함하여 매크로를 호출 해주어야 합니다.
+아래에선 <tt class="docutils literal"><span class="pre">효과</span></tt> 매개변수에 &#8220;페이드&#8221;라는 기본적인 효과를 전달해 보았습니다.</p>
+<a class="reference internal image-reference" href="http://i.imgur.com/HxqOQh2.png"><img alt="http://i.imgur.com/HxqOQh2.png" src="http://i.imgur.com/HxqOQh2.png" /></a>
+<p>위치와 크기를 다르게 하여 이미지를 두장 장 더 띄워 보도록 하겠습니다.</p>
+<a class="reference internal image-reference" href="http://i.imgur.com/H848olA.png"><img alt="http://i.imgur.com/H848olA.png" src="http://i.imgur.com/H848olA.png" /></a>
+<p>스크립트를 편집창에 작성 하셨다면 키보드의 F5버튼 혹은 메뉴에 &#8216;테스트 - 바로 테스트 F5&#8217;을 눌러서 어떻게 동작 하는지
+확인 해보도록 합시다.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">만약 스크립트에 아무 문제가 없는데도 정상적으로 동작하지 않는다면 &#8216;컨트롤+S버튼&#8217; 혹은 메뉴에 &#8216;파일 - 저장&#8217;버튼을
+눌러 한번 더 저장후 실행해 보시길 바랍니다.</p>
+</div>
+<p>그리고 <a class="reference internal" href="../lnx-script/image.html#id2"><em>이미지 매크로</em></a> 의 매개변수를 이것저것 넣어 어떻게 동작되는지 한번 확인 해보도록 합시다. 아래 리스트를 참고하시길 바랍니다.</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">효과</span></tt> 매개변수에 <a class="reference internal" href="../lnx-script/data-structure.html#id23"><em>노드입장효과</em></a> 들을 넣어봅시다.</li>
+<li><tt class="docutils literal"><span class="pre">크기</span></tt> 매개변수에 <a class="reference internal" href="../lnx-script/data-structure.html#id17"><em>크기</em></a> 들을 넣어봅시다.</li>
+<li><tt class="docutils literal"><span class="pre">위치</span></tt> 매개변수에 <a class="reference internal" href="../lnx-script/data-structure.html#id7"><em>위치</em></a> 들을 넣어봅시다.</li>
+</ul>
+<p>다음 튜토리얼에선 띄운 이미지에 애니메이션 효과를 적용해보도록 하겠습니다.</p>
+</div>
+
+
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'pinienginedocs'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="01tutorial-project.html"
+                        title="previous chapter">01. 프로젝트 만들기</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="03tutorial-image-animation.html"
+                        title="next chapter">03. 애니메이션 효과 적용해보기</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/pages/tutorial/02tutorial-image.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="03tutorial-image-animation.html" title="03. 애니메이션 효과 적용해보기"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="01tutorial-project.html" title="01. 프로젝트 만들기"
+             >previous</a> |</li>
+        <li><a href="../../index.html">PiniEngine 1.0.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" >튜토리얼</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2014, Nooslab.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-58077189-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

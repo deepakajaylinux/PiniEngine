@@ -6,26 +6,27 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>시작하기! &mdash; PiniEngine 1.0.0 documentation</title>
+    <title>04. 대화,독백 그리고 텍스트 찍어보기 &mdash; PiniEngine 1.0.0 documentation</title>
     
-    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
+        URL_ROOT:    '../../',
         VERSION:     '1.0.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="PiniEngine 1.0.0 documentation" href="../index.html" />
-    <link rel="next" title="튜토리얼" href="tutorial/index.html" />
-    <link rel="prev" title="피니 엔진을 사용하게 되신것을 환영합니다!" href="../index.html" />
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="PiniEngine 1.0.0 documentation" href="../../index.html" />
+    <link rel="up" title="튜토리얼" href="index.html" />
+    <link rel="next" title="05. 대화창 꾸며보기" href="05tutorial-text-decoration.html" />
+    <link rel="prev" title="03. 애니메이션 효과 적용해보기" href="03tutorial-image-animation.html" />
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-58077189-1']);
@@ -52,15 +53,16 @@ html *{
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
+          <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="tutorial/index.html" title="튜토리얼"
+          <a href="05tutorial-text-decoration.html" title="05. 대화창 꾸며보기"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../index.html" title="피니 엔진을 사용하게 되신것을 환영합니다!"
+          <a href="03tutorial-image-animation.html" title="03. 애니메이션 효과 적용해보기"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">PiniEngine 1.0.0 documentation</a> &raquo;</li> 
+        <li><a href="../../index.html">PiniEngine 1.0.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">튜토리얼</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -72,13 +74,29 @@ html *{
 
   
   <div class="section" id="id1">
-<h1>시작하기!<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>피니 엔진에선 자체 개발한 <em>LNX 스크립트</em> 로 불리는 강력한 한글 스크립트를 사용하여 게임을 개발하게 됩니다.
-또한 툴 내의 스크립트 편집기에선 실시간으로 문법 에러를 알려주며 스크립트에 작성된 변수나 매크로 그리고
-북마크와 같은 예약어들,문자열,숫자들에 대해 각각 다른 색으로 표시하여 더욱 가독성 높은 개발을 가능하게 합니다.</p>
-<p>피니엔진을 시작하시는 분들을 위하여 간단한 기능부터 하나 하나 설명해나가는 <a class="reference internal" href="tutorial/index.html#id1"><em>튜토리얼</em></a> 문서가 준비되어 있으니
-참고 부탁 드립니다. 또한 피니엔진이 설치된 위치에는 &#8216;UI샘플&#8217; 예제와 &#8216;집나간 멍구&#8217; 예제가 있으니 이를 참고하시어
-좀 더 쉽게 피니엔진의 사용법을 익히실수 있을 겁니다.</p>
+<span id="id2"></span><h1><a class="toc-backref" href="#id7">04. 대화,독백 그리고 텍스트 찍어보기</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>피니엔진은 비주얼 노벨 게임 장르에 특화된 게임 엔진인 만큼 해당 장르에서 자주 쓰여 정형화된 기능들을 좀 더 쓰기 쉽게
+가공하여 제공하고 있습니다. 여기선 그러한 특징들중 대화와 같은 텍스트 중심의 기능들의 사용법에 대해서 설명 드리고자 합니다.</p>
+<div class="contents topic" id="id3">
+<p class="topic-title first">목차</p>
+<ul class="simple">
+<li><a class="reference internal" href="#id1" id="id7">04. 대화,독백 그리고 텍스트 찍어보기</a><ul>
+<li><a class="reference internal" href="#id4" id="id8">먼저 대화 해보기</a></li>
+<li><a class="reference internal" href="#id5" id="id9">그리고 독백 해보기</a></li>
+<li><a class="reference internal" href="#id6" id="id10">마지막으로 텍스트 찍어보기</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2><a class="toc-backref" href="#id8">먼저 대화 해보기</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id5">
+<h2><a class="toc-backref" href="#id9">그리고 독백 해보기</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id6">
+<h2><a class="toc-backref" href="#id10">마지막으로 텍스트 찍어보기</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -104,20 +122,30 @@ html *{
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">04. 대화,독백 그리고 텍스트 찍어보기</a><ul>
+<li><a class="reference internal" href="#id4">먼저 대화 해보기</a></li>
+<li><a class="reference internal" href="#id5">그리고 독백 해보기</a></li>
+<li><a class="reference internal" href="#id6">마지막으로 텍스트 찍어보기</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../index.html"
-                        title="previous chapter">피니 엔진을 사용하게 되신것을 환영합니다!</a></p>
+  <p class="topless"><a href="03tutorial-image-animation.html"
+                        title="previous chapter">03. 애니메이션 효과 적용해보기</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="tutorial/index.html"
-                        title="next chapter">튜토리얼</a></p>
+  <p class="topless"><a href="05tutorial-text-decoration.html"
+                        title="next chapter">05. 대화창 꾸며보기</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../_sources/pages/Getting-Started.txt"
+    <li><a href="../../_sources/pages/tutorial/04tutorial-text.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
-    <form class="search" action="../search.html" method="get">
+    <form class="search" action="../../search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
@@ -136,15 +164,16 @@ html *{
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
+          <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="tutorial/index.html" title="튜토리얼"
+          <a href="05tutorial-text-decoration.html" title="05. 대화창 꾸며보기"
              >next</a> |</li>
         <li class="right" >
-          <a href="../index.html" title="피니 엔진을 사용하게 되신것을 환영합니다!"
+          <a href="03tutorial-image-animation.html" title="03. 애니메이션 효과 적용해보기"
              >previous</a> |</li>
-        <li><a href="../index.html">PiniEngine 1.0.0 documentation</a> &raquo;</li> 
+        <li><a href="../../index.html">PiniEngine 1.0.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" >튜토리얼</a> &raquo;</li> 
       </ul>
     </div>
 
