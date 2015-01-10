@@ -25,7 +25,7 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="top" title="PiniEngine 1.0.0 documentation" href="../../index.html" />
     <link rel="up" title="튜토리얼" href="index.html" />
-    <link rel="next" title="05. 대화창 꾸며보기" href="05tutorial-text-decoration.html" />
+    <link rel="next" title="LNX 스크립트" href="../lnx-script/index.html" />
     <link rel="prev" title="03. 애니메이션 효과 적용해보기" href="03tutorial-image-animation.html" />
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -56,7 +56,7 @@ html *{
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="05tutorial-text-decoration.html" title="05. 대화창 꾸며보기"
+          <a href="../lnx-script/index.html" title="LNX 스크립트"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="03tutorial-image-animation.html" title="03. 애니메이션 효과 적용해보기"
@@ -83,7 +83,7 @@ html *{
 <ul class="simple">
 <li><a class="reference internal" href="#id1" id="id7">04. 대화,독백 그리고 텍스트 찍어보기</a><ul>
 <li><a class="reference internal" href="#id4" id="id8">먼저 대화 해보기</a></li>
-<li><a class="reference internal" href="#id5" id="id9">그리고 독백 해보기</a></li>
+<li><a class="reference internal" href="#id5" id="id9">이어서 독백을 해보기</a></li>
 <li><a class="reference internal" href="#id6" id="id10">마지막으로 텍스트 찍어보기</a></li>
 </ul>
 </li>
@@ -99,9 +99,21 @@ html *{
 
     copyClipboard("text-example1",code)
 </script><a class="reference internal image-reference" href="http://i.imgur.com/34m344P.png"><img alt="http://i.imgur.com/34m344P.png" src="http://i.imgur.com/34m344P.png" /></a>
+<p>캐릭터들을 설치했다면 아래와 같이 스크립트를 작성하여 대화를 해봅시다.</p>
+<button id="text-example2">예제 복사하기</button>
+
+<script>
+    var code = "[이미지 아이디=\"배경\" 파일명=\"복도3.png\" 효과=\"페이드\" 크기=\"화면맞춤\"]\n\n[이미지 아이디=\"피니\" 파일명=\"피니_노멀.png\"  크기=\"0.65,0.65\" 위치=\"100,410\"]\n[이미지 아이디=\"석대\" 파일명=\"석대_짜증.png\" 크기=\"0.7,0.7\" 위치=\"680,410\"]\n\n[대화창수정 아이디=\"대화\" 이미지=\"textArea.png\" 색상=\"255,255,255,255\" 위치=\"0,700\" 영역=\"800,300\"  여백=\"30,40\" ]\n[대화창수정 아이디=\"대화\" 이름창이미지=\"nameLabel.png\" 이름창색상=\"255,255,255,255\" 이름창위치=\"20,480\" 이름창폰트크기=\"30\" 이름창폰트색상=\"97,68,36,255\" ]\n\n[대화 이름=\"피니\" ]\n;안녕 이름이 뭐니?\n[대화 이름=\"석대\" ]\n;난 석대라고 한다.";
+
+    copyClipboard("text-example2",code)
+</script><a class="reference internal image-reference" href="http://i.imgur.com/oJR3XvK.png"><img alt="http://i.imgur.com/oJR3XvK.png" src="http://i.imgur.com/oJR3XvK.png" /></a>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="../lnx-script/text.html#id12"><em>대화창수정 매크로</em></a> 을 사용하여 대화창과 이어서 나올 독백창을 커스터마이징 할 수 있습니다.</p>
+</div>
 </div>
 <div class="section" id="id5">
-<h2><a class="toc-backref" href="#id9">그리고 독백 해보기</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">이어서 독백을 해보기</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>ㅁㅁㅁㅁ</p>
 </div>
 <div class="section" id="id6">
@@ -137,7 +149,7 @@ html *{
   <ul>
 <li><a class="reference internal" href="#">04. 대화,독백 그리고 텍스트 찍어보기</a><ul>
 <li><a class="reference internal" href="#id4">먼저 대화 해보기</a></li>
-<li><a class="reference internal" href="#id5">그리고 독백 해보기</a></li>
+<li><a class="reference internal" href="#id5">이어서 독백을 해보기</a></li>
 <li><a class="reference internal" href="#id6">마지막으로 텍스트 찍어보기</a></li>
 </ul>
 </li>
@@ -147,8 +159,8 @@ html *{
   <p class="topless"><a href="03tutorial-image-animation.html"
                         title="previous chapter">03. 애니메이션 효과 적용해보기</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="05tutorial-text-decoration.html"
-                        title="next chapter">05. 대화창 꾸며보기</a></p>
+  <p class="topless"><a href="../lnx-script/index.html"
+                        title="next chapter">LNX 스크립트</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../../_sources/pages/tutorial/04tutorial-text.txt"
@@ -178,7 +190,7 @@ html *{
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="05tutorial-text-decoration.html" title="05. 대화창 꾸며보기"
+          <a href="../lnx-script/index.html" title="LNX 스크립트"
              >next</a> |</li>
         <li class="right" >
           <a href="03tutorial-image-animation.html" title="03. 애니메이션 효과 적용해보기"

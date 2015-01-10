@@ -17,4 +17,3 @@
   02tutorial-image
   03tutorial-image-animation
   04tutorial-text
-  05tutorial-text-decoration
