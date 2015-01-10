@@ -11,7 +11,7 @@
 본 내용은 피니엔진을 처음 접하거나 아직은 미숙한 분들을 위해 작성된 튜토리얼 입니다.
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
   01tutorial-project
   02tutorial-image
