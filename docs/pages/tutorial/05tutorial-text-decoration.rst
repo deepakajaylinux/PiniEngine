@@ -3,6 +3,6 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-03. 애니메이션 효과 적용해보기
+05. 대화창 꾸며보기
 **********************************************
 

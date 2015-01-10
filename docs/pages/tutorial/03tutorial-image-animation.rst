@@ -3,6 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-04. 대화창 꾸며보기
+03. 애니메이션 효과 적용해보기
 **********************************************
+
+이전 튜토리얼에선 이미지를 띄워 보았습니다. 피니엔진에선 이미지에 대해 :ref:`매크로_애니메이션` 를 이용하여 애니메이션 효과를 줄 수 있습니다.
 

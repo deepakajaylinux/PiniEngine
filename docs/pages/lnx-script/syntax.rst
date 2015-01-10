@@ -8,6 +8,8 @@
     <script src="../../_static/zeroclipboard/ZeroClipboard.js"></script>
     <script src="../../_static/copyClipboard.js"></script>
 
+.. _LNX_스크립트_기본문법:
+
 기본 문법
 **************************************
 

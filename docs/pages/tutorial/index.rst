@@ -3,6 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. _튜토리얼:
+
 튜토리얼
 **********************************************
 
@@ -11,7 +13,8 @@
 .. toctree::
   :maxdepth: 2
 
-  01tutorial
-  02tutorial
-  03tutorial
-  04tutorial
+  01tutorial-project
+  02tutorial-image
+  03tutorial-image-animation
+  04tutorial-text
+  05tutorial-text-decoration
