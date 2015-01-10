@@ -73,29 +73,21 @@ html *{
             
 
   
-  <script src="../../_static/zeroclipboard/ZeroClipboard.js"></script>
-<script src="../../_static/copyClipboard.js"></script><div class="section" id="id1">
+  <div class="section" id="id1">
 <span id="id2"></span><h1>03. 애니메이션 효과 적용해보기<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>이전 튜토리얼에선 이미지를 띄워 보았습니다. 피니엔진에선 이미지에 대해 <a class="reference internal" href="../lnx-script/animation.html#id2"><em>애니메이션 매크로</em></a> 를 이용하여 애니메이션 효과를 줄 수 있습니다.
-아래에선 멍구 이미지에 &#8220;상하흔들기&#8221; 애니메이션 효과를 주어 보았습니다.</p>
-<button id="text-animation-example1">예제 복사하기</button>
-<script>
-    var code = "[이미지 아이디=\"멍구2\" 파일명=\"멍구2.png\" 효과=\"페이드\" ]\n\n[애니메이션 아이디=\"멍구2\" 타입=\"상하흔들기\" 폭=50 횟수=3 시간=2 가속=\"사인인\"]\n\n[이미지 아이디=\"피니\" 파일명=\"피니_노멀.png\"  크기=\"0.65,0.65\" 위치=\"100,410\"]\n[이미지 아이디=\"석대\" 파일명=\"석대_짜증.png\" 크기=\"0.7,0.7\" 위치=\"680,410\"]";
-
-    copyClipboard("text-animation-example1",code)
-</script><a class="reference internal image-reference" href="http://i.imgur.com/k2LVfeu.png"><img alt="http://i.imgur.com/k2LVfeu.png" src="http://i.imgur.com/k2LVfeu.png" /></a>
+<p>이전 튜토리얼에선 이미지를 띄워 보았습니다. 피니엔진에선 이미지에 대해 <a class="reference internal" href="../lnx-script/animation.html#id2"><em>애니메이션 매크로</em></a> 를 이용하여 애니메이션 효과를 줄 수 있습니다.</p>
+<p>아래에선 멍구 이미지에 &#8220;상하흔들기&#8221; 애니메이션 효과를 주어 보았습니다.</p>
+<a class="reference internal image-reference" href="http://i.imgur.com/k2LVfeu.png"><img alt="http://i.imgur.com/k2LVfeu.png" src="http://i.imgur.com/k2LVfeu.png" /></a>
 <p>좀 더 다양한 애니메이션 효과를 확인해보도록 합시다. 아래에선 피니,석대 캐릭터에 각각 걷기와 색상 애니메이션 효과를 주어보았습니다.</p>
-<button id="text-animation-example2">예제 복사하기</button>
-<script>
-    var code = "[이미지 아이디=\"멍구2\" 파일명=\"멍구2.png\" 효과=\"페이드\" ]\n\n[애니메이션 아이디=\"멍구2\" 타입=\"상하흔들기\" 폭=50 횟수=3 시간=2 가속=\"사인인\"]\n\n[이미지 아이디=\"피니\" 파일명=\"피니_노멀.png\"  크기=\"0.65,0.65\" 위치=\"100,410\"]\n[이미지 아이디=\"석대\" 파일명=\"석대_짜증.png\" 크기=\"0.7,0.7\" 위치=\"680,410\"]\n\n[클릭대기]\n[애니메이션 아이디=\"피니\" 타입=\"걷기\" 횟수=4 폭=20 확대=\"1.2,1.2\" 시간=1 가속=\"사인인\"]\n\n[클릭대기]\n[애니메이션 아이디=\"석대\" 타입=\"색상\" 시간=1.2 색상=\"255,0,0\" 가속=\"사인인\"]\n[대기 시간=2]\n[애니메이션 아이디=\"석대\" 타입=\"색상\" 시간=1.2 색상=\"255,255,255\" 가속=\"사인인\"]";
-
-    copyClipboard("text-animation-example2",code)
-</script><a class="reference internal image-reference" href="http://i.imgur.com/O29kEVd.png"><img alt="http://i.imgur.com/O29kEVd.png" src="http://i.imgur.com/O29kEVd.png" /></a>
+<a class="reference internal image-reference" href="http://i.imgur.com/O29kEVd.png"><img alt="http://i.imgur.com/O29kEVd.png" src="http://i.imgur.com/O29kEVd.png" /></a>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <p class="last">스크립트 실행중에 <a class="reference internal" href="../lnx-script/system.html#id8"><em>클릭대기 매크로</em></a> 를 만나게 되면 클릭할때 까지 대기 상태에 들어갑니다.
 또한 <a class="reference internal" href="../lnx-script/system.html#id10"><em>대기 매크로</em></a> 를 사용하면 원하는 시간 만큼 대기 할 수 있습니다.</p>
 </div>
+<p>스크립트를 편집창에 작성 하셨다면 키보드의 F5버튼 혹은 메뉴에 &#8216;테스트 - 바로 테스트 F5&#8217;을 눌러서 어떻게 동작 하는지 확인 해보도록 합시다.
+그리고 <a class="reference internal" href="../lnx-script/animation.html#id2"><em>애니메이션 매크로</em></a> 의 <tt class="docutils literal"><span class="pre">타입</span></tt> 매개변수에 <a class="reference internal" href="../lnx-script/data-structure.html#id34"><em>애니메이션효과</em></a> 를 이것저것 넣어 어떻게 동작되는지 한번 확인 해보도록 합시다.</p>
+<p>다음 튜토리얼에선 대화 관련 함수를 이용해 글씨를 띄우는 방법을 배워보도록 하겠습니다.</p>
 </div>
 
 
