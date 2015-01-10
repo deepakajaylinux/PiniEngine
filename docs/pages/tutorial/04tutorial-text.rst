@@ -3,6 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. raw:: html
+
+    <script src="../../_static/zeroclipboard/ZeroClipboard.js"></script>
+    <script src="../../_static/copyClipboard.js"></script>
+
 .. _04_튜토리얼:
 
 04. 대화,독백 그리고 텍스트 찍어보기
@@ -15,9 +20,25 @@
 
 먼저 대화 해보기
 ==============================================
+일단 저번 시간에 배웠듯이 배경과 캐릭터들을 :ref:`매크로_이미지` 를 이용하여 설치 해봅시다.
+
+.. raw:: html
+
+    <button id="text-example1">예제 복사하기</button>
+
+    <script>
+        var code = "[이미지 아이디=\"배경\" 파일명=\"복도3.png\" 효과=\"페이드\" 크기=\"화면맞춤\"]\n\n[이미지 아이디=\"피니\" 파일명=\"피니_노멀.png\"  크기=\"0.65,0.65\" 위치=\"100,410\"]\n[이미지 아이디=\"석대\" 파일명=\"석대_짜증.png\" 크기=\"0.7,0.7\" 위치=\"680,410\"]";
+        
+        copyClipboard("text-example1",code)
+    </script>
+
+.. image:: http://i.imgur.com/34m344P.png
+    :scale: 100%
 
 그리고 독백 해보기
 ==============================================
+ㅁㅁㅁㅁ
 
 마지막으로 텍스트 찍어보기
 ==============================================
+ㅁㅁㅁㅁ
