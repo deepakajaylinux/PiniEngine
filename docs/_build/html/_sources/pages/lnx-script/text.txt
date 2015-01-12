@@ -96,12 +96,12 @@
     <button id="dialog-example">예제 복사하기</button>
 
     <script>
-        code = "[이미지 아이디=\"멍구1\" 파일명=\"멍구1.png\" 크기=\"화면맞춤\" 효과=\"줌아웃페이드\"]\n\n[대화 이름=\"멍구\"]\n\t킁..<클릭> 킁킁..<클릭> 킁킁킁.. <클릭> 킁킁킁킁.. <클릭> 킁킁킁킁킁킁킁킁..!!!!!!";
+        code = "[이미지 아이디=\"멍구1\" 파일명=\"멍구1.png\" 크기=\"화면맞춤\" 효과=\"줌아웃페이드\"]\n\n[대화 이름=\"멍구\"]\n;킁..<클릭> 킁킁..<클릭> 킁킁킁.. <클릭> 킁킁킁킁.. <클릭> 킁킁킁킁킁킁킁킁..!!!!!!";
         
         copyClipboard("dialog-example",code);
     </script>
 
-.. image:: /images/example_dialog.png
+.. image:: http://i.imgur.com/SBjYVlA.png
     :scale: 100%
 .. image:: /images/example_dialog.gif
     :scale: 100%
@@ -130,12 +130,12 @@
     <button id="monologue-example">예제 복사하기</button>
 
     <script>
-        code = "[이미지 아이디=\"멍구1\" 파일명=\"멍구1.png\" 크기=\"화면맞춤\" 효과=\"줌아웃페이드\"]\n\n[독백 이름=\"멍구\"]\n\t왠지 킁킁거리고 싶어지는 걸?? <클릭>\n\t내 이름은 멍구다. 킁킁거리길 제일 잘하지!<클릭>";
+        code = "[이미지 아이디=\"멍구1\" 파일명=\"멍구1.png\" 크기=\"화면맞춤\" 효과=\"줌아웃페이드\"]\n\n[독백 이름=\"멍구\"]\n;왠지 킁킁거리고 싶어지는 걸?? <클릭>\n;내 이름은 멍구다. 킁킁거리길 제일 잘하지!<클릭>";
         
         copyClipboard("monologue-example",code);
     </script>
 
-.. image:: /images/example_monologue.png
+.. image:: http://i.imgur.com/u9fCzRb.png
     :scale: 100%
 .. image:: /images/example_monologue.gif
     :scale: 100%

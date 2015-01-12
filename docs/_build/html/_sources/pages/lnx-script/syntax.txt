@@ -67,7 +67,7 @@ LNX 스크립트 매크로의 개념은 `기존 프로그래밍 언어에 존재
         copyClipboard("syntax-keep-property-example",code);
     </script>
 
-.. image:: http://i.imgur.com/p1u9D9b.png
+.. image:: http://i.imgur.com/ixmWvfT.png
     :scale: 100%
 
 .. image:: http://i.imgur.com/C6NwLZY.gif
@@ -99,6 +99,16 @@ LNX 스크립트 매크로의 개념은 `기존 프로그래밍 언어에 존재
 매크로 선언 및 정의
 ---------------------------------------
 피니엔진이 기본으로 제공하느 매크로 외에 사용자가 직접 매크로를 만들어서 사용할 수 있습니다.
+
+.. raw:: html
+
+    <button id="syntax-custom-macro-example">예제 복사하기</button>
+
+    <script>
+        code = "@매크로 피니대화창_색상변경:\n\t[대화창수정 아이디=\"피니\" 이미지=\"textArea.png\" 색상=대호창색상]\n\t[효과음 아이디=\"왈\" 파일명=\"으르르.mp3\" ]\n\t\n[피니대화창_수정 대화창색상=\"0,0,0,255\"]";
+        
+        copyClipboard("syntax-custom-macro-example",code);
+    </script>
 
 .. image:: http://i.imgur.com/SeOSlOq.png
     :scale: 100%
@@ -223,7 +233,17 @@ LNX스크립트에는 프로그래밍 언어에서 대개 지원하는 변수의
 북마크 선언은 아래와 같이 :(콜론)과 원하는 북마크 이름을 적으면 됩니다.
 또한 실행 시점을 원하는 특정 북마크로 이동하고 싶다면 >(부등호)와 원하는 북마크 이름을 적으면 됩니다.
 
-.. image:: http://i.imgur.com/hhGAn5U.png
+.. raw:: html
+
+    <button id="syntax-bookmark-example">예제 복사하기</button>
+
+    <script>
+        code = ":게임시작\n\n[이미지 아이디=\"멍구1\" 파일명=\"멍구1.png\"  크기=\"화면맞춤\" 효과=\"줌아웃페이드\"]\n\n[독백 이름=\"멍구\"]\n;왠지 킁킁거리고 싶어지는 걸?? <클릭>\n;내 이름은 멍구다. 킁킁거리길 제일 잘하지!<클릭>\n\n#게임시작으로 돌아가기\n>게임시작";
+        
+        copyClipboard("syntax-bookmark-example",code);
+    </script>
+
+.. image:: http://i.imgur.com/46aso1Q.png
     :scale: 100%
 
 엔진상의 스크립트 에디터 창에선 위의 예제 사진에서 보이듯이 북마크 선언 혹은 북마크 이동을 하는 스크립트가 있는 라인에 커서가 있으면 해당 북마크가 어디어디에 있는지 표시해 줍니다.
