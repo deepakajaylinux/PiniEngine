@@ -40,6 +40,19 @@
 .. image:: http://i.imgur.com/Nr7naIK.png
     :scale: 100%
 
+그러곤 조금 기다리시면 아래와 같은 창을 보실수 있으실 겁니다.
+
+.. image:: http://imgur.com/XCsbUG9
+    :scale: 100%
+
+여기서 '인스톨러 생성' 버튼을 누르시면 아래와 같은 화면을 보실수 있습니다.
+
+.. image:: http://i.imgur.com/G3ucZ9b.png
+    :scale: 100%
+
+그리곤 또 한번 더 '인스톨러 생성' 버튼을 누르시면 아까 전 익스포트 '저장위치'로 정해 놓으신 경로에서 'installer.exe' 파일이 있는것을 확인할 수 있을겁니다.
+
+
 ----------
 
 안드로이드 내보내기
