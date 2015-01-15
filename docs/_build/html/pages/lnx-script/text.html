@@ -210,7 +210,7 @@ html *{
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>아이디</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 대화창의 고유 아이디입니다. 속성을 수정하고 싶은 대화창의 아이디를 전달해야 합니다.</li>
-<li><strong>여백</strong> (<a class="reference internal" href="data-structure.html#id17"><em>크기</em></a>) &#8211; <tt class="docutils literal"><span class="pre">위치</span></tt> 매개변수로 전달된 대화창의 위치가 대화 텍스트가 보이게 될 기준입니다. 해당 매개변수로 전달된 여백의 너비와 높이 만큼 <a href="#id14"><span class="problematic" id="id15">``</span></a>위치``에서 여백을 두고 대화 텍스트가 보여지게 됩니다.</li>
+<li><strong>여백</strong> (<a class="reference internal" href="data-structure.html#id17"><em>크기</em></a>) &#8211; <tt class="docutils literal"><span class="pre">위치</span></tt> 매개변수로 전달된 대화창의 위치가 대화 텍스트가 보이게 될 기준입니다. 해당 매개변수로 전달된 여백의 너비와 높이 만큼 <tt class="docutils literal"><span class="pre">위치</span></tt> 에서 여백을 두고 대화 텍스트가 보여지게 됩니다.</li>
 <li><strong>영역</strong> (<a class="reference internal" href="data-structure.html#id17"><em>크기</em></a>) &#8211; 대화창의 영역 크기를 지정할 수 있습니다. <tt class="docutils literal"><span class="pre">위치</span></tt> 매개변수를 기준으로 <tt class="docutils literal"><span class="pre">영역</span></tt> 매개변수로 넘어온 너비와 높이만큼에만 &#8216;대화&#8217;가 보일수 있습니다.</li>
 <li><strong>위치</strong> (<a class="reference internal" href="data-structure.html#id7"><em>위치</em></a>) &#8211; 대화창의 위치를 지정할 수 있습니다. <tt class="docutils literal"><span class="pre">이미지</span></tt> 매개변수로 들어온 대화창 이미지가 어디서 부터 보일 것인지 지정하게 됩니다.</li>
 <li><strong>색상</strong> (<a class="reference internal" href="data-structure.html#id14"><em>색상</em></a>) &#8211; 대화창의 색상을 지정할 수 있습니다.</li>
@@ -228,7 +228,7 @@ html *{
 <li><strong>이름창폰트</strong> (<em>문자열</em>) &#8211; 이름창에 표시될 이름 텍스트의 폰트를 지정할 수 있습니다.</li>
 <li><strong>연결이미지</strong> (<em>문자열</em>) &#8211; 연결 선택지의 기본 이미지를 지정할 수 있습니다. 확장자를 포함한 이미지의 파일명을 전달해야 합니다.</li>
 <li><strong>연결색상</strong> (<a class="reference internal" href="data-structure.html#id14"><em>색상</em></a>) &#8211; <tt class="docutils literal"><span class="pre">연결색상</span></tt> 매개변수를 사용하기 위해선 <tt class="docutils literal"><span class="pre">연결이미지</span></tt> 와 <tt class="docutils literal"><span class="pre">연결선택시이미지</span></tt> 를 지정하면 안됩니다. <tt class="docutils literal"><span class="pre">연결색상</span></tt> 을 지정해주면 각각의 선택지 텍스트에 배경색이 입혀지게 됩니다.</li>
-<li><strong>연결넓이맞춤</strong> &#8211; </li>
+<li><strong>연결넓이맞춤</strong> &#8211; 선택지 분기의 너비를 동일하게 맞춰 줄것인지에 대해 지정할 수 있습니다.</li>
 <li><strong>연결선택시이미지</strong> &#8211; 연결 선택지를 선택 하였을 경우의 이미지를 지정할 수 있습니다. 확장자를 포함한 이미지의 파일명을 전달해야 합니다.</li>
 </ul>
 </td>
@@ -238,8 +238,8 @@ html *{
 <p>아래와 같이 동일 아이디의 대화창 속성을 여러번에 걸쳐 나누어 적용하면 스크립트를 훨씬 보기 편하게 작성할 수 있습니다.</p>
 </dd></dl>
 
-<div class="section" id="id16">
-<h3>연결 관련 매개변수<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id14">
+<h3>연결 관련 매개변수<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
 <p><tt class="docutils literal"><span class="pre">연결이미지</span></tt> , <tt class="docutils literal"><span class="pre">연결색상</span></tt> , <tt class="docutils literal"><span class="pre">연결넓이맞춤</span></tt> , <tt class="docutils literal"><span class="pre">연결선택시이미지</span></tt> 와 같은 연결 관련 매개변수를 사용하면
 아래와 같은 선택지 관련 화면을 구성 할 수 있습니다. 아래는 피니엔진에 기본적으로 같이 제공되는 &#8216;집나간 멍구&#8217; 예제의 한부분을 참조 하였습니다.</p>
 <button id="dialog-window-modified-example1">예제 복사하기</button>
@@ -251,16 +251,16 @@ html *{
 </script><a class="reference internal image-reference" href="http://i.imgur.com/I1IzMBe.png"><img alt="http://i.imgur.com/I1IzMBe.png" src="http://i.imgur.com/I1IzMBe.png" /></a>
 <a class="reference internal image-reference" href="http://i.imgur.com/IE06iTD.png"><img alt="http://i.imgur.com/IE06iTD.png" src="http://i.imgur.com/IE06iTD.png" /></a>
 </div>
-<div class="section" id="id17">
-<h3>연결넓이맞춤 매개변수<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id15">
+<h3>연결넓이맞춤 매개변수<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
 <p><tt class="docutils literal"><span class="pre">연결넓이맞춤</span></tt> 매개변수는 <a class="reference internal" href="#id9"><em>독백 매크로</em></a> 매크로를 사용하여 선택지 분기를 만들었을때 선택지의 표시하는 영역을 동일하게 맞춰 줄것인지에 대한 인자입니다.</p>
 <p>아래 사진은 <tt class="docutils literal"><span class="pre">연결넓이맞춤</span></tt> 매개변수로 &#8220;예&#8221;를 전달했을 경우의 예입니다.</p>
 <a class="reference internal image-reference" href="http://i.imgur.com/IVgJjhW.png"><img alt="http://i.imgur.com/IVgJjhW.png" src="http://i.imgur.com/IVgJjhW.png" /></a>
 <p>또한 아래 사진은 &#8220;아니오&#8221;를 전달했을 경우의 예입니다.</p>
 <a class="reference internal image-reference" href="http://i.imgur.com/IcHGySp.png"><img alt="http://i.imgur.com/IcHGySp.png" src="http://i.imgur.com/IcHGySp.png" /></a>
 </div>
-<div class="section" id="id18">
-<h3>연결이미지,연결선택시이미지 매개변수<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id16">
+<h3>연결이미지,연결선택시이미지 매개변수<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
 <p><tt class="docutils literal"><span class="pre">연결이미지</span></tt> , <tt class="docutils literal"><span class="pre">연결선택시이미지</span></tt> 매개변수는 <a class="reference internal" href="#id9"><em>독백 매크로</em></a> 매크로를 사용하여 선택지 분기를 만들었을때 선택지에 대한 이미지 입니다.
 샘플 &#8216;집나간 멍구&#8217;에 있는 리소를 참고하여 설명 드리겠습니다.</p>
 <a class="reference internal image-reference" href="http://i.imgur.com/kQ3Kc4Y.png"><img alt="http://i.imgur.com/kQ3Kc4Y.png" src="http://i.imgur.com/kQ3Kc4Y.png" /></a>
@@ -269,8 +269,15 @@ html *{
 제가 임의로 가장 위의 선택지를 마우스로 한번 클릭한 경우 입니다. 아래에서 보듯이 선택지가 <tt class="docutils literal"><span class="pre">연결선택시이미지</span></tt> 매개변수로 전달한 이미지로 깜빡이는 모습을 확인할수 있습니다.</p>
 <a class="reference internal image-reference" href="http://i.imgur.com/MubA7Zc.gif"><img alt="http://i.imgur.com/MubA7Zc.gif" src="http://i.imgur.com/MubA7Zc.gif" /></a>
 </div>
-<div class="section" id="id19">
-<h3>예제<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id17">
+<h3>연결색상 매개변수<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<p><tt class="docutils literal"><span class="pre">연결색상</span></tt> 매개변수는 <a class="reference internal" href="#id9"><em>독백 매크로</em></a> 매크로를 사용하여 선택지 분기를 만들었을때 이미지 대신 단색으로 꾸밀수 있습니다.
+이를 사용하기 위해선 <tt class="docutils literal"><span class="pre">연결이미지</span></tt> 매개변수와 <tt class="docutils literal"><span class="pre">연결선택시이미지</span></tt> 매개변수를 이용하여 선택지 연결 이미지를 정해두면 안됩니다.</p>
+<p><tt class="docutils literal"><span class="pre">연결색상</span></tt> 매개변수에 &#8220;255,50,50,80&#8221;라는 값을 전달하면 아래와 같이 확인할 수 있습니다.</p>
+<a class="reference internal image-reference" href="http://i.imgur.com/q0MshYh.gif"><img alt="http://i.imgur.com/q0MshYh.gif" src="http://i.imgur.com/q0MshYh.gif" /></a>
+</div>
+<div class="section" id="id18">
+<h3>예제<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
 <button id="dialog-window-modified-example2">예제 복사하기</button>
 
 <script>
@@ -281,8 +288,8 @@ html *{
 <hr class="docutils" />
 </div>
 </div>
-<div class="section" id="id20">
-<span id="id21"></span><h2>대화지우기 매크로<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id19">
+<span id="id20"></span><h2>대화지우기 매크로<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[대화지우기]</tt></dt>
@@ -332,13 +339,14 @@ html *{
 </ul>
 </li>
 <li><a class="reference internal" href="#id12">대화창수정 매크로</a><ul>
-<li><a class="reference internal" href="#id16">연결 관련 매개변수</a></li>
-<li><a class="reference internal" href="#id17">연결넓이맞춤 매개변수</a></li>
-<li><a class="reference internal" href="#id18">연결이미지,연결선택시이미지 매개변수</a></li>
-<li><a class="reference internal" href="#id19">예제</a></li>
+<li><a class="reference internal" href="#id14">연결 관련 매개변수</a></li>
+<li><a class="reference internal" href="#id15">연결넓이맞춤 매개변수</a></li>
+<li><a class="reference internal" href="#id16">연결이미지,연결선택시이미지 매개변수</a></li>
+<li><a class="reference internal" href="#id17">연결색상 매개변수</a></li>
+<li><a class="reference internal" href="#id18">예제</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id20">대화지우기 매크로</a></li>
+<li><a class="reference internal" href="#id19">대화지우기 매크로</a></li>
 </ul>
 </li>
 </ul>
