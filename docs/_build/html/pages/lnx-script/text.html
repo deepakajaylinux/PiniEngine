@@ -134,7 +134,7 @@ html *{
 <tt class="descname">[대화 이름,대사창,유지=&quot;아니오&quot;]</tt></dt>
 <dd><p>대화 매크로는 특정 캐릭터가 어떠한 대사를 하기 전달하기 위해 사용할 수 있습니다.
 대화 매크로 대화창의 스타일은 <a class="reference internal" href="#id12"><em>대화창수정 매크로</em></a> 의 매개변수인 아이디에 &#8220;대화&#8221; 라는 문자열을 전달하여 수정할 수 있습니다.
-또한 대화 매크로는 <em class="xref std std-ref">문법_확장인자</em> 를 사용하는 매크로입니다.</p>
+또한 대화 매크로는 <a class="reference internal" href="syntax.html#id7"><em>매크로 확장인자</em></a> 를 사용하는 매크로입니다.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -170,7 +170,7 @@ html *{
 <tt class="descname">[독백 이름,파일명,위치]</tt></dt>
 <dd><p>독백 매크로는 대화 매크로와는 달리 전면을 차지하여 텍스트를 전달할 수 있습니다.
 독백 매크로 대화창의 스타일은 <a class="reference internal" href="#id12"><em>대화창수정 매크로</em></a> 의 매개변수인 아이디에 &#8220;대화&#8221; 라는 문자열을 전달하여 수정할 수 있습니다.
-또한 독백 매크로는 <em class="xref std std-ref">문법_확장인자</em> 를 사용하는 매크로입니다.</p>
+또한 독백 매크로는 <a class="reference internal" href="syntax.html#id7"><em>매크로 확장인자</em></a> 를 사용하는 매크로입니다.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -210,9 +210,9 @@ html *{
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>아이디</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 대화창의 고유 아이디입니다. 속성을 수정하고 싶은 대화창의 아이디를 전달해야 합니다.</li>
-<li><strong>여백</strong> (<a class="reference internal" href="data-structure.html#id17"><em>크기</em></a>) &#8211; </li>
-<li><strong>영역</strong> (<a class="reference internal" href="data-structure.html#id17"><em>크기</em></a>) &#8211; </li>
-<li><strong>위치</strong> (<a class="reference internal" href="data-structure.html#id7"><em>위치</em></a>) &#8211; 대화창의 위치를 지정할 수 있습니다.</li>
+<li><strong>여백</strong> (<a class="reference internal" href="data-structure.html#id17"><em>크기</em></a>) &#8211; <tt class="docutils literal"><span class="pre">위치</span></tt> 매개변수로 전달된 대화창의 위치가 대화 텍스트가 보이게 될 기준입니다. 해당 매개변수로 전달된 여백의 너비와 높이 만큼 <a href="#id14"><span class="problematic" id="id15">``</span></a>위치``에서 여백을 두고 대화 텍스트가 보여지게 됩니다.</li>
+<li><strong>영역</strong> (<a class="reference internal" href="data-structure.html#id17"><em>크기</em></a>) &#8211; 대화창의 영역 크기를 지정할 수 있습니다. <tt class="docutils literal"><span class="pre">위치</span></tt> 매개변수를 기준으로 <tt class="docutils literal"><span class="pre">영역</span></tt> 매개변수로 넘어온 너비와 높이만큼에만 &#8216;대화&#8217;가 보일수 있습니다.</li>
+<li><strong>위치</strong> (<a class="reference internal" href="data-structure.html#id7"><em>위치</em></a>) &#8211; 대화창의 위치를 지정할 수 있습니다. <tt class="docutils literal"><span class="pre">이미지</span></tt> 매개변수로 들어온 대화창 이미지가 어디서 부터 보일 것인지 지정하게 됩니다.</li>
 <li><strong>색상</strong> (<a class="reference internal" href="data-structure.html#id14"><em>색상</em></a>) &#8211; 대화창의 색상을 지정할 수 있습니다.</li>
 <li><strong>이미지</strong> (<em>문자열</em>) &#8211; 대화창의 이미지를 지정할 수 있습니다. 확장자를 포함한 이미지의 파일명을 전달해야 합니다.</li>
 <li><strong>폰트크기</strong> (<em>숫자</em>) &#8211; 대화창의 원하는 텍스트의 폰트를 전달해야 합니다.</li>
@@ -222,7 +222,7 @@ html *{
 <li><strong>커서크기</strong> (<em>숫자</em>) &#8211; 대화창에 나오는 커서의 크기을 지정할 수 있습니다.</li>
 <li><strong>커서색상</strong> (<a class="reference internal" href="data-structure.html#id14"><em>색상</em></a>) &#8211; 대화창에 나오는 커서의 색상을 지정할 수 있습니다.</li>
 <li><strong>이름창위치</strong> (<a class="reference internal" href="data-structure.html#id7"><em>위치</em></a>) &#8211; 이름창의 위치를 지정할 수 있습니다.</li>
-<li><strong>이름창영역</strong> (<a class="reference internal" href="data-structure.html#id17"><em>크기</em></a>) &#8211; </li>
+<li><strong>이름창영역</strong> (<a class="reference internal" href="data-structure.html#id17"><em>크기</em></a>) &#8211; 이름창의 영역 크기를 지정할 수 있습니다. <tt class="docutils literal"><span class="pre">이름창위치</span></tt> 매개변수를 기준으로 <tt class="docutils literal"><span class="pre">이름창영역</span></tt> 매개변수로 넘어온 너비와 높이 만큼만 &#8216;이름&#8217;이 보일수 있습니다.</li>
 <li><strong>이름창폰트크기</strong> (<em>숫자</em>) &#8211; 이름창에 표시될 이름 텍스트의 폰트 크기를 지정할 수 있습니다.</li>
 <li><strong>이름창폰트색상</strong> (<a class="reference internal" href="data-structure.html#id14"><em>색상</em></a>) &#8211; 이름창에 표시될 이름 텍스트의 색상을 지정할 수 있습니다.</li>
 <li><strong>이름창폰트</strong> (<em>문자열</em>) &#8211; 이름창에 표시될 이름 텍스트의 폰트를 지정할 수 있습니다.</li>
@@ -238,8 +238,8 @@ html *{
 <p>아래와 같이 동일 아이디의 대화창 속성을 여러번에 걸쳐 나누어 적용하면 스크립트를 훨씬 보기 편하게 작성할 수 있습니다.</p>
 </dd></dl>
 
-<div class="section" id="id14">
-<h3>연결 관련 매개변수<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id16">
+<h3>연결 관련 매개변수<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
 <p><tt class="docutils literal"><span class="pre">연결이미지</span></tt> , <tt class="docutils literal"><span class="pre">연결색상</span></tt> , <tt class="docutils literal"><span class="pre">연결넓이맞춤</span></tt> , <tt class="docutils literal"><span class="pre">연결선택시이미지</span></tt> 와 같은 연결 관련 매개변수를 사용하면
 아래와 같은 선택지 관련 화면을 구성 할 수 있습니다. 아래는 피니엔진에 기본적으로 같이 제공되는 &#8216;집나간 멍구&#8217; 예제의 한부분을 참조 하였습니다.</p>
 <button id="dialog-window-modified-example1">예제 복사하기</button>
@@ -251,8 +251,8 @@ html *{
 </script><a class="reference internal image-reference" href="http://i.imgur.com/I1IzMBe.png"><img alt="http://i.imgur.com/I1IzMBe.png" src="http://i.imgur.com/I1IzMBe.png" /></a>
 <a class="reference internal image-reference" href="http://i.imgur.com/IE06iTD.png"><img alt="http://i.imgur.com/IE06iTD.png" src="http://i.imgur.com/IE06iTD.png" /></a>
 </div>
-<div class="section" id="id15">
-<h3>예제<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id17">
+<h3>예제<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
 <button id="dialog-window-modified-example2">예제 복사하기</button>
 
 <script>
@@ -263,8 +263,8 @@ html *{
 <hr class="docutils" />
 </div>
 </div>
-<div class="section" id="id16">
-<span id="id17"></span><h2>대화지우기 매크로<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id18">
+<span id="id19"></span><h2>대화지우기 매크로<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
 <tt class="descname">[대화지우기]</tt></dt>
@@ -314,11 +314,11 @@ html *{
 </ul>
 </li>
 <li><a class="reference internal" href="#id12">대화창수정 매크로</a><ul>
-<li><a class="reference internal" href="#id14">연결 관련 매개변수</a></li>
-<li><a class="reference internal" href="#id15">예제</a></li>
+<li><a class="reference internal" href="#id16">연결 관련 매개변수</a></li>
+<li><a class="reference internal" href="#id17">예제</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id16">대화지우기 매크로</a></li>
+<li><a class="reference internal" href="#id18">대화지우기 매크로</a></li>
 </ul>
 </li>
 </ul>
