@@ -17,4 +17,5 @@
   02tutorial-image
   03tutorial-image-animation
   04tutorial-text
-  05tutorial-export
+  05tutorial-device-test
+  06tutorial-export

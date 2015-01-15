@@ -25,6 +25,7 @@
    pages/Getting-Started
    pages/tutorial/index
    pages/lnx-script/index
+   pages/device-test
    pages/export
    pages/user-feedback
 
