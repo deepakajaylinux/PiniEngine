@@ -140,12 +140,12 @@ LNX 스크립트 매크로의 개념은 `기존 프로그래밍 언어에 존재
     <button id="syntax-custom-macro-example">예제 복사하기</button>
 
     <script>
-        code = "@매크로 피니대화창_색상변경:\n\t[대화창수정 아이디=\"피니\" 이미지=\"textArea.png\" 색상=대호창색상]\n\t[효과음 아이디=\"왈\" 파일명=\"으르르.mp3\" ]\n\t\n[피니대화창_수정 대화창색상=\"0,0,0,255\"]";
+        code = "@매크로 피니대화창_색상변경:\n\t[대화창수정 아이디=\"피니\" 이미지=\"textArea.png\" 색상=피니대화창_색상변경.대화창색상]\n\t[효과음 아이디=\"왈\" 파일명=\"으르르.mp3\" ]\n\t\n[피니대화창_수정 대화창색상=\"0,0,0,255\"]";
         
         copyClipboard("syntax-custom-macro-example",code);
     </script>
 
-.. image:: http://i.imgur.com/SeOSlOq.png
+.. image:: http://i.imgur.com/i5mSAHW.png
     :scale: 100%
 
 매개변수
