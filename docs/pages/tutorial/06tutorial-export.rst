@@ -42,7 +42,7 @@
 
 그러곤 조금 기다리시면 아래와 같은 창을 보실수 있으실 겁니다.
 
-.. image:: http://imgur.com/XCsbUG9
+.. image:: http://imgur.com/XCsbUG9.png
     :scale: 100%
 
 여기서 '인스톨러 생성' 버튼을 누르시면 아래와 같은 화면을 보실수 있습니다.
