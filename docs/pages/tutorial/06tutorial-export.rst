@@ -62,7 +62,7 @@
 .. image:: http://i.imgur.com/AqGSzLV.png
     :scale: 100%
 
-여기서 다음 버튼을 누르시면 아래 사진과 같이 안드로이드에 내보내기에 필요한 `ADT(Android Developer Tools) <http://developer.android.com/tools/help/adt.html>`_ 라던가 `JDT(Java Development Kit) <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`_ 등을 자동으로 설치합니다.
+여기서 다음 버튼을 누르시면 아래 사진과 같이 안드로이드에 내보내기에 필요한 `ADT(Android Developer Tools) <http://developer.android.com/tools/help/adt.html>`_ 라던가 `JDK(Java Development Kit) <http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>`_ 등을 자동으로 설치합니다.
 
 .. image:: http://i.imgur.com/yIRe9ro.png
         :scale: 100%
@@ -76,6 +76,13 @@
     .. image:: http://i.imgur.com/8nmv37f.png
         :scale: 100%
 
-    .. image:: http://i.imgur.com/S0ZcPjZ.png
+JDK와 ADT등이 정상적으로 설치 되었다면 다음과 같은 창을 확인할 수 있습니다.
+비밀번호는 자신이 만들었다는 것을 입증하는 서명과도 같은것이므로 꼭 입력해야 합니다. 비밀번호는 영문자와 숫자의 조합으로만 입력 가능합니다.
+
+.. image:: http://i.imgur.com/S0ZcPjZ.png
         :scale: 100%
-        
+
+다음 버튼을 누르면 일련의 과정을 거친후 아래 화면과 같이 APK파일이 만들어지게 됩니다.
+
+.. image:: http://i.imgur.com/clDybGm.png
+        :scale: 100%
