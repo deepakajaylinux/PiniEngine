@@ -75,40 +75,40 @@ html *{
   
   <script src="../../_static/zeroclipboard/ZeroClipboard.js"></script>
 <script src="../../_static/copyClipboard.js"></script><div class="section" id="lnx">
-<span id="id1"></span><h1><a class="toc-backref" href="#id29">기본 문법</a><a class="headerlink" href="#lnx" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1><a class="toc-backref" href="#id30">기본 문법</a><a class="headerlink" href="#lnx" title="Permalink to this headline">¶</a></h1>
 <div class="contents topic" id="id2">
 <p class="topic-title first">목차</p>
 <ul class="simple">
-<li><a class="reference internal" href="#lnx" id="id29">기본 문법</a><ul>
-<li><a class="reference internal" href="#id3" id="id30">매크로</a><ul>
-<li><a class="reference internal" href="#id5" id="id31">매크로 호출</a></li>
-<li><a class="reference internal" href="#id6" id="id32">매크로의 특징</a><ul>
-<li><a class="reference internal" href="#id7" id="id33">매크로 확장인자</a></li>
-<li><a class="reference internal" href="#id9" id="id34">매크로 인자변수</a></li>
-<li><a class="reference internal" href="#id10" id="id35">매크로 호출시 매개변수의 순서</a></li>
-<li><a class="reference internal" href="#id11" id="id36">매크로 매개변수 유지 특징</a></li>
+<li><a class="reference internal" href="#lnx" id="id30">기본 문법</a><ul>
+<li><a class="reference internal" href="#id3" id="id31">매크로</a><ul>
+<li><a class="reference internal" href="#id5" id="id32">매크로 호출</a></li>
+<li><a class="reference internal" href="#id6" id="id33">매크로의 특징</a><ul>
+<li><a class="reference internal" href="#id7" id="id34">매크로 확장인자</a></li>
+<li><a class="reference internal" href="#id9" id="id35">매크로 인자변수</a></li>
+<li><a class="reference internal" href="#id11" id="id36">매크로 호출시 매개변수의 순서</a></li>
+<li><a class="reference internal" href="#id12" id="id37">매크로 매개변수 유지 특징</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id12" id="id37">사용자 정의 매크로</a><ul>
-<li><a class="reference internal" href="#id14" id="id38">매크로 선언 및 정의</a></li>
-<li><a class="reference internal" href="#id15" id="id39">매개변수</a></li>
-<li><a class="reference internal" href="#id16" id="id40">기본 매개변수</a></li>
+<li><a class="reference internal" href="#id13" id="id38">사용자 정의 매크로</a><ul>
+<li><a class="reference internal" href="#id15" id="id39">매크로 선언 및 정의</a></li>
+<li><a class="reference internal" href="#id16" id="id40">매개변수</a></li>
+<li><a class="reference internal" href="#id17" id="id41">기본 매개변수</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id17" id="id41">변수</a><ul>
-<li><a class="reference internal" href="#id19" id="id42">변수의 선언</a></li>
-<li><a class="reference internal" href="#id20" id="id43">변수의 대입</a></li>
-<li><a class="reference internal" href="#id21" id="id44">변수의 사칙연산</a></li>
-<li><a class="reference internal" href="#id22" id="id45">문자열 변수의 병합</a></li>
-<li><a class="reference internal" href="#id23" id="id46">변수의 형변환</a></li>
+<li><a class="reference internal" href="#id18" id="id42">변수</a><ul>
+<li><a class="reference internal" href="#id20" id="id43">변수의 선언</a></li>
+<li><a class="reference internal" href="#id21" id="id44">변수의 대입</a></li>
+<li><a class="reference internal" href="#id22" id="id45">변수의 사칙연산</a></li>
+<li><a class="reference internal" href="#id23" id="id46">문자열 변수의 병합</a></li>
+<li><a class="reference internal" href="#id24" id="id47">변수의 형변환</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id24" id="id47">비교 연산자</a></li>
-<li><a class="reference internal" href="#id25" id="id48">조건문</a></li>
-<li><a class="reference internal" href="#id27" id="id49">북마크</a><ul>
-<li><a class="reference internal" href="#id28" id="id50">북마크 선언과 북마크 이동</a></li>
+<li><a class="reference internal" href="#id25" id="id48">비교 연산자</a></li>
+<li><a class="reference internal" href="#id26" id="id49">조건문</a></li>
+<li><a class="reference internal" href="#id28" id="id50">북마크</a><ul>
+<li><a class="reference internal" href="#id29" id="id51">북마크 선언과 북마크 이동</a></li>
 </ul>
 </li>
 </ul>
@@ -117,21 +117,21 @@ html *{
 </div>
 <p>본 페이지에서는 LNX 스크립트의 기본적인 문법과 특징들에 대해 설명합니다.</p>
 <div class="section" id="id3">
-<h2><a class="toc-backref" href="#id30">매크로</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id31">매크로</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>LNX 스크립트 매크로의 개념은 <a class="reference external" href="http://ko.wikipedia.org/wiki/%ED%95%A8%EC%88%98_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)">기존 프로그래밍 언어에 존재하는 개념인 함수</a> 와 유사합니다.</p>
 <p>간단하게 설명하자면 매크로는 명령들의 집합 즉, 여러 명령들을 묶어 놓은 것이라고 볼 수 있습니다.
 반복적으로 쓰이는 여러줄의 스크립트가 있을 경우 이를 매크로로 묶은 후 이 매크로를 호출한다면 더욱 스크립팅이 편리하고 스크립트 코드 또한 짧고 깔끔하게 유지될 수 있을것 입니다.</p>
 <div class="section" id="id5">
-<h3><a class="toc-backref" href="#id31">매크로 호출</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id32">매크로 호출</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>어떠한 매크로를 호출하고 싶다면 매크로의 이름을 대괄호로 묶고 해당 매크로에 필수적으로 필요한 매개변수와 사용자의 필요에 의해 그 외의 매개변수를 &#8220;매개변수 이름=매개변수 값&#8221;의 형태로 전달해주어야 합니다.</p>
 <p>피니엔진에서 제공하는 기본 매크로 중 <a class="reference internal" href="text.html#id2"><em>텍스트 매크로</em></a> 를 호출하는 예를 아래에서 간단하게 보여 드리겠습니다.</p>
 </div>
 <div class="section" id="id6">
-<h3><a class="toc-backref" href="#id32">매크로의 특징</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id33">매크로의 특징</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>매크로에는 아래와 같은 몇가지 특징이 있습니다.
-이는 <a class="reference internal" href="#id12"><em>사용자 정의 매크로</em></a> 에도 동일하게 적용됩니다.</p>
+이는 <a class="reference internal" href="#id13"><em>사용자 정의 매크로</em></a> 에도 동일하게 적용됩니다.</p>
 <div class="section" id="id7">
-<span id="id8"></span><h4><a class="toc-backref" href="#id33">매크로 확장인자</a><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<span id="id8"></span><h4><a class="toc-backref" href="#id34">매크로 확장인자</a><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <p>매크로 확장인자는 일반 매개변수와는 다른 조금은 특별한 매개변수의 한 종류입니다. 현재 <a class="reference internal" href="text.html#id6"><em>대화 매크로</em></a> , <a class="reference internal" href="text.html#id9"><em>독백 매크로</em></a> 와 같은 매크로가 확장인자를 전달받고 있습니다.
 확장인자는 매크로 바로 아랫줄에 세미콜론을 이어가며 사용하게 됩니다. 아래 사진에선 샘플 &#8216;집나간 멍구&#8217;에서 사용된 <a class="reference internal" href="text.html#id9"><em>독백 매크로</em></a> 을 예로 들어 어떠한 독백 지문 텍스트를 확장인자로 전달받는 과정을 보여주고 있습니다.</p>
 <button id="syntax-extension-parameter-example">예제 복사하기</button>
@@ -143,9 +143,9 @@ html *{
 </script><a class="reference internal image-reference" href="http://i.imgur.com/k1Ld3RJ.png"><img alt="http://i.imgur.com/k1Ld3RJ.png" src="http://i.imgur.com/k1Ld3RJ.png" /></a>
 </div>
 <div class="section" id="id9">
-<h4><a class="toc-backref" href="#id34">매크로 인자변수</a><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<span id="id10"></span><h4><a class="toc-backref" href="#id35">매크로 인자변수</a><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
 <p>매크로 인자변수란 어떠한 매크로가 가지고 있는 매개변수에 대하여 호출하기 전에 미리 정해주어 매크로의 상태로서 그 값을 지니는 것을 말합니다.
-&#8220;(매크로 이름).(매개변수 이름) = (매개변수 값)&#8221; 와 같은 형태로 인자 변수의 값을 대입할 수 있습니다. 아래 사진에서 보이는 예제에선 2번째 라인부터 8번째 라인까지와 11번째 라인과 동일하게 동작합니다. 그리고 <a class="reference internal" href="#id12"><em>사용자 정의 매크로</em></a> 또한 매크로 인자변수를 가질수 있습니다.</p>
+&#8220;(매크로 이름).(매개변수 이름) = (매개변수 값)&#8221; 와 같은 형태로 인자 변수의 값을 대입할 수 있습니다. 아래 사진에서 보이는 예제에선 2번째 라인부터 8번째 라인까지와 11번째 라인과 동일하게 동작합니다. 그리고 <a class="reference internal" href="#id13"><em>사용자 정의 매크로</em></a> 또한 매크로 인자변수를 가질수 있습니다.</p>
 <button id="syntax-parameter-variable-example">예제 복사하기</button>
 
 <script>
@@ -158,8 +158,8 @@ html *{
 <p class="last"><a class="reference internal" href="system.html#id14"><em>인자변수초기화 매크로</em></a> 가 호출되기 전까지는 모든 매크로는 매크로 인자변수에 대입된 값들을 계속 유지하게 됩니다.</p>
 </div>
 </div>
-<div class="section" id="id10">
-<h4><a class="toc-backref" href="#id35">매크로 호출시 매개변수의 순서</a><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id11">
+<h4><a class="toc-backref" href="#id36">매크로 호출시 매개변수의 순서</a><a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
 <p>매크로 호출시 매개변수를 넘기는 순서는 자유롭게 하여도 정상적으로 동작합니다.
 즉 아래와 같이해도 두 줄의 스크립트는 동일하게 동작하게 됩니다.</p>
 <button id="syntax-parameter-order-example">예제 복사하기</button>
@@ -170,8 +170,8 @@ html *{
     copyClipboard("syntax-parameter-order-example",code);
 </script><a class="reference internal image-reference" href="http://i.imgur.com/BTQeoz8.png"><img alt="http://i.imgur.com/BTQeoz8.png" src="http://i.imgur.com/BTQeoz8.png" /></a>
 </div>
-<div class="section" id="id11">
-<h4><a class="toc-backref" href="#id36">매크로 매개변수 유지 특징</a><a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id12">
+<h4><a class="toc-backref" href="#id37">매크로 매개변수 유지 특징</a><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
 <p>모든 매크로는 어떠한 매개변수가 전달되어 호출됬을 경우 해당 매개변수를 모두 계속 기억하고 있는 특징을 가지고 있습니다. 아래와 같은 예를 봅시다.</p>
 <button id="syntax-keep-property-example">예제 복사하기</button>
 
@@ -192,10 +192,10 @@ html *{
 </div>
 </div>
 </div>
-<div class="section" id="id12">
-<span id="id13"></span><h2><a class="toc-backref" href="#id37">사용자 정의 매크로</a><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id14">
-<h3><a class="toc-backref" href="#id38">매크로 선언 및 정의</a><a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id13">
+<span id="id14"></span><h2><a class="toc-backref" href="#id38">사용자 정의 매크로</a><a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id15">
+<h3><a class="toc-backref" href="#id39">매크로 선언 및 정의</a><a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
 <p>피니엔진이 기본으로 제공하느 매크로 외에 사용자가 직접 매크로를 만들어서 사용할 수 있습니다. 아래와 같이 &#8220;&#64;매크로 매크로명:&#8221;을 시작으로 다음 줄부터 탭 한칸으로 시작하여 작성하고 싶은 스크립트를 작성하면 됩니다.</p>
 <button id="syntax-custom-macro-example">예제 복사하기</button>
 
@@ -205,43 +205,43 @@ html *{
     copyClipboard("syntax-custom-macro-example",code);
 </script><a class="reference internal image-reference" href="http://i.imgur.com/i5mSAHW.png"><img alt="http://i.imgur.com/i5mSAHW.png" src="http://i.imgur.com/i5mSAHW.png" /></a>
 </div>
-<div class="section" id="id15">
-<h3><a class="toc-backref" href="#id39">매개변수</a><a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id16">
+<h3><a class="toc-backref" href="#id40">매개변수</a><a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
 <p>매개변수란 정의된 매크로가 호출될때 외부에서 받을수 있는 입력 값을 뜻합니다. 사용자 정의 매크로 정의시에 전달받을 매개변수를 명시할 필요 없습니다.
 어떠한 이름의 매개변수도 전달 받을수 있습니다.</p>
 </div>
-<div class="section" id="id16">
-<h3><a class="toc-backref" href="#id40">기본 매개변수</a><a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id17">
+<h3><a class="toc-backref" href="#id41">기본 매개변수</a><a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
 <p>사용자 매크로를 선언할 때 기본 매개변수를 지정해 줄 수 있습니다.</p>
 <p>즉, 어떠한 매크로가 기본 매개변수를 가지고 있다면 그 매크로를 호출할땐 최소한
 기본 매개변수를 제외한 필수 매개변수를 전달 해주어야 합니다.</p>
 <hr class="docutils" />
 </div>
 </div>
-<div class="section" id="id17">
-<span id="id18"></span><h2><a class="toc-backref" href="#id41">변수</a><a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id18">
+<span id="id19"></span><h2><a class="toc-backref" href="#id42">변수</a><a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
 <p>LNX스크립트에는 프로그래밍 언어에서 대개 지원하는 변수의 개념을 가지고 있습니다.
 변수는 어떠한 값을 보관하고 연산의 대상이 됩니다. 또한 매크로의 매개변수로 활용 될 수 있습니다.</p>
-<div class="section" id="id19">
-<h3><a class="toc-backref" href="#id42">변수의 선언</a><a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id20">
+<h3><a class="toc-backref" href="#id43">변수의 선언</a><a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
 <p>한글과 영어 그리고 숫자를 섞어서 변수의 이름을 만들수 있습니다.
 다만 변수의 이름은 숫자로 시작 할 수 없고 숫자만으로 이루어진 것 또한 변수의 이름이 될 수 없습니다.
 변수의 선언은 비어있는 줄에 변수의 이름을 쓰기만 하면 됩니다.
 하지만 대입이 없는 변수의 선언은 그다지 의미있는 스크립트가 아닙니다. 이와 같은 것이 있다는 것만 아셔도 충분합니다.
 또한 LNX스크립트에선 한줄에 하나의 변수 선언만 가능하며 변수 대입 또한 이와 같습니다.</p>
 </div>
-<div class="section" id="id20">
-<h3><a class="toc-backref" href="#id43">변수의 대입</a><a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id21">
+<h3><a class="toc-backref" href="#id44">변수의 대입</a><a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
 <p>변수의 대입은 변수의 선언과 동시에 이루어질수 있습니다. 대입은 등호(=)를 사용합니다.
 변수의 대입은 (변수이름=값)의 형태로 이루어 집니다. 어떠한 변수에 대입이 이루어 지면 해당 변수는
 대입이 이루어졌을 때 전달된 값을 계속 보관하고 있게 됩니다.</p>
 </div>
-<div class="section" id="id21">
-<h3><a class="toc-backref" href="#id44">변수의 사칙연산</a><a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id22">
+<h3><a class="toc-backref" href="#id45">변수의 사칙연산</a><a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
 <p>기본적으로 숫자가 대입된 변수에 한하여 대하여 덧셈(+),뺄셈(-),곱셈(*),나눗셈(/)과 같은 사칙연산이 가능합니다.</p>
 </div>
-<div class="section" id="id22">
-<h3><a class="toc-backref" href="#id45">문자열 변수의 병합</a><a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id23">
+<h3><a class="toc-backref" href="#id46">문자열 변수의 병합</a><a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
 <p>덧셈(+) 기호를 사용하여 문자열 변수와 다른 문자열 혹은 다른 문자열 변수와 병합할 수 있습니다. 하지만 반대의 경우로 뺄셈(-)은 되지 않습니다.</p>
 <button id="syntax-string-merge">예제 복사하기</button>
 
@@ -253,21 +253,21 @@ html *{
 <p>위의 예제와 같이 &#8220;abc&#8221;라는 문자열이 보관된 변수 A에 &#8220;123&#8221;을 덧셈하여 변수 A에 다시
 대입을 한다면 변수 A에는 &#8220;abc123&#8221; 이라는 문자열이 보관되게 됩니다.</p>
 </div>
-<div class="section" id="id23">
-<h3><a class="toc-backref" href="#id46">변수의 형변환</a><a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id24">
+<h3><a class="toc-backref" href="#id47">변수의 형변환</a><a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
 <p>변수의 형변환이란</p>
 </div>
 </div>
 <hr class="docutils" />
-<div class="section" id="id24">
-<h2><a class="toc-backref" href="#id47">비교 연산자</a><a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id25">
+<h2><a class="toc-backref" href="#id48">비교 연산자</a><a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
 <p>비교 연산자는 어떠한 변수나 값을 서로 비교하기 위해 쓰이는 연산자 입니다.
-주로 <a class="reference internal" href="#id25"><em>조건문</em></a> 에 쓰이게 됩니다.</p>
+주로 <a class="reference internal" href="#id26"><em>조건문</em></a> 에 쓰이게 됩니다.</p>
 <ul>
 <li><dl class="first docutils">
 <dt>==</dt>
 <dd><p class="first last">좌우로 어떤 변수나 숫자,문자열 같은 값을 놓아 서로 같은지 비교합니다.
-같으면 참 같지 않은면 거짓입니다. <a class="reference internal" href="#id25"><em>조건문</em></a> 에서 쓰일 경우 참이면 그 아래에 있는 스크립트가 실행되게 됩니다.</p>
+같으면 참 같지 않은면 거짓입니다. <a class="reference internal" href="#id26"><em>조건문</em></a> 에서 쓰일 경우 참이면 그 아래에 있는 스크립트가 실행되게 됩니다.</p>
 </dd>
 </dl>
 </li>
@@ -275,16 +275,16 @@ html *{
 <dt>&gt;,&lt;</dt>
 <dd><p class="first last">좌우로 어떤 변수나 숫자,문자열 같은 값을 놓아 누가 더 큰지 비교합니다.
 &gt;의 경우 좌측에 있는 것이 우측에 있는 것 보다 더 크면 참이고 &lt;의 경우엔 우측에 있는 것이 좌측에 있는 것 보다 크면 참입니다.
-<a class="reference internal" href="#id25"><em>조건문</em></a> 에서 쓰일 경우 참이면 그 아래에 있는 스크립트가 실행되게 됩니다.</p>
+<a class="reference internal" href="#id26"><em>조건문</em></a> 에서 쓰일 경우 참이면 그 아래에 있는 스크립트가 실행되게 됩니다.</p>
 </dd>
 </dl>
 </li>
 </ul>
 <hr class="docutils" />
 </div>
-<div class="section" id="id25">
-<span id="id26"></span><h2><a class="toc-backref" href="#id48">조건문</a><a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="#id17"><em>변수</em></a> 를 활용해 조건문을 사용하면 어떠한 조건이 맞아 떨어졌을 경우 여러 분기로 실행지점을 나누거나
+<div class="section" id="id26">
+<span id="id27"></span><h2><a class="toc-backref" href="#id49">조건문</a><a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="#id18"><em>변수</em></a> 를 활용해 조건문을 사용하면 어떠한 조건이 맞아 떨어졌을 경우 여러 분기로 실행지점을 나누거나
 특정 스크립트를 수행하게끔 할 수 있습니다.</p>
 <ul>
 <li><dl class="first docutils">
@@ -315,13 +315,13 @@ html *{
 문자열 &#8220;D&#8221;나 숫자 34와 같은 경우 10번째 라인이 실행되게 됩니다.</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="id27">
-<h2><a class="toc-backref" href="#id49">북마크</a><a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id28">
+<h2><a class="toc-backref" href="#id50">북마크</a><a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
 <p>북마크를 사용하면 특정한 실행지점으로 이동할 수 있습니다.</p>
 <p>기존 프로그래밍 언어에 대입하여 설명 드리자면 <a class="reference external" href="http://ko.wikipedia.org/wiki/Goto_%EB%AC%B8)">goto문</a> 에 가까운 기능입니다.
 북마크 선언을 통한 북마크 지점은 Label로 볼 수 있고 북마크 이동 기능은 goto 명령어라고 볼 수 있습니다.</p>
-<div class="section" id="id28">
-<h3><a class="toc-backref" href="#id50">북마크 선언과 북마크 이동</a><a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id29">
+<h3><a class="toc-backref" href="#id51">북마크 선언과 북마크 이동</a><a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
 <p>북마크 선언은 아래와 같이 :(콜론)과 원하는 북마크 이름을 적으면 됩니다.
 또한 실행 시점을 원하는 특정 북마크로 이동하고 싶다면 &gt;(부등호)와 원하는 북마크 이름을 적으면 됩니다.</p>
 <button id="syntax-bookmark-example">예제 복사하기</button>
@@ -367,30 +367,30 @@ html *{
 <li><a class="reference internal" href="#id6">매크로의 특징</a><ul>
 <li><a class="reference internal" href="#id7">매크로 확장인자</a></li>
 <li><a class="reference internal" href="#id9">매크로 인자변수</a></li>
-<li><a class="reference internal" href="#id10">매크로 호출시 매개변수의 순서</a></li>
-<li><a class="reference internal" href="#id11">매크로 매개변수 유지 특징</a></li>
+<li><a class="reference internal" href="#id11">매크로 호출시 매개변수의 순서</a></li>
+<li><a class="reference internal" href="#id12">매크로 매개변수 유지 특징</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id12">사용자 정의 매크로</a><ul>
-<li><a class="reference internal" href="#id14">매크로 선언 및 정의</a></li>
-<li><a class="reference internal" href="#id15">매개변수</a></li>
-<li><a class="reference internal" href="#id16">기본 매개변수</a></li>
+<li><a class="reference internal" href="#id13">사용자 정의 매크로</a><ul>
+<li><a class="reference internal" href="#id15">매크로 선언 및 정의</a></li>
+<li><a class="reference internal" href="#id16">매개변수</a></li>
+<li><a class="reference internal" href="#id17">기본 매개변수</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id17">변수</a><ul>
-<li><a class="reference internal" href="#id19">변수의 선언</a></li>
-<li><a class="reference internal" href="#id20">변수의 대입</a></li>
-<li><a class="reference internal" href="#id21">변수의 사칙연산</a></li>
-<li><a class="reference internal" href="#id22">문자열 변수의 병합</a></li>
-<li><a class="reference internal" href="#id23">변수의 형변환</a></li>
+<li><a class="reference internal" href="#id18">변수</a><ul>
+<li><a class="reference internal" href="#id20">변수의 선언</a></li>
+<li><a class="reference internal" href="#id21">변수의 대입</a></li>
+<li><a class="reference internal" href="#id22">변수의 사칙연산</a></li>
+<li><a class="reference internal" href="#id23">문자열 변수의 병합</a></li>
+<li><a class="reference internal" href="#id24">변수의 형변환</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id24">비교 연산자</a></li>
-<li><a class="reference internal" href="#id25">조건문</a></li>
-<li><a class="reference internal" href="#id27">북마크</a><ul>
-<li><a class="reference internal" href="#id28">북마크 선언과 북마크 이동</a></li>
+<li><a class="reference internal" href="#id25">비교 연산자</a></li>
+<li><a class="reference internal" href="#id26">조건문</a></li>
+<li><a class="reference internal" href="#id28">북마크</a><ul>
+<li><a class="reference internal" href="#id29">북마크 선언과 북마크 이동</a></li>
 </ul>
 </li>
 </ul>
