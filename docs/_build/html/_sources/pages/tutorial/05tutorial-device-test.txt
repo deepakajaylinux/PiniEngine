@@ -30,7 +30,7 @@
     :scale: 100%
 
 .. seealso::
-    안드로이드 리모트 앱은 피니엔진이 설치되어 있는 경로 아래에 "pini_update\resource\android"에 있습니다.
+    안드로이드 리모트 앱은 피니엔진이 설치되어 있는 경로 아래에 "pini_update\\resource\\android"에 있습니다.
     또한 리모트 앱을 모바일 기기에 설치하는 방법이 궁금하시다면 아래의 링크를 참고해주시기 바랍니다.
     `안드로이드 APK 설치방법 <http://ggari.tistory.com/186>`_
 
