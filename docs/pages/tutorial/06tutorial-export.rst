@@ -100,20 +100,24 @@ JDK와 ADT등이 정상적으로 설치 되었다면 다음과 같은 창을 확
 `안드로이드 APK 설치방법 <http://ggari.tistory.com/186>`_
 
 
-ADK,JDK 수동 설치 및 경로 수동 지정
+ADT,JDK 수동 설치 및 경로 수동 지정
 -----------------------------------------------
-만약 특정 버전의 JDK나 NDK를 사용하시기를 원하신다면 원하는 버전을 설치후 해당 SDK가 설치된 폴더를 내보내기시 설정하시면 됩니다.
+만약 특정 버전의 JDK나 ADT를 사용하시기를 원하신다면 원하는 버전을 설치후 해당 SDK가 설치된 폴더를 내보내기시 설정하시면 됩니다.
+아래 사진에 표시된 빨간색 사각형 부분으로 표시된 버튼들을 클릭하여 각각 
+
+.. image:: http://i.imgur.com/QN91Pgv.png
+    :scale: 100%
 
 `JDK 다운로드 링크 <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>`_ 
 
 JDK의 경우 위의 링크로 들어가 아래 사진에 빨간색 표시되어진 부분을 참고하시어 약관 동의 체크와 OS별 설치파일을 선택하시면 됩니다.
 
 .. image:: http://i.imgur.com/7urgUMo.png
-        :scale: 100%
+    :scale: 100%
 
-`NDK 다운로드 링크 <https://developer.android.com/tools/sdk/ndk/index.html#Installing>`_ 
+`ADT 다운로드 링크 <http://developer.android.com/sdk/index.html#Other>`_ 
 
-NDK의 경우 위의 링크로 들어가 아래 사진의 빨간색 표시되어진 부분을 참고하시어 OS별 설치파일을 선택하시면 됩니다.
+ADK의 경우 위의 링크로 들어가 아래 사진의 빨간색 표시되어진 부분을 참고하시어 OS별 설치파일 혹은 압축 파일을 다운 받으시면 됩니다.
 
-.. image:: http://i.imgur.com/H1JOCHg.png
-        :scale: 100%
+.. image:: http://i.imgur.com/Ywe4st9.png
+    :scale: 100%
