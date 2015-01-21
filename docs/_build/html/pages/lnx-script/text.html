@@ -89,7 +89,7 @@ html *{
 <li><strong>아이디</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 텍스트의 고유 아이디입니다. 기존에 쓰이고 있는 아이디를 전달 한다면 덮어쓰여 집니다.</li>
 <li><strong>텍스트</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 보여주고 싶은 문자열을 전달해야 합니다.</li>
 <li><strong>위치</strong> (x,y를 표현한 문자열(&#8220;숫자,숫자&#8221;) 혹은 <a class="reference internal" href="data-structure.html#id7"><em>위치</em></a>) &#8211; 텍스트의 위치를 전달해야 합니다.</li>
-<li><strong>효과</strong> (<a class="reference internal" href="data-structure.html#id23"><em>노드입장효과</em></a>) &#8211; <a class="reference internal" href="data-structure.html#id23"><em>노드입장효과</em></a> 를 사용하여 텍스트가 나타날 때의 효과를 정할수 있습니다.</li>
+<li><strong>효과</strong> (<a class="reference internal" href="data-structure.html#id26"><em>노드입장효과</em></a>) &#8211; <a class="reference internal" href="data-structure.html#id26"><em>노드입장효과</em></a> 를 사용하여 텍스트가 나타날 때의 효과를 정할수 있습니다.</li>
 <li><strong>효과시간</strong> (<em>숫자</em>) &#8211; 등장시 효과의 시간 (기준은 초)</li>
 <li><strong>글꼴</strong> (<em>문자열</em>) &#8211; 원하는 텍스트의 폰트를 전달해야 합니다.</li>
 <li><strong>크기</strong> (<em>숫자</em>) &#8211; 원하는 텍스트의 사이즈를 전달해야 합니다.</li>
@@ -142,7 +142,7 @@ html *{
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>이름</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 대사창의 이름칸에 보이게 될 이름을 전달해 주어야 합니다.</li>
 <li><strong>대사창</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 대사창의 내용칸에 보이게 될 대사를 전달해 주어야 합니다.</li>
-<li><strong>유지</strong> (<a class="reference internal" href="data-structure.html#id30"><em>여부</em></a>) &#8211; 만약 &#8220;예&#8221;를 전달한다면 해당 대화는 대화가 끝나더라도 대화창이 계속 남게 됩니다. &#8220;예&#8221;가 아닌 &#8220;아니오&#8221;를 전달한다면 대화가 끝나게 될 시 독백 창이 사라지게 됩니다.</li>
+<li><strong>유지</strong> (<a class="reference internal" href="data-structure.html#id33"><em>여부</em></a>) &#8211; 만약 &#8220;예&#8221;를 전달한다면 해당 대화는 대화가 끝나더라도 대화창이 계속 남게 됩니다. &#8220;예&#8221;가 아닌 &#8220;아니오&#8221;를 전달한다면 대화가 끝나게 될 시 독백 창이 사라지게 됩니다.</li>
 </ul>
 </td>
 </tr>
@@ -177,7 +177,7 @@ html *{
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>대사창</strong> (<em>문자열</em>) &#8211; 대사창의 내용칸에 보이게 될 대사를 전달해 주어야 합니다.</li>
-<li><strong>유지</strong> (<a class="reference internal" href="data-structure.html#id30"><em>여부</em></a>) &#8211; 만약 &#8220;예&#8221; 전달한다면 해당 독백이 끝나더라도 독백 창이 계속 남게 됩니다. &#8220;예&#8221;가 아닌 &#8220;아니오&#8221;를 전달한다면 독백이 끝나게 될 시 독백 창이 사라지게 됩니다.</li>
+<li><strong>유지</strong> (<a class="reference internal" href="data-structure.html#id33"><em>여부</em></a>) &#8211; 만약 &#8220;예&#8221; 전달한다면 해당 독백이 끝나더라도 독백 창이 계속 남게 됩니다. &#8220;예&#8221;가 아닌 &#8220;아니오&#8221;를 전달한다면 독백이 끝나게 될 시 독백 창이 사라지게 됩니다.</li>
 </ul>
 </td>
 </tr>
@@ -210,24 +210,24 @@ html *{
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>아이디</strong> (<em>문자열</em>) &#8211; ( <strong>필수</strong> ) 대화창의 고유 아이디입니다. 속성을 수정하고 싶은 대화창의 아이디를 전달해야 합니다.</li>
-<li><strong>여백</strong> (<a class="reference internal" href="data-structure.html#id17"><em>크기</em></a>) &#8211; <tt class="docutils literal"><span class="pre">위치</span></tt> 매개변수로 전달된 대화창의 위치가 대화 텍스트가 보이게 될 기준입니다. 해당 매개변수로 전달된 여백의 너비와 높이 만큼 <tt class="docutils literal"><span class="pre">위치</span></tt> 에서 여백을 두고 대화 텍스트가 보여지게 됩니다.</li>
-<li><strong>영역</strong> (<a class="reference internal" href="data-structure.html#id17"><em>크기</em></a>) &#8211; 대화창의 영역 크기를 지정할 수 있습니다. <tt class="docutils literal"><span class="pre">위치</span></tt> 매개변수를 기준으로 <tt class="docutils literal"><span class="pre">영역</span></tt> 매개변수로 넘어온 너비와 높이만큼에만 &#8216;대화&#8217;가 보일수 있습니다.</li>
+<li><strong>여백</strong> (<a class="reference internal" href="data-structure.html#id20"><em>크기</em></a>) &#8211; <tt class="docutils literal"><span class="pre">위치</span></tt> 매개변수로 전달된 대화창의 위치가 대화 텍스트가 보이게 될 기준입니다. 해당 매개변수로 전달된 여백의 너비와 높이 만큼 <tt class="docutils literal"><span class="pre">위치</span></tt> 에서 여백을 두고 대화 텍스트가 보여지게 됩니다.</li>
+<li><strong>영역</strong> (<a class="reference internal" href="data-structure.html#id20"><em>크기</em></a>) &#8211; 대화창의 영역 크기를 지정할 수 있습니다. <tt class="docutils literal"><span class="pre">위치</span></tt> 매개변수를 기준으로 <tt class="docutils literal"><span class="pre">영역</span></tt> 매개변수로 넘어온 너비와 높이만큼에만 &#8216;대화&#8217;가 보일수 있습니다.</li>
 <li><strong>위치</strong> (<a class="reference internal" href="data-structure.html#id7"><em>위치</em></a>) &#8211; 대화창의 위치를 지정할 수 있습니다. <tt class="docutils literal"><span class="pre">이미지</span></tt> 매개변수로 들어온 대화창 이미지가 어디서 부터 보일 것인지 지정하게 됩니다.</li>
-<li><strong>색상</strong> (<a class="reference internal" href="data-structure.html#id14"><em>색상</em></a>) &#8211; 대화창의 색상을 지정할 수 있습니다.</li>
+<li><strong>색상</strong> (<a class="reference internal" href="data-structure.html#rgba"><em>RGBA</em></a>) &#8211; 대화창의 색상을 지정할 수 있습니다.</li>
 <li><strong>이미지</strong> (<em>문자열</em>) &#8211; 대화창의 이미지를 지정할 수 있습니다. 확장자를 포함한 이미지의 파일명을 전달해야 합니다.</li>
 <li><strong>폰트크기</strong> (<em>숫자</em>) &#8211; 대화창의 원하는 텍스트의 폰트를 전달해야 합니다.</li>
-<li><strong>폰트색상</strong> (<a class="reference internal" href="data-structure.html#id14"><em>색상</em></a>) &#8211; 대화창에 표시될 대화 텍스트들의 색상을 지정할 수 있습니다.</li>
+<li><strong>폰트색상</strong> (<a class="reference internal" href="data-structure.html#rgba"><em>RGBA</em></a>) &#8211; 대화창에 표시될 대화 텍스트들의 색상을 지정할 수 있습니다.</li>
 <li><strong>폰트</strong> (<em>문자열</em>) &#8211; 대화창에 표시될 대화 텍스트들의 폰트를 지정할 수 있습니다.</li>
 <li><strong>커서이미지</strong> (<em>문자열</em>) &#8211; 대화창 커서의 이미지를 지정할 수 있습니다. 확장자를 포함한 이미지의 파일명을 전달해야 합니다.</li>
 <li><strong>커서크기</strong> (<em>숫자</em>) &#8211; 대화창에 나오는 커서의 크기을 지정할 수 있습니다.</li>
-<li><strong>커서색상</strong> (<a class="reference internal" href="data-structure.html#id14"><em>색상</em></a>) &#8211; 대화창에 나오는 커서의 색상을 지정할 수 있습니다.</li>
+<li><strong>커서색상</strong> (<a class="reference internal" href="data-structure.html#rgba"><em>RGBA</em></a>) &#8211; 대화창에 나오는 커서의 색상을 지정할 수 있습니다.</li>
 <li><strong>이름창위치</strong> (<a class="reference internal" href="data-structure.html#id7"><em>위치</em></a>) &#8211; 이름창의 위치를 지정할 수 있습니다.</li>
-<li><strong>이름창영역</strong> (<a class="reference internal" href="data-structure.html#id17"><em>크기</em></a>) &#8211; 이름창의 영역 크기를 지정할 수 있습니다. <tt class="docutils literal"><span class="pre">이름창위치</span></tt> 매개변수를 기준으로 <tt class="docutils literal"><span class="pre">이름창영역</span></tt> 매개변수로 넘어온 너비와 높이 만큼만 &#8216;이름&#8217;이 보일수 있습니다.</li>
+<li><strong>이름창영역</strong> (<a class="reference internal" href="data-structure.html#id20"><em>크기</em></a>) &#8211; 이름창의 영역 크기를 지정할 수 있습니다. <tt class="docutils literal"><span class="pre">이름창위치</span></tt> 매개변수를 기준으로 <tt class="docutils literal"><span class="pre">이름창영역</span></tt> 매개변수로 넘어온 너비와 높이 만큼만 &#8216;이름&#8217;이 보일수 있습니다.</li>
 <li><strong>이름창폰트크기</strong> (<em>숫자</em>) &#8211; 이름창에 표시될 이름 텍스트의 폰트 크기를 지정할 수 있습니다.</li>
-<li><strong>이름창폰트색상</strong> (<a class="reference internal" href="data-structure.html#id14"><em>색상</em></a>) &#8211; 이름창에 표시될 이름 텍스트의 색상을 지정할 수 있습니다.</li>
+<li><strong>이름창폰트색상</strong> (<a class="reference internal" href="data-structure.html#rgba"><em>RGBA</em></a>) &#8211; 이름창에 표시될 이름 텍스트의 색상을 지정할 수 있습니다.</li>
 <li><strong>이름창폰트</strong> (<em>문자열</em>) &#8211; 이름창에 표시될 이름 텍스트의 폰트를 지정할 수 있습니다.</li>
 <li><strong>연결이미지</strong> (<em>문자열</em>) &#8211; 연결 선택지의 기본 이미지를 지정할 수 있습니다. 확장자를 포함한 이미지의 파일명을 전달해야 합니다.</li>
-<li><strong>연결색상</strong> (<a class="reference internal" href="data-structure.html#id14"><em>색상</em></a>) &#8211; <tt class="docutils literal"><span class="pre">연결색상</span></tt> 매개변수를 사용하기 위해선 <tt class="docutils literal"><span class="pre">연결이미지</span></tt> 와 <tt class="docutils literal"><span class="pre">연결선택시이미지</span></tt> 를 지정하면 안됩니다. <tt class="docutils literal"><span class="pre">연결색상</span></tt> 을 지정해주면 각각의 선택지 텍스트에 배경색이 입혀지게 됩니다.</li>
+<li><strong>연결색상</strong> (<a class="reference internal" href="data-structure.html#rgba"><em>RGBA</em></a>) &#8211; <tt class="docutils literal"><span class="pre">연결색상</span></tt> 매개변수를 사용하기 위해선 <tt class="docutils literal"><span class="pre">연결이미지</span></tt> 와 <tt class="docutils literal"><span class="pre">연결선택시이미지</span></tt> 를 지정하면 안됩니다. <tt class="docutils literal"><span class="pre">연결색상</span></tt> 을 지정해주면 각각의 선택지 텍스트에 배경색이 입혀지게 됩니다.</li>
 <li><strong>연결넓이맞춤</strong> &#8211; 선택지 분기의 너비를 동일하게 맞춰 줄것인지에 대해 지정할 수 있습니다.</li>
 <li><strong>연결선택시이미지</strong> &#8211; 연결 선택지를 선택 하였을 경우의 이미지를 지정할 수 있습니다. 확장자를 포함한 이미지의 파일명을 전달해야 합니다.</li>
 </ul>

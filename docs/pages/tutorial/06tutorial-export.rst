@@ -117,7 +117,7 @@ JDK의 경우 위의 링크로 들어가 아래 사진에 빨간색 표시되어
 
 `ADT 다운로드 링크 <http://developer.android.com/sdk/index.html#Other>`_ 
 
-ADK의 경우 위의 링크로 들어가 아래 사진의 빨간색 표시되어진 부분을 참고하시어 OS별 설치파일 혹은 압축 파일을 다운 받으시면 됩니다.
+ADT의 경우 위의 링크로 들어가 아래 사진의 빨간색 표시되어진 부분을 참고하시어 OS별 설치파일 혹은 압축 파일을 다운 받으시면 됩니다.
 
 .. image:: http://i.imgur.com/Ywe4st9.png
     :scale: 100%
